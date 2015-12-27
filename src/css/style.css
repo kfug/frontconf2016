@@ -8,6 +8,14 @@ common
 	float: right;
 }
 
+.sp_ib {
+	display: none;
+}
+
+.cs {
+	font-size: 2rem;
+}
+
 /* ----------------------------------------------------
 PC
 ---------------------------------------------------- */
@@ -26,15 +34,33 @@ header
 	display: block;
 }
 
+#floating {
+	width: 100%;
+	background-color: #444;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 300;
+}
+#floating a {
+	text-align: center;
+	display: block;
+	color: #fff;
+	padding: 15px 0px;
+	width: 100%;
+	text-decoration: none;
+}
+
 /* header */
 #top-head {
 	top: -100px;
 	position: absolute;
 	width: 100%;
-	margin: 100px auto 0;
-	padding: 30px 0 0;
+	margin: 90px auto 0;
+	padding: 70px 0px 10px;
 	line-height: 1;
-	z-index: 999;
+	z-index: 200;
+	background-color: #fff;
 }
 #top-head a,
 #top-head {
@@ -68,11 +94,11 @@ header
 
 /* Fixed */
 #top-head.fixed {
-	margin-top: 0;
+	margin-top: 50px;
 	top: 0;
 	position: fixed;
 	padding-top: 10px;
-	height: 55px;
+	height: 35px;
 	background: #fff;
 	background: rgba(255,255,255,.7);
 	transition: top 0.65s ease-in;
@@ -278,8 +304,8 @@ main-area
 	padding: 60px 0;
 }
 .cont h2 {
-	font-size: 1.9rem;
-	margin-bottom: 30px;
+	font-size: 2.2rem;
+	margin-bottom: 45px;
 }
 .cont .inner {
 	position: relative;
@@ -298,6 +324,18 @@ main-area
 	right: 0px;
 	margin: auto;
 	bottom: -60px;
+}
+
+
+/*・・・・・・・・・・・・・・
+about
+・・・・・・・・・・・・・・・*/
+#about h3 {
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+}
+#about p + p{
+	margin-top: 10px;
 }
 
 /*・・・・・・・・・・・・・・
@@ -319,11 +357,18 @@ access
 	width: 37%;
 }
 .mapbox .r h3 {
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 }
-.mapbox .r .map-txt {
-	margin-top: 20px;
+.mapbox .r ul {
+	margin-top: 35px;
 }
+.mapbox .r ul li {
+	margin-top: 10px;
+}
+.mapbox .r a {
+	color: #333;
+}
+
 
 /*・・・・・・・・・・・・・・
 speaker
@@ -416,38 +461,31 @@ faq
 sns-foot
 ・・・・・・・・・・・・・・・*/
 
+.sns-foot .inner h3{
+	width: 300px;
+	margin: 50px auto 0;
+}
+.sns-foot .inner h3 img {
+	width: 100%;
+}
+.sns-foot .snsbox {
+	width: 50%;
+	margin: 0 auto;
+}
 .sns-foot .snsbox li {
-	width: 25%;
 	float: left;
 	text-align: center;
+	width: 33.3%;
 }
 .sns-foot .snsbox li a {
-	display: block;
+	display: inline-block;
 	font-size: 1.4rem;
-	background-color: #333;
-	border-radius: 50%;
 	padding: 15% 0px;
-	margin: 0px 17%;
-	position: relative;
+	color: #333;
+	font-size: 1.3rem;
 }
 .sns-foot .snsbox li a:hover {
 	opacity: 0.8;
-}
-.sns-foot .snsbox li a span {
-	display: inline-block;
-	text-indent: -9999px;
-	color: #fff;
-}
-.sns-foot .snsbox li a span:before {
-	text-indent: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	width: 1em;
-	height: 1em;
 }
 
 
@@ -461,6 +499,12 @@ SP
 /*::::::::::::::::::::::::::::::::::
 header
 :::::::::::::::::::::::::::::::::::*/
+	.sp_ib {
+		display: inline-block;
+	}
+	#top-head.fixed {
+		margin-top: 0;
+	}
 	#top-head,
 	.inner {
 		width: 100%;
@@ -471,6 +515,10 @@ header
 		position: fixed;
 		margin-top: 0;
 		background-color: #fff;
+	}
+	#floating {
+		top: inherit;
+		bottom: 0;
 	}
 	/* Fixed reset */
 	#top-head.fixed {
@@ -522,6 +570,7 @@ header
 		display: block;
 		color: #fff;
 		padding: 18px 0;
+		font-size: 12px;
 	}
 	#nav-toggle {
 		display: block;
@@ -549,7 +598,9 @@ header
 		-webkit-transform: translateY(556px);
 		transform: translateY(556px);
 	}
-
+	.cont h2 {
+		font-size: 1.7rem;
+	}
 	#content-wraper {
 		margin-top: 56px;
 	}
@@ -573,6 +624,10 @@ header
 	.main-area .bnrbox {
 		margin-top: 5%;
 	}
+	.main-area .snsbox li a {
+		font-size: 1rem;
+	}
+
 	.bnrbox .bnr a {
 		padding: 4% 6%;
 	}
@@ -631,4 +686,56 @@ header
 	.faq-col dd {
 		margin-top: 10px;
 	}
+	#page-top {
+		right: 10px;
+		width: 50px;
+	}
+	.hvr-icon-bob::before {
+		font-size: 1rem;
+	}
+	#floating a {
+		font-size: 0.5rem;
+		padding: 15px 0;
+	}
+	.sns-foot .snsbox {
+		width: 100%;
+	}
+
+	/*・・・・・・・・・・・・・・
+	about
+	・・・・・・・・・・・・・・・*/
+	#about h3 {
+		font-size: 1.2rem;
+	}
+	/*・・・・・・・・・・・・・・
+	map
+	・・・・・・・・・・・・・・・*/
+	.mapbox .r h3 {
+		font-size: 1.2rem;
+	}
+	.mapbox .r ul {
+		margin-top: 15px;
+	}
+	/*・・・・・・・・・・・・・・
+	speaker
+	・・・・・・・・・・・・・・・*/
+	.list-speaker {
+		margin-top: -5px;
+		margin-left: -4%;
+	}
+	.list-speaker li {
+		margin-top: 5px;
+	}
+	/*・・・・・・・・・・・・・・
+	faq
+	・・・・・・・・・・・・・・・*/
+	.faq-col dt {
+		font-size: 1.3rem;
+	}
+
+	#page-top {
+		bottom: 80px!important;
+	}
+
+
 }
