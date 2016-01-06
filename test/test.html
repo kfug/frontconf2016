@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>undefined</title>
+  <meta name="generator" content="Google Web Designer 1.5.3.1209">
+  <meta name="template" content="Expandable 2.3.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      transform: translateZ(0px);
+      background-color: rgb(255, 255, 255);
+    }
+    .page1-content {
+      width: 550px;
+      height: 400px;
+    }
+  </style>
+  <link href="gwdpage_style.css" data-version="8" data-exports-type="gwd-page" rel="stylesheet">
+  <link href="gwdpagedeck_style.css" data-version="8" data-exports-type="gwd-pagedeck" rel="stylesheet">
+  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="googbase_min.js"></script>
+  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="gwd_webcomponents_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" type="text/javascript" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="8" data-exports-type="gwd-pagedeck" type="text/javascript" src="gwdpagedeck_min.js"></script>
+</head>
+
+<body class="document-body">
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
+      <div class="gwd-page-content page1-content"></div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "0";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {}
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })();
+  </script>
+</body>
+
+</html>

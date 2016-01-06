@@ -27,7 +27,7 @@ $(function(){
 		var target = $(href == "#" || href == "" ? 'html' : href);
 		var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
 		$("html, body").animate({scrollTop:position}, speed, "swing");
-		return false;
+		// return false;
 	});
 
 // ページトップボタン
