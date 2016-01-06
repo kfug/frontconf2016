@@ -251,16 +251,23 @@ content
 	text-align: center;
 	padding: 10px 0;
 }
+.sp_block {
+	display: none;
+}
 
 /*::::::::::::::::::::::::::::::::::
 main-area
 :::::::::::::::::::::::::::::::::::*/
 
+.edgeLoad-EDGE-10196486 { visibility:hidden; }
+#Stage { background-color: transparent!important;}
+
 .main-area {
-	background: url("../img/fec_main_sample03.png") no-repeat center 57%;
+	background: url("../img/bg_pattern.jpg") no-repeat center 57%;
 	-webkit-background-size: cover;
 	background-size: cover;
 	min-width: 980px;
+	margin: 0 auto;
 }
 .main-area .inner {
 	height: 320px;
@@ -280,6 +287,7 @@ main-area
 	bottom: 20px;
 	left: 0;
 	width: 280px;
+	z-index: 20;
 }
 
 .main-area .snsbox li {
@@ -320,6 +328,7 @@ main-area
 	position: absolute;
 	right: 0;
 	bottom: 20px;
+	z-index: 20;
 }
 .bnrbox .bnr {
 	background-color: #333;
@@ -533,12 +542,29 @@ SP
 ---------------------------------------------------- */
 
 @media screen and (max-width: 640px) {
-
 /*::::::::::::::::::::::::::::::::::
 header
 :::::::::::::::::::::::::::::::::::*/
+	.sp_block {
+		display: block;
+	}
 	.main-area {
 		min-width: auto;
+	}
+	.main-area h1 {
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 10%;
+	}
+	.main-area h1 img {
+		width: 100%;
+	}
+	#Stage {
+		width: 100%!important;
+		height: auto!important;
+	}
+	#Stage_bg_shape , #Stage_bg_shape_r , #Stage_bg_shape_l , #Stage_ttl_2016 , #Stage_ttl_conference , #Stage_ttl_frontend {
+		display: none!important;
 	}
 	.cs {
 		font-size: 1.5rem;
@@ -652,15 +678,18 @@ header
 		padding-top: 25px;
 		height: auto;
 	}
-	.main-area .inner h1 {
-		margin-bottom: 20%;
-	}
 	.main-area .snsbox , .main-area .bnrbox {
 		position: relative;
 	}
 	.main-area .snsbox {
 		margin: 0 auto;
 		width: 50%;
+	}
+	.main-area .snsbox li a {
+		background-color: transparent;
+	}
+	.main-area .snsbox li a span {
+		color: #505050;
 	}
 	.inner {
 		padding: 0 3%;
@@ -826,18 +855,18 @@ speaker.html
 .speaker-list li a {
 	color: #3089A5;
 }
-#speaker .column.a-hole {
-	background-color: #fff;
-}
-#speaker .column.a-hole {
+#speaker .column:nth-child(odd) {
 	background-color: #eee;
+}
+#speaker .column.pagettl {
+	background-color: #fff;
 }
 #speaker .inner .border {
 	border: 1px solid #333;
 	padding: 20px;
 }
 #speaker .column {
-	padding: 40px 0;
+	padding: 50px 0px 20px;
 }
 #speaker .column.hole {
 	padding: 0px 0px 40px;
@@ -868,7 +897,7 @@ speaker.html
 	float: left;
 	padding-left: 6px;
 }
-#speaker .column .tag li a {
+#speaker .column .tag li span {
 	display: inline-block;
 	background-color: #F38869;
 	padding: 5px 10px;
@@ -885,11 +914,79 @@ speaker.html
 	display: none;
 	padding: 0 5px;
 }
-#speaker .time {
-	position: absolute;
-	top: 0;
-	left: 0;
+#speaker .label {
 	background-color: #333;
 	color: #fff;
 	padding: 5px 10px;
+}
+#speaker .label.time {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#speaker .label.hole {
+	position: absolute;
+	top: 0;
+	left: 5.5em;
+}
+#speaker .label.hole.a-hole {
+	background-color: #34BBE5;
+}
+#speaker .label.hole.b-hole {
+	background-color: #F95D5D;
+}
+
+
+/* ----------------------------------------------------
+SP
+---------------------------------------------------- */
+
+@media screen and (max-width: 640px) {
+	/*::::::::::::::::::::::::::::::::::
+	header
+	:::::::::::::::::::::::::::::::::::*/
+	#speaker #content-wraper {
+		margin-top: 60px;
+	}
+	#speaker #content-wraper .pagettl.column {
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	#speaker .column.hole .l, .column.hole .r {
+		width: 100%;
+	}
+	.column.hole .r {
+		margin-top: 15px;
+	}
+	.speaker-list li {
+		width: 100%;
+		float: none;
+		margin-top: 10px;
+	}
+	.speaker-list li:first-child {
+		margin-top: 0;
+	}
+	#speaker .speaker-img {
+		width: 100%;
+		float: none;
+	}
+	#speaker .speaker-img .img {
+		margin: 0 auto;
+	}
+	#speaker .speaker-detail {
+		float: none;
+		margin-top: 15px;
+		padding: 0 3%;
+		width: 100%;
+	}
+	#speaker .speaker-detail h1 + p {
+		margin-top: 10px;
+	}
+	#speaker .column .tag {
+		float: none;
+		margin-top: 20px;
+	}
+	#speaker .column {
+		padding: 40px 0px 25px;
+	}
 }

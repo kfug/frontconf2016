@@ -12,7 +12,7 @@
 	<meta property="og:url" content="ダミーurl">
 	<meta property="og:site_name" content="関西フロントエンドカンファレンス2016">
 	<meta property="og:description" content="関西最大級のフロントエンドの祭典、forntend conference 2016!! 大阪梅田 にて 2016.03.05 開催!">
-	<meta property="og:image" content="ダミーog画像">
+	<meta property="og:image" content="img/">
 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 	<link rel="stylesheet" href="css/reset.css">
@@ -23,6 +23,57 @@
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-10196486 { visibility:hidden; }
+    </style>
+<script>
+  AdobeEdge.loadComposition('main', 'EDGE-10196486', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "980px",
+    height: "450px"
+}, {dom: [ ]}, {
+    dom: [
+        {
+            id: 'bg_pattern',
+            type: 'image',
+            tag: 'img',
+            rect: ['0px', '0px', '980px', '450px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'img/bg_pattern.jpg','0px','0px']
+        },
+        {
+            id: 'bg_shape_l2',
+            type: 'image',
+            tag: 'img',
+            rect: ['0px', '231px', '215px', '221px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'img/bg_shape_l.png','0px','0px']
+        },
+        {
+            id: 'bg_shape_r2',
+            type: 'image',
+            tag: 'img',
+            rect: ['752px', '0px', '228px', '243px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'img/bg_shape_r.png','0px','0px']
+        },
+        {
+            id: 'mainttl',
+            type: 'image',
+            tag: 'img',
+            rect: ['220px', '121px', '539px', '245px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'img/mainttl.png','0px','0px']
+        }
+    ],
+    style: {
+        '${symbolSelector}': {
+            isStage: true,
+            rect: [undefined, undefined, '980px', '450px']
+        }
+    }
+});
+</script>
 </head>
 <body>
 <div id="floating">
@@ -56,8 +107,8 @@
 
 <div id="content-wraper">
 	<section class="main-area">
-		<div class="inner">
-			<!-- <h1><img src="img/mainttl.png" alt="Frontend Conference 2016"></h1> -->
+		<div class="inner EDGE-10196486" id="Stage">
+			<h1 class="sp_block"><img src="img/mainttl.png" alt="Frontend Conference 2016"></h1>
 			<div class="snsbox cf">
 				<ul class="sns">
 					<li><a class="fb btn hvr-float" href="http://www.facebook.com/share.php?u=[共有したいURL]" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-facebook2">Facebookでシェアする</span></a></li>
@@ -67,7 +118,8 @@
 				</ul><!-- /.sns -->
 			</div><!-- /.snsbox -->
 
-
+	<div>
+	</div>
 
 			<div class="bnrbox cf">
 				<div class="bnr"><a href="http://the-frontend-conference-2016.peatix.com" target="_blank" class="hvr-icon-wobble-horizontal">スポンサー募集</a></div>
@@ -112,7 +164,7 @@
 			<ul class="list-speaker cf">
 				<li>
 					<div class="ih-item circle colored effect1">
-						<a href="speaker.html"><div class="spinner"></div>
+						<a href="speaker.html#ishida"><div class="spinner"></div>
 							<div class="img">
 								<img src="http://placehold.it/150x150/27709b/ffffff">
 							</div>
@@ -121,12 +173,12 @@
 									<p><i class="fa fa-share"></i></p>
 								</div>
 							</div>
-						<span class="name">◯◯ ◯◯◯</span></a>
+						<span class="name">石田 三成</span></a>
 					</div>
 				</li>
 				<li>
 					<div class="ih-item circle colored effect1">
-						<a href="speaker.html"><div class="spinner"></div>
+						<a href="speaker.html#shima"><div class="spinner"></div>
 							<div class="img">
 								<img src="http://placehold.it/150x150/27709b/ffffff">
 							</div>
@@ -135,12 +187,12 @@
 									<p><i class="fa fa-share"></i></p>
 								</div>
 							</div>
-						<span class="name">◯◯ ◯◯◯</span></a>
+						<span class="name">島　左近</span></a>
 					</div>
 				</li>
 				<li>
 					<div class="ih-item circle colored effect1">
-						<a href="speaker.html"><div class="spinner"></div>
+						<a href="speaker.html#kuroda"><div class="spinner"></div>
 							<div class="img">
 								<img src="http://placehold.it/150x150/27709b/ffffff">
 							</div>
@@ -149,26 +201,12 @@
 									<p><i class="fa fa-share"></i></p>
 								</div>
 							</div>
-						<span class="name">◯◯ ◯◯◯</span></a>
-					</div>
-				</li>
-				<li>
-					<div class="ih-item circle colored effect1 nolink">
-						<a href="speaker.html"><div class="spinner"></div>
-							<div class="img">
-								<img src="http://placehold.it/150x150/27709b/ffffff">
-							</div>
-							<div class="info">
-								<div class="info-back">
-									<p><i class="fa fa-share"></i></p>
-								</div>
-							</div>
-						<span class="name">◯◯ ◯◯◯</span></a>
+						<span class="name">黒田　長政</span></a>
 					</div>
 				</li>
 				<li>
 					<div class="ih-item circle colored effect1">
-						<a href="speaker.html"><div class="spinner"></div>
+						<a href="speaker.html#hosokawa"><div class="spinner"></div>
 							<div class="img">
 								<img src="http://placehold.it/150x150/27709b/ffffff">
 							</div>
@@ -177,7 +215,7 @@
 									<p><i class="fa fa-share"></i></p>
 								</div>
 							</div>
-						<span class="name">◯◯ ◯◯◯</span></a>
+						<span class="name">細川　忠興</span></a>
 					</div>
 				</li>
 				<li>
