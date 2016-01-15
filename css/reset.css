@@ -11,7 +11,7 @@ p,blockquote,table,th,td {margin: 0; padding: 0;}
 
 html,body {background: #FFF; color: #333;}
 
-body {font:16px/1 "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing: grayscale;}
+body {font:18px/1 "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing: grayscale;}
 * html body {font-size: small;}
 *:first-child+html body {font-size: small;}
 
