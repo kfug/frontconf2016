@@ -1,0 +1,33 @@
+{
+  "name": "frontconf2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.11.0",
+    "ejs": "^2.3.4",
+    "gulp": "^3.9.0",
+    "gulp-ejs": "^1.2.2",
+    "gulp-gm": "0.0.8",
+    "gulp-image-resize": "^0.7.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sitemap": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfug/frontconf2016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kfug/frontconf2016/issues"
+  },
+  "homepage": "https://github.com/kfug/frontconf2016#readme"
+}
