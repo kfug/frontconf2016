@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+section {
+	padding-bottom: 20px;
+}
+
+.handson-howto {
+	margin: 0 auto;
+	padding: 40px;
+	width: 85%;
+	height: auto;
+	position: relative;
+	top: -40px;
+	box-shadow: 1px 1px 1px #ccc;
+	background: #fff;
+	
+}
+.handson-howto h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+#handson-lists {
+	padding: 40px;
+	background: #ddd;
+}
+
+.handson-lists h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.handson-lists ul li {
+	margin-bottom: 15px;
+}
+
+span.tag {
+	display: inline-block;
+	padding: 6px 9px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+	background: #888;
+}
+
+.handson-lists ul li a {
+	font-size: 22px;
+	text-decoration: none;
+	margin-right: 8px;
+}
+
+#handson {
+	padding-top: 30px;
+	background:  #eee;
+}
+
+.handson-list {
+	padding: 45px;
+	background: #fff;
+}
+
+.handson-list .heading {
+	margin-bottom: 30px;
+}
+
+.handson-list h1 {
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+.handson-list p {
+	padding-top: 20px;
+}
+
+.handson-list .prof-img {
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+}
+.handson-list .prof-detail {
+}
