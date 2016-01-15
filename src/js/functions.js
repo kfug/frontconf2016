@@ -15,8 +15,20 @@ $(function(){
 		$header.toggleClass('open');
 	});
 
-// スムーススクロール
 
+	var cont = $(".cont"),
+		Window = $(window);
+
+	cont.css('opacity', '0');
+	Window.scroll(function() {
+		cont.each(function() {
+			if (Window.scrollTop() > $(this).offset().top - Window.height()) {
+				$(this).animate({opacity: "1"}, 500);
+			}
+		});
+	});
+
+// スムーススクロール
 	var replaceWidth = 640;
 	var windowWidth = parseInt( $(window).width() );
 	var headerHight = $("header").innerHeight(); //ヘッダの高さ

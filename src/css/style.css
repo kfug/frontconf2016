@@ -82,7 +82,7 @@ header
 	list-style: none;
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 6px;
 	font-size: 14px;
 }
 #global-nav ul li {
@@ -165,7 +165,7 @@ page-top
 #page-top a {
 	width: 100%;
 	padding-bottom: 70%;
-	background: #666;
+	background: #C5C5C5;
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
@@ -244,7 +244,7 @@ footer .snsbox li a {
 content
 :::::::::::::::::::::::::::::::::::*/
 #content-wraper {
-	margin-top: 105px;
+	margin-top: 125px;
 }
 .pagettl h2 {
 	font-size: 2.3rem;
@@ -348,39 +348,100 @@ main-area
 	padding: 60px 0;
 }
 .cont h2 {
-	font-size: 2.2rem;
-	margin-bottom: 45px;
+	font-size: 2.6rem;
+	margin-bottom: 65px;
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	border-bottom: 1px dotted #333;
+	padding-bottom: 5px;
+}
+.cont h2 i {
+	margin-right: 10px;
+	color: #00C6D5;
+	font-size: 1.5rem;
+	vertical-align: middle;
+}
+.cont h2 i.fa-exclamation {
+	font-size: 1.8rem;
+}
+.cont h2 span {
+	letter-spacing: 2px;
+	vertical-align: middle;
 }
 .cont .inner {
 	position: relative;
+	padding: 0 10px;
 }
-.cont .inner:after {
-	content: "";
-	width: 400px;
-	height: 1px;
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(252,252,252,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(232,232,232,1) 51%,rgba(252,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(232,232,232,1) 51%,rgba(252,252,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=1 ); /* IE6-9 */
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	bottom: -60px;
-}
-
 
 /*・・・・・・・・・・・・・・
 about
 ・・・・・・・・・・・・・・・*/
 #about h3 {
-	font-size: 1.5rem;
-	margin-bottom: 25px;
+	font-size: 1.9rem;
+	margin-bottom: 35px;
+}
+#about p {
+	line-height: 1.5;
 }
 #about p + p{
-	margin-top: 10px;
+	margin-top: 15px;
 }
+
+/*・・・・・・・・・・・・・・
+news
+・・・・・・・・・・・・・・・*/
+#news .newsbox {
+	border: 5px solid #D8D8D8;
+	padding: 25px 25px 20px;
+	padding-bottom: 20px;
+}
+#news .newsbox {
+	display: table;
+}
+#news .newsrow + .newsrow {
+	margin-top: 20px;
+	border-top: 1px solid #eee;
+	padding-top: 18px;
+}
+#news .newsbox dt {
+	display: table-cell;
+	width: 180px;
+}
+#news .newsbox dt .label-new {
+	background-color: #F3724C;
+	color: #fff;
+	padding: 4px 8px 6px;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0px 10px;
+	font-family: "Montserrat",sans-serif;
+	font-size: 0.9rem;
+}
+#news .newsbox dd {
+	display: table-cell;
+	line-height: 1.4;
+}
+#news .btn-read {
+	margin-top: 10px;
+	text-align: right;
+}
+#news .btn-read a {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+#news .newsbox a {
+	color: #00C0FF;
+}
+#news .btn-read a {
+	color: #333;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+.fa-angle-right {
+	padding-right: 5px;
+}
+
+
 
 /*・・・・・・・・・・・・・・
 access
@@ -401,7 +462,7 @@ access
 	width: 37%;
 }
 .mapbox .r h3 {
-	font-size: 1.7rem;
+	font-size: 2.2rem;
 }
 .mapbox .r ul {
 	margin-top: 35px;
@@ -412,37 +473,43 @@ access
 .mapbox .r a {
 	color: #333;
 }
-
+#map.cont h2 i.fa-map-o {
+	font-size: 1.4rem;
+}
 
 /*・・・・・・・・・・・・・・
 speaker
 ・・・・・・・・・・・・・・・*/
-.list-speaker {
+#speaker .list-speaker {
 	margin-top: -45px;
 	margin-left: -5.6%;
 }
-.list-speaker li {
+#speaker .list-speaker li {
 	float: left;
 	width: 15%;
 	margin-top: 45px;
 	margin-left: 5%;
 	text-align: center;
 }
-.list-speaker li a {
+#speaker .list-speaker li a {
 	display: block;
 	text-decoration: none;
 	width: 110%;
 }
-.list-speaker a .name {
+#speaker .list-speaker a .name {
 	color: #333;
 }
-.list-speaker li .name {
+#speaker .list-speaker li .name {
 	margin-top: 10px;
 	display: inline-block;
 }
-.list-speaker li h3 {
+#speaker .list-speaker li h3 {
 	margin-bottom: 0;
 }
+#speaker.cont h2 i.fa-bullhorn {
+	font-size: 1.8rem;
+}
+
 
 /*ihover overwrite*/
 .ih-item.circle {
@@ -485,57 +552,69 @@ speaker
 faq
 ・・・・・・・・・・・・・・・*/
 
-.faq-col {
+#faq .faq-col {
 	margin-bottom: 25px;
 }
-.faq-col dt {
+#faq .faq-col dt {
 	font-size: 1.6rem;
 	padding-left: 1em;
 	text-indent: -1em;
 	line-height: 1.1;
 }
-.faq-col dd {
+#faq .faq-col dd {
 	margin-top: 10px;
 	margin-left: 2em;
 	line-height: 1.5;
 }
-.faq-col dt:before {
+#faq .faq-col dt:before {
 	content: "Q.";
+}
+#faq.cont h2 i.fa-question {
+	font-size: 2.1rem;
 }
 
 
 /*・・・・・・・・・・・・・・
-sns-foot
+sponsor
 ・・・・・・・・・・・・・・・*/
 
-.sns-foot .inner h3{
-	width: 300px;
-	margin: 50px auto 0;
+#sponsor .sponsor-list {
+	overflow: hidden;
+	margin-left: -10px;
 }
-.sns-foot .inner h3 img {
+#sponsor .sponsor-list li {
+	width: 320px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+
+/*・・・・・・・・・・・・・・
+staff
+・・・・・・・・・・・・・・・*/
+
+#staff .staff-list {
+	overflow: hidden;
+	margin-left: -42px;
+}
+#staff .staff-list li {
+	width: 69px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 42px;
+	text-align: center;
+}
+#staff .staff-list li img {
 	width: 100%;
 }
-.sns-foot .snsbox {
-	width: 50%;
-	margin: 0 auto;
+#staff .staff-list li a {
+	text-decoration: none;
 }
-.sns-foot .snsbox li {
-	float: left;
-	text-align: center;
-	width: 33.3%;
-}
-.sns-foot .snsbox li a {
-	display: inline-block;
-	font-size: 1.4rem;
-	padding: 15% 0px;
+#staff .staff-list li a span {
+	font-size: 0.8rem;
 	color: #333;
-	font-size: 1.3rem;
 }
-.sns-foot .snsbox li a:hover {
-	opacity: 0.8;
-}
-
-
 
 /* ----------------------------------------------------
 SP
@@ -712,17 +791,6 @@ header
 		position: relative;
 		width: 100%;
 		overflow: hidden;
-	}
-	.cont h2::after {
-		content: "";
-		height: 1px;
-		width: 94%;
-		background-color: #eee;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		margin-left: 3%;
 	}
 	.cont .inner::after {
 		display: none;
