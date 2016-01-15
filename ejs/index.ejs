@@ -82,7 +82,7 @@
 <header id="top-head">
 	<div class="inner">
 		<div id="mobile-head">
-			<h1 class="logo"><a href="/">Logo</a></h1>
+			<h1 class="logo"><a href="./"><img src="./img/logo_kfug_lucid.png" alt="" style="height: 1.5em;"></a></h1>
 			<div id="nav-toggle">
 				<div>
 					<span></span>
@@ -123,7 +123,7 @@
 	</div>
 
 			<div class="bnrbox cf">
-				<div class="bnr"><a href="http://the-frontend-conference-2016.peatix.com" target="_blank" class="hvr-icon-wobble-horizontal">スポンサー募集</a></div>
+				<div class="bnr"><a href="http://the-frontend-conference-2016.peatix.com" target="_blank" class="hvr-icon-wobble-horizontal">スポンサー募集中!!</a></div>
 			</div><!-- /.bnrbox cf -->
 		</div><!-- /.inner -->
 	</section><!-- /.main-area -->
@@ -164,7 +164,7 @@
 				<% speakers.forEach(function(speaker){ %>
 				<li>
 					<div class="ih-item circle colored effect1">
-						<a href="speaker.html#ishida"><div class="spinner"></div>
+						<a href="speaker.html#<%=speaker.code%>"><div class="spinner"></div>
 							<div class="img">
 								<img src="./images/speakers/<%=speaker.code%>.jpg">
 							</div>
