@@ -15,6 +15,12 @@ $ gulp bsync
 ブラウザシンクの起動
 
 ````
+$ gulp image
+````
+
+画像の圧縮・リサイズ
+
+````
 $ make deploy
 ````
 

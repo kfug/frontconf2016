@@ -7,7 +7,10 @@ var notify = require('gulp-notify');
 module.exports = function(){
     this.src(["./ejs/*.ejs"])
         .pipe(ejs({
-            speakers: require("../data/speakers.js")
+            speakers: require("../data/speakers.js"),
+            staffs: require("../data/staffs.js"),
+            sponsors: require("../data/sponsors.js"),
+            news: require("../data/news.js"),
     }))
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(this.dest("src/"))

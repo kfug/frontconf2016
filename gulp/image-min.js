@@ -18,12 +18,12 @@ var speakerImgCompiler = function (gmfile,done) {
     });
 };
 
-var member = function (gmfile,done) {
+var sponsorImgCompiler = function (gmfile,done) {
     gmfile.size(function (err, size) {
         done(err, gmfile
-            .resize(400)
+            .resize(800)
             .gravity("Center")
-            .crop(400,400))
+            .crop(800,400))
     });
 };
 
@@ -39,9 +39,12 @@ var logo = function (gmfile,done) {
 
 
 module.exports = function(){
-    gulp.src([paths.srcDir+"speakers/*"])
+    this.src([paths.srcDir+"speakers/*"])
         .pipe(gm(speakerImgCompiler))
-        .pipe(gulp.dest(paths.dstDir+"speakers/"));
+        .pipe(this.dest(paths.dstDir+"speakers/"));
+    this.src([paths.srcDir+"sponsors/*"])
+        .pipe(gm(sponsorImgCompiler))
+        .pipe(this.dest(paths.dstDir+"sponsors/"));
     //gulp.src([
     //        "./images/member/**/*"
     //    ])
