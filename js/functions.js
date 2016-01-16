@@ -18,14 +18,13 @@ $(function(){
 
 	var cont = $(".cont"),
 		Window = $(window);
-
-	cont.css('opacity', '0');
+	//cont.css('opacity', '0');
 	Window.scroll(function() {
-		cont.each(function() {
-			if (Window.scrollTop() > $(this).offset().top - Window.height()) {
-				$(this).animate({opacity: "1"}, 500);
-			}
-		});
+		//cont.each(function() {
+		//	if (Window.scrollTop() > $(this).offset().top - Window.height()) {
+		//		$(this).animate({opacity: "1"}, 500);
+		//	}
+		//});
 	});
 
 // スムーススクロール

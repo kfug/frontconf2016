@@ -266,7 +266,7 @@ main-area
 	background: url("../img/bg_pattern.jpg") no-repeat center 57%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-width: 980px;
+	/*min-width: 980px;*/
 	margin: 0 auto;
 }
 .main-area .inner {
@@ -639,8 +639,8 @@ header
 		width: 100%;
 	}
 	#Stage {
-		width: 100%!important;
-		height: auto!important;
+		width: 100% !important;
+		height: auto !important;
 	}
 	#Stage_bg_shape , #Stage_bg_shape_r , #Stage_bg_shape_l , #Stage_ttl_2016 , #Stage_ttl_conference , #Stage_ttl_frontend {
 		display: none!important;
