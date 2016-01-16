@@ -11,6 +11,7 @@ module.exports = function(){
             staffs: require("../data/staffs.js"),
             sponsors: require("../data/sponsors.js"),
             news: require("../data/news.js"),
+            handson: require("../data/handson.js"),
     }))
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(this.dest("src/"))
