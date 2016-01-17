@@ -1,0 +1,24 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+
+.container{
+  max-width: 980px;
+  margin-top:2em;
+  margin-bottom:5em;
+}
+
+.footerLogo{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkArea{
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5em;
+  a{
+    font-weight: bold;
+  }
+}
