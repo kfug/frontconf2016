@@ -5,7 +5,7 @@ var notify = require('gulp-notify');
 
 
 module.exports = function(){
-    this.src(["./ejs/*.ejs"])
+    this.src(["./ejs/*.ejs","!./ejs/_*"])
         .pipe(ejs({
             speakers: require("../data/speakers.js"),
             staffs: require("../data/staffs.js"),
