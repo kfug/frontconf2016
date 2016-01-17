@@ -1,138 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,user-scalable=0">
-	<title>関西フロントエンドカンファレンス2016</title>
+	<%- include('_head', {title:"登壇・セミナー情報"}); %>
 
-	<meta name="description" content="関西最大級のフロントエンドの祭典、forntend conference 2016!! 大阪梅田 にて 2016.03.05 開催!">
-	<meta name="keywords" content="フロントエンド,関西フロントエンドUG,関西フロントエンドカンファレンス2016">
-	<meta property="og:title" content="関西フロントエンドカンファレンス2016">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="ダミーurl">
-	<meta property="og:site_name" content="関西フロントエンドカンファレンス2016">
-	<meta property="og:description" content="関西最大級のフロントエンドの祭典、forntend conference 2016!! 大阪梅田 にて 2016.03.05 開催!">
-	<meta property="og:image" content="ダミーog画像">
-
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/ihover.min.css">
-	<link rel="stylesheet" href="css/hover.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-
+	<style>
+		.sublogo{
+			width:100%;
+			max-width: 980px;
+			margin: 0 auto;
+			display: block;
+		}
+	</style>
 </head>
 <body id="speaker">
-<div id="floating">
-	<p><a href="http://the-frontend-conference-2016.peatix.com/" target="_blank">優先参加チケット付き!! <br class="sp_ib">個人/企業スポンサー募集中です。</a></p>
-</div><!-- /#floating -->
-<header id="top-head">
-	<div class="inner">
-		<div id="mobile-head">
-			<h1 class="logo"><a href="/">Logo</a></h1>
-			<div id="nav-toggle">
-				<div>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-		</div>
-		<nav id="global-nav">
-			<ul>
-				<li><a href="/#about" class="hvr-underline-from-center">ABOUT</a></li>
-				<!-- <li><a href="/#news" class="hvr-underline-from-center">NEWS</a></li> -->
-				<!-- <li><a href="/#timetable" class="hvr-underline-from-center">TIME TABLE</a></li> -->
-				<li><a href="/#access" class="hvr-underline-from-center">ACCESS</a></li>
-				<li><a href="/#speaker" class="hvr-underline-from-center">SPEAKER</a></li>
-				<li><a href="/#faq" class="hvr-underline-from-center">FAQ</a></li>
-				<li><a href="/#contact" class="hvr-underline-from-center">CONTACT</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+<%- include('_header', {title:"サイトタイトル"}); %>
+
 
 <div id="content-wraper">
+	<img class="sublogo" src="./img/fec_main.jpg" alt="">
 	<section class="pagettl column">
 		<div class="inner">
-			<h2 class="animated bounceInDown">SPEAKER</h2>
+			<h2 class="animated bounceInDown">セッション一覧 - SPEAKERS</h2>
 		</div><!-- /.inner -->
 	</section><!-- /.column -->
-	<section class="column hole">
-		<div class="inner">
-			<div class="l">
-				<div class="border"><h3>Aホール</h3>
-					<ul class="speaker-list">
-						<li><a href="#ishida hvr-icon-down">石田　三成</a></li>
-						<li><a href="#shima hvr-icon-down">島　左近</a></li>
-					</ul>
-					<!-- /.speaker-list -->
-				</div><!-- /.border -->
-			</div>
-			<div class="r">
-				<div class="border">
-					<h3>Bホール</h3>
-					<ul class="speaker-list">
-						<li><a href="#kuroda hvr-icon-down">黒田　長政</a></li>
-						<li><a href="#hosokawa hvr-icon-down">細川　忠興</a></li>
-					</ul>
-				</div><!-- /.border -->
-			</div>
-		</div><!-- /.inner -->
-	</section><!-- /.column -->
+	<!--<section class="column hole">-->
+		<!--<div class="inner">-->
+			<!--<div class="l">-->
+				<!--<div class="border"><h3>Aホール</h3>-->
+					<!--<ul class="speaker-list">-->
+						<!--<li><a href="#ishida hvr-icon-down">石田　三成</a></li>-->
+						<!--<li><a href="#shima hvr-icon-down">島　左近</a></li>-->
+					<!--</ul>-->
+					<!--&lt;!&ndash; /.speaker-list &ndash;&gt;-->
+				<!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
+			<!--</div>-->
+			<!--<div class="r">-->
+				<!--<div class="border">-->
+					<!--<h3>Bホール</h3>-->
+					<!--<ul class="speaker-list">-->
+						<!--<li><a href="#kuroda hvr-icon-down">黒田　長政</a></li>-->
+						<!--<li><a href="#hosokawa hvr-icon-down">細川　忠興</a></li>-->
+					<!--</ul>-->
+				<!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
+			<!--</div>-->
+		<!--</div>&lt;!&ndash; /.inner &ndash;&gt;-->
+	<!--</section>&lt;!&ndash; /.column &ndash;&gt;-->
 	<% speakers.forEach(function(speaker){ %>
 	<section class="column speaker" id="<%=speaker.code%>%>">
 		<div class="inner">
-		<div class="label time"></div>
-		<div class="label hole a-hole"></div>
+		<!--<div class="label time"></div>-->
+		<!--<div class="label hole a-hole"></div>-->
 			<div class="cf">
 			<div class="speaker-img">
 					<p class="img">
-						<img src="./images/speakers/<%=speaker.code%>.jpg">
+						<img style="width:100%;" src="./images/speakers/<%=speaker.code%>.jpg">
 					</p><!-- /.img -->
 				</div><!-- /.speaker-img -->
 				<div class="speaker-detail">
-					<h1><%=speaker.name%>%></h1>
-					<p><%=speaker.description%></p>
+					<h2 style="font-size: 1.5em;margin: .5em 0 "><%=speaker.title%></h2>
+					<h1><%=speaker.name %></h1>
+					<p><%=speaker.description %></p>
 				</div><!-- /.speaker-detail -->
 			</div><!-- /.cf -->
-			<ul class="tag">
-				<li><span>Aホール</span></li>
-				<li><span>豊臣</span></li>
-			</ul><!-- /.tag -->
+			<!--<ul class="tag">-->
+				<!--<li><span>Aホール</span></li>-->
+				<!--<li><span>豊臣</span></li>-->
+			<!--</ul>&lt;!&ndash; /.tag &ndash;&gt;-->
 		</div><!-- /.inner -->
 	</section><!-- /.column speaker -->
 	<% });%>
+	<section>
+		<br><br><br>
+		<p style="text-align: center;font-size: 1.5em;font-weight: bold;color: #999">and more ...</p>
+	</section>
 
 	<div id="page-top" class="hvr-icon-bob">
 		<a href="#content-wraper">PAGE TOP</a>
 	</div>
 
-	<footer>
-		<small>&copy; Kansai Frontend UG</small>
-		<ul class="snsbox cf">
-				<li><a href="https://www.facebook.com/groups/kansai.frontend/" target="_blank">facebook</a></li>
-				<li><a href="https://twitter.com/frontkansai" target="_blank">twitter</a></li>
-				<li><a href="http://kfug.connpass.com/" target="_blank">connpass</a></li>
-			</ul>
-	</footer>
+	<%- include('_footer', {title:"サイトタイトル"}); %>
+
 </div>
 <!-- /#contentWraper -->
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-66526811-4', 'auto');
-  ga('send', 'pageview');
-</script>
+<%- include('_ga'); %>
 </body>
 </html>
