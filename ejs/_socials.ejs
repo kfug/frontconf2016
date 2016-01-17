@@ -1,0 +1,29 @@
+<% var url = "http://kfug.github.io/frontconf2016/";%>
+<% var msg = "関西最大級のフロントエンドの祭典 FRONTEND CONFERENCE 2016 03/05 大阪梅田にて開幕!!";%>
+
+<ul class="sns">
+    <li>
+        <a class="fb btn hvr-float" href="http://www.facebook.com/share.php?u=<%=url%>"
+           onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+            <span class="icon-facebook2">Facebookでシェアする</span></a>
+    </li>
+    <li>
+        <a class="twitter btn hvr-float"
+           href="http://twitter.com/share?url=<%=url%>&text=<%=msg%>msg&via=@frontkansai"
+           target="_blank">
+            <span class="icon-twitter">tweetする</span>
+        </a>
+    </li>
+    <li>
+        <a class="line btn hvr-float" href="http://line.me/R/msg/text/?<%=msg+""+url%>">
+            <span class="icon-line">LINEで送る</span>
+        </a>
+    </li>
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/<%=url%>"
+           class="hatena-bookmark-button hvr-float"
+           data-hatena-bookmark-layout="simple" title="任意のタイトル">
+            <span class="icon-hatebu">はてなブックマークに追加</span>
+        </a>
+    </li>
+</ul><!-- /.sns -->

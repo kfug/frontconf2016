@@ -64,12 +64,7 @@
 		<div class="inner EDGE-10196486" id="Stage">
 			<h1 class="sp_block"><img src="img/mainttl.png" alt="Frontend Conference 2016"></h1>
 			<div class="snsbox cf">
-				<ul class="sns">
-					<li><a class="fb btn hvr-float" href="http://www.facebook.com/share.php?u=[共有したいURL]" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-facebook2">Facebookでシェアする</span></a></li>
-					<li><a class="twitter btn hvr-float" href="http://twitter.com/share?url=[共有したいURL]&text=[任意のテキスト]&via=[ツイート内に含まれるユーザー名]&related=[関連アカウント]" target="_blank"><span class="icon-twitter">tweetする</span></a></li>
-					<li><a class="line btn hvr-float" href="http://line.me/R/msg/text/?[任意のテキスト][共有したいURL]"><span class="icon-line">LINEで送る</span></a></li>
-					<li><a href="http://b.hatena.ne.jp/entry/hoge.html[共有したいURL]" class="hatena-bookmark-button hvr-float" data-hatena-bookmark-layout="simple" title="任意のタイトル"><span class="icon-hatebu">はてなブックマークに追加</span></a></li>
-				</ul><!-- /.sns -->
+				<%- include('_socials', {title:"サイトタイトル"}); %>
 			</div><!-- /.snsbox -->
 
 	<div>
@@ -88,6 +83,11 @@
 			<p>2016年03月05日　大阪梅田の新梅田研修センターにて、<br>フロントエンドエンジニア/デザイナー向けイベントを開催します。</p>
 			<p>デザイナー向け、エンジニア向け合わせて10以上のセッショントラックに加え、<br>もくもく会ブースやハンズオンブースなど初めての方でも気軽に楽しめる企画が盛り沢山!!</p>
 			<p>デザイナーもエンジニアもWebで働く全ての人のために。<br>関西最大級のフロントエンドイベントが今始まります!!</p>
+			<br>
+			<p>
+				JSフレームワークやSASS,デザイン設計など 気になるセッション一覧は
+				<a style="color:#00C0FF;" href="./speaker.html">こちらをチェック!!</a>
+			</p>
 		</div><!-- /.inner -->
 	</section><!-- /#about -->
 
@@ -122,12 +122,26 @@
 				<div class="l">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.126506277503!2d135.48678405582905!3d34.701989014726664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x5b1c4510126e4191!2z5paw5qKF55Sw56CU5L-u44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1450943709081" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-				<div class="r">
-					<h3>2016/03/05 sat</h3>
-					<a href="http://www.temmacenter.com/shin_umeda/access/index.html" target="_blank"><ul>
-							<li>大阪梅田 新梅田研修センター</li>
-							<li>大阪市福島区福島6-22-20</li>
-						</ul></a>
+				<div class="r dateArea">
+					<style>
+						.dateArea h4{
+							font-size: 1.1em;
+							font-weight: bold;
+							margin-bottom: .5em;;
+						}
+						.dateArea p{
+							margin-bottom: .5em;;
+						}
+					</style>
+					<br>
+					<h4>日時</h4>
+
+					<p>2016/03/05 土曜日</p>
+					<p>10:00 - 18:00 (別途懇親会を予定)</p>
+
+					<h4>会場</h4>
+					<p>新梅田研研修センター &nbsp; <a href="http://www.temmacenter.com/shin_umeda/access/index.html" target="_blank">公式サイト</a></p>
+					<p>JR大阪駅 より 徒歩 10分</p>
 				</div>
 			</div><!-- /.mapbox -->
 		</div><!-- /.inner -->
