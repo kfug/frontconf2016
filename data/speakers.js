@@ -33,7 +33,7 @@ module.exports = [
     "link": {
       "twitter": "https://twitter.com/martini3oz"
     },
-    "description": "",
+    "description": "Webサイトパフォーマンス管理は、表示速度と繋がりやすさを軸とした、配信品質管理です。\n分析においては、統計学の知識が必要となっています。\nまた、スマートフォンでのブラウジングの増大に伴い、携帯ネットワークの知識が求められ、\nUXの観点から神経物理学、行動経済学の知識が必要となっています。\nそのようなWebサイトパフォーマンス管理に必要な基礎知識の概要を説明します。",
     "cws": true,
     "video": true,
     "target": "エンジニア",
@@ -45,7 +45,7 @@ module.exports = [
     "name": "榊原昌彦	",
     "link": {
     },
-    "description": "",
+    "description": "paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。\nでは、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。",
     "cws": true,
     "video": true,
     "target": "デザイナ",
@@ -57,7 +57,7 @@ module.exports = [
     "name": "Kite",
     "link": {
     },
-    "description": "",
+    "description": "BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitter/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。",
     "cws": true,
     "video": true,
     "target": "デザイナ",
