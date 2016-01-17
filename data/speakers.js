@@ -14,6 +14,19 @@ module.exports = [
     "tag": ["HTML5"]
   },
   {
+    "code":"A031",
+    "title":"Angular2でアプリを書いた話",
+    "name": "今井晨介",
+    "link": {
+      "twitter": "https://twitter.com/shin_v1"
+    },
+    "description": "Angular2を用いてBGM付ポモドーロ・テクニックを利用したWebアプリケーションを書いてみたお話をします。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["JS"]
+  },
+  {
     "code":"A032",
     "title":"Sencha Ext JS 6 の紹介",
     "name": "中村 久司",
