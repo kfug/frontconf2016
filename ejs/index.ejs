@@ -7,53 +7,53 @@
 
 	<script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
 
-	<script>
-		AdobeEdge.loadComposition('main', 'EDGE-10196486', {
-			scaleToFit: "none",
-			centerStage: "none",
-			minW: "0px",
-			maxW: "undefined",
-			width: "980px",
-			height: "500px"
-		}, {dom: [ ]}, {
-			dom: [
-				{
-					id: 'bg_pattern',
-					type: 'image',
-					tag: 'img',
-					rect: ['0px', '0px', '980px', '500px', 'auto', 'auto'],
-					fill: ["rgba(0,0,0,0)",'img/bg_pattern.jpg','0px','0px']
-				},
-				{
-					id: 'bg_shape_l2',
-					type: 'image',
-					tag: 'img',
-					rect: ['0px', '231px', '215px', '221px', 'auto', 'auto'],
-					fill: ["rgba(0,0,0,0)",'img/bg_shape_l.png','0px','0px']
-				},
-				{
-					id: 'bg_shape_r2',
-					type: 'image',
-					tag: 'img',
-					rect: ['752px', '0px', '228px', '243px', 'auto', 'auto'],
-					fill: ["rgba(0,0,0,0)",'img/bg_shape_r.png','0px','0px']
-				},
-				{
-					id: 'mainttl',
-					type: 'image',
-					tag: 'img',
-					rect: ['220px', '121px', '539px', '245px', 'auto', 'auto'],
-					fill: ["rgba(0,0,0,0)",'img/mainttl.png','0px','0px']
-				}
-			],
-			style: {
-				'${symbolSelector}': {
-					isStage: true,
-					rect: [undefined, undefined, '980px', '500px']
-				}
-			}
-		});
-	</script>
+<script>
+   AdobeEdge.loadComposition('main', 'EDGE-10196486', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "980px",
+    height: "450px"
+}, {dom: [ ]}, {
+    dom: [
+        {
+            id: 'bg_pattern',
+            type: 'image',
+            tag: 'img',
+            rect: ['0px', '0px', '980px', '450px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/bg_pattern.jpg','0px','0px']
+        },
+        {
+            id: 'bg_shape_l2',
+            type: 'image',
+            tag: 'img',
+            rect: ['0px', '231px', '215px', '221px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/bg_shape_l.png','0px','0px']
+        },
+        {
+            id: 'bg_shape_r2',
+            type: 'image',
+            tag: 'img',
+            rect: ['752px', '0px', '228px', '243px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/bg_shape_r.png','0px','0px']
+        },
+        {
+            id: 'mainttl',
+            type: 'image',
+            tag: 'img',
+            rect: ['220px', '121px', '539px', '245px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/mainttl.png','0px','0px']
+        }
+    ],
+    style: {
+        '${symbolSelector}': {
+            isStage: true,
+            rect: [undefined, undefined, '980px', '450px']
+        }
+    }
+});
+</script>
 </head>
 <body>
 <%- include('_header', {top:true}); %>
