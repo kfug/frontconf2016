@@ -37,14 +37,14 @@
                         {
                             id: 'bg_shape_r',
                             type: 'image',
-                            rect: ['0px', '194px', '228px', '243px', 'auto', 'auto'],
+                            rect: ['0px', '206px', '228px', '243px', 'auto', 'auto'],
                             opacity: '0.78861769912689',
                             fill: ["rgba(0,0,0,0)",im+"bg_shape_r.png",'0px','0px']
                         },
                         {
                             id: 'bg_shape_l',
                             type: 'image',
-                            rect: ['765px', '-13px', '215px', '221px', 'auto', 'auto'],
+                            rect: ['765px', '-1px', '215px', '221px', 'auto', 'auto'],
                             opacity: '0.87804924424102',
                             fill: ["rgba(0,0,0,0)",im+"bg_shape_l.png",'0px','0px']
                         },
@@ -79,9 +79,59 @@
                     }
                 },
                 timeline: {
-                    duration: 5807,
+                    duration: 5939.2332920699,
                     autoPlay: true,
                     data: [
+                        [
+                            "eid273",
+                            "opacity",
+                            3960,
+                            915,
+                            "easeOutQuint",
+                            "${bg_shape}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid286",
+                            "left",
+                            4882,
+                            925,
+                            "easeOutQuint",
+                            "${bg_shape_l}",
+                            '982px',
+                            '765px'
+                        ],
+                        [
+                            "eid296",
+                            "top",
+                            700,
+                            0,
+                            "easeOutQuint",
+                            "${ttl_conference}",
+                            '210px',
+                            '210px'
+                        ],
+                        [
+                            "eid295",
+                            "top",
+                            700,
+                            240,
+                            "easeOutQuint",
+                            "${ttl_frontend}",
+                            '135px',
+                            '105px'
+                        ],
+                        [
+                            "eid209",
+                            "left",
+                            700,
+                            1375,
+                            "easeOutQuart",
+                            "${ttl_conference}",
+                            '998px',
+                            '224px'
+                        ],
                         [
                             "eid220",
                             "top",
@@ -93,64 +143,14 @@
                             '303px'
                         ],
                         [
-                            "eid206",
-                            "left",
-                            940,
-                            1135,
-                            "easeOutQuint",
-                            "${ttl_frontend}",
-                            '-541px',
-                            '233px'
-                        ],
-                        [
-                            "eid209",
-                            "left",
-                            700,
-                            1214,
-                            "easeOutQuart",
-                            "${ttl_conference}",
-                            '998px',
-                            '219px'
-                        ],
-                        [
-                            "eid299",
-                            "left",
-                            1914,
-                            161,
-                            "easeOutCubic",
-                            "${ttl_conference}",
-                            '219px',
-                            '224px'
-                        ],
-                        [
-                            "eid289",
-                            "opacity",
-                            5124,
-                            505,
-                            "easeInExpo",
-                            "${bg_shape_l}",
-                            '0.4390240013599396',
-                            '0.87804924424102'
-                        ],
-                        [
                             "eid293",
                             "opacity",
                             4875,
-                            505,
+                            1064,
                             "easeInExpo",
                             "${bg_shape_r}",
                             '0.4390240013599396',
                             '0.78861769912689'
-                        ],
-                        [
-                            "eid273",
-                            "opacity",
-                            3960,
-                            915,
-                            "easeOutQuint",
-                            "${bg_shape}",
-                            '0',
-                            '1'
                         ],
                         [
                             "eid252",
@@ -163,14 +163,24 @@
                             '0deg'
                         ],
                         [
-                            "eid286",
-                            "left",
+                            "eid300",
+                            "top",
+                            4704,
+                            0,
+                            "easeOutCubic",
+                            "${bg_shape_r}",
+                            '206px',
+                            '206px'
+                        ],
+                        [
+                            "eid289",
+                            "opacity",
                             4882,
-                            925,
-                            "easeOutQuint",
+                            1057,
+                            "easeInExpo",
                             "${bg_shape_l}",
-                            '982px',
-                            '765px'
+                            '0.4390240013599396',
+                            '0.87804924424102'
                         ],
                         [
                             "eid285",
@@ -193,24 +203,14 @@
                             '418px'
                         ],
                         [
-                            "eid295",
-                            "top",
-                            700,
-                            240,
+                            "eid206",
+                            "left",
+                            940,
+                            1135,
                             "easeOutQuint",
                             "${ttl_frontend}",
-                            '135px',
-                            '105px'
-                        ],
-                        [
-                            "eid296",
-                            "top",
-                            700,
-                            0,
-                            "easeOutQuint",
-                            "${ttl_conference}",
-                            '210px',
-                            '210px'
+                            '-541px',
+                            '233px'
                         ],
                         [
                             "eid217",
