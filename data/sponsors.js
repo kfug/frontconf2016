@@ -11,5 +11,13 @@ module.exports = [
         "code":"SP005",
         "link":"https://www.glad-cube.com/"
     },
+    {
+        "code":"SP006",
+        "link":"https://impath.co.jp/"
+    },
+    {
+        "code":"SP007",
+        "link":"http://www.unzip.co.jp/"
+    },
 ]
 
