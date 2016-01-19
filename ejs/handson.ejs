@@ -11,6 +11,16 @@
 			display: block;
 		}
 	</style>
+	<script>
+		$(function(){
+			$(".scroll").on("click",function(){
+				var p = $($(this).attr("data-target")).offset().top;
+				$('html,body').animate({ scrollTop: p }, 'fast');
+				return false;
+			});
+		})
+
+	</script>
 	
 </head>
 <body>
@@ -18,10 +28,10 @@
 
 
 <div id="content-wraper" class="handsonArea">
-	<img class="sublogo" src="./img/fec_main.jpg" alt="">
+	<!--<img class="sublogo" src="./img/fec_main.jpg" alt="">-->
 	<section class="pagettl column">
 		<div class="inner">
-			<h2 class="animated bounceInDown">HANDS ON</h2>
+			<!--<h2 class="animated bounceInDown">HANDS ON</h2>-->
 		</div><!-- /.inner -->
 	</section><!-- /.column -->
 	
@@ -42,7 +52,10 @@
 			<h1 class="edge">FRONTEND CONFERENCE 2016 でチャレンジできること</h1>
 			<ul>
 				<% handson.forEach(function(seminor){ %>
-				<li><a href="#"><%=seminor.title%></a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminor<%=seminor.code%>"><%=seminor.title%></a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				<% })%>
 			</ul>
 		</div>
@@ -51,33 +64,32 @@
 	<section id="handson">
 		<div class="inner">
 			<% handson.forEach(function(seminor){ %>
-			<div class="handson-list">
+			<div class="handson-list" id="seminor<%=seminor.code%>">
 				<div class="heading">
 					<h1><%=seminor.title%></h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p><%=seminor.description%></p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			<% })%>
 		</div>
@@ -88,7 +100,9 @@
 		<div class="handson-info">
 				<dl>
 					<dt>受付について</dt>
-					<dd>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。</dd>
+					<dd>受付は当日会場内にて実施させていただきます。</dd>
+					<dd>会場内での説明や資料をベースに、各自で作業を進めて頂き、不明な点を質問形式でサポートする形のブースイベントとなっております。</dd>
+					<dd>各受講者に決められた形のメンターが付いてサポートするタイプのイベントではない点ご了承ください。</dd>
 				</dl>
 				<dl>
 					<dt>諸注意</dt>
@@ -96,11 +110,12 @@
 					<dd>メンタースタッフと参加人数のバランスでは、質問対応にお時間を頂くケースがあります。</dd>
 					<dd>ネットワークの状態や持ち込み機器の状態で、作業の進行が出来ない場合がございます。</dd>
 				</dl>
-				<p>その他ご不明な点がありましたら<a href="">こちら</a>からお問い合わせください。</p>
+				<!--<p>その他ご不明な点がありましたら<a href="">こちら</a>からお問い合わせください。</p>-->
 		</div>
 		<div class="join">
-			<div class="btn-join"><a href="">FRONTEND CONFERENCE 2016 に参加する！</a></div>
-			<div class="btn"><a href="">個人/企業スポンサーはこちら</a></div>
+			<p>現在優先案内枠付のスポンサーチケット発売中!!</p>
+			<!--<div class="btn-join"><a href="">FRONTEND CONFERENCE 2016 に参加する！</a></div>-->
+			<div class="btn"><a href="">個人/企業スポンサーのお申し込みはこちら</a></div>
 		</div>
 		</div>
 	</section>

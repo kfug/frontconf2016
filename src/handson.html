@@ -33,6 +33,16 @@
 			display: block;
 		}
 	</style>
+	<script>
+		$(function(){
+			$(".scroll").on("click",function(){
+				var p = $($(this).attr("data-target")).offset().top;
+				$('html,body').animate({ scrollTop: p }, 'fast');
+				return false;
+			});
+		})
+
+	</script>
 	
 </head>
 <body>
@@ -70,10 +80,10 @@
 
 
 <div id="content-wraper" class="handsonArea">
-	<img class="sublogo" src="./img/fec_main.jpg" alt="">
+	<!--<img class="sublogo" src="./img/fec_main.jpg" alt="">-->
 	<section class="pagettl column">
 		<div class="inner">
-			<h2 class="animated bounceInDown">HANDS ON</h2>
+			<!--<h2 class="animated bounceInDown">HANDS ON</h2>-->
 		</div><!-- /.inner -->
 	</section><!-- /.column -->
 	
@@ -94,17 +104,30 @@
 			<h1 class="edge">FRONTEND CONFERENCE 2016 でチャレンジできること</h1>
 			<ul>
 				
-				<li><a href="#">progateで始めるコーディング入門</a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminorSP001">progateで始めるコーディング入門</a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				
-				<li><a href="#">黒い画面で始めるgit入門</a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminorSP002">黒い画面で始めるgit入門</a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				
-				<li><a href="#">gulpで始めるフロントエンドタスク管理</a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminorSP003">gulpで始めるフロントエンドタスク管理</a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				
-				<li><a href="#">CSSをもっと便利に。BootstrapとSass入門</a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminorSP004">CSSをもっと便利に。BootstrapとSass入門</a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				
-				<li><a href="#">javascriptの新標準。babelでES2015を始めよう</a><span class="tag">デザイナー向け</span></li>
-				
-				<li><a href="#">angular2</a><span class="tag">デザイナー向け</span></li>
+				<li><a class="scroll" data-target="#seminorSP005">javascriptの新標準。babelでES2015を始めよう</a>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<!--<span class="tag">エンジニア向け</span>-->
+				</li>
 				
 			</ul>
 		</div>
@@ -113,178 +136,149 @@
 	<section id="handson">
 		<div class="inner">
 			
-			<div class="handson-list">
+			<div class="handson-list" id="seminorSP001">
 				<div class="heading">
 					<h1>progateで始めるコーディング入門</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p>Progateは、HTMLやCSS,jQueryといったWebの入門的な基礎知識を学ぶのにオススメのIT系教育サービスです。無料で利用できるWeb上のコンテンツを通じて、Web制作の基礎をゲーム感覚で学ぶことが出来ます。
+自宅での一人の作業は、つまづきのサポートなどが無く心配…という方も、メンター付きのハンズオン会場なら、気軽にチャレンジできます!!</p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			
-			<div class="handson-list">
+			<div class="handson-list" id="seminorSP002">
 				<div class="heading">
 					<h1>黒い画面で始めるgit入門</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p>最近何かと耳にすることの多くなったGit。バージョン管理ツールとしての利用だけでなくGithubやBit BucketsといったWebサービスを通じたファイルのやり取りにも利用されるシーンが増えてきました。
+ 黒い画面は苦手…という方も、gitを通じて苦手を克服し、Gitデビューしてみませんか？</p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			
-			<div class="handson-list">
+			<div class="handson-list" id="seminorSP003">
 				<div class="heading">
 					<h1>gulpで始めるフロントエンドタスク管理</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p>gulpはnode製のタスク管理ツールです。最近のフロントエンド制作では何かと耳にすることの多くなったnode。そんなnodeの細かい制作タスクを綺麗に管理してくれるのがgulpです。
+ gulpの基本的な使い方を通じてnodeで変わるフロントエンドWeb制作の新しいスタイルを体験してみましょう!!</p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			
-			<div class="handson-list">
+			<div class="handson-list" id="seminorSP004">
 				<div class="heading">
 					<h1>CSSをもっと便利に。BootstrapとSass入門</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p>SASSと呼ばれるCSSの新しい書き方が登場してから、数年が経過しますが、現場ではCSSをガリガリ書いている…という所も実はまだ多いのではないでしょうか？
+このハンズオンではSASSの一種であるSCSSを中心に、SCSSの基本的な使い方から活用方法等を説明していきます。</p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			
-			<div class="handson-list">
+			<div class="handson-list" id="seminorSP005">
 				<div class="heading">
 					<h1>javascriptの新標準。babelでES2015を始めよう</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
+					<!--<span class="tag">デザイナー向け</span>-->
+					<p>Javascriptの新仕様 ES2015。昨年に言語仕様が正式公開され、JS界隈では大きな話題を呼びました。
+ 各種ブラウザの実装は、まだもう少し時間がかかるといったところですが、babel等のツールを用いたES2015記法の利用がJS界隈では主流となってきています。この機会に是非JSの新しい形を始めてみましょう!!</p>
 				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
-			</div>
-			
-			<div class="handson-list">
-				<div class="heading">
-					<h1>angular2</h1>
-					<span class="tag">デザイナー向け</span>
-					<p>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。<br>
-						手は前していた。先生は一知っ靴のようをすうていない。セロも頭象たり何がきいて来ます。</p>
-				</div>
-				<div class="row detail">
-					<div class="col-sm-6 speaker-prof">
-						<div class="prof-detail">
-							<dl>
-								<dt>講師</dt>
-								<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>
-								<dd class="name">ほにゃにゃさん</dd>
-								<dd>ほにょほにょほにょ</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="col-sm-6 handson-detail">
-						<dl>
-							<dt>時間</dt>
-							<dd>20:00 - 23:00</dd>
-							<dd class="time">3時間</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="btn-join"><a href="">参加する！</a></div>
+				<!--<div class="row detail">-->
+					<!--<div class="col-sm-6 speaker-prof">-->
+						<!--<div class="prof-detail">-->
+							<!--<dl>-->
+								<!--<dt>講師</dt>-->
+								<!--<dd class="col-sm-4"><img class="prof-img" src="http://placehold.it/100x100/ccc/fff/&text=prof-img" alt=""></dd>-->
+								<!--<dd class="name">ほにゃにゃさん</dd>-->
+								<!--<dd>ほにょほにょほにょ</dd>-->
+							<!--</dl>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-sm-6 handson-detail">-->
+						<!--<dl>-->
+							<!--<dt>時間</dt>-->
+							<!--<dd>20:00 - 23:00</dd>-->
+							<!--<dd class="time">3時間</dd>-->
+						<!--</dl>-->
+					<!--</div>-->
+				<!--</div>-->
+				<div class="btn-join"><a class="scroll" data-target="#handson-info">参加する！</a></div>
 			</div>
 			
 		</div>
@@ -295,7 +289,9 @@
 		<div class="handson-info">
 				<dl>
 					<dt>受付について</dt>
-					<dd>上手たでのだはたそしてばかの同じ手のうちをはまるでばかましたが、あれまで赤に困るれことでした。たべすぎ誰は畑へ高くたていっぺんの狸の外弾をし第三月みちの演奏に叩くでしまいんます。</dd>
+					<dd>受付は当日会場内にて実施させていただきます。</dd>
+					<dd>会場内での説明や資料をベースに、各自で作業を進めて頂き、不明な点を質問形式でサポートする形のブースイベントとなっております。</dd>
+					<dd>各受講者に決められた形のメンターが付いてサポートするタイプのイベントではない点ご了承ください。</dd>
 				</dl>
 				<dl>
 					<dt>諸注意</dt>
@@ -303,11 +299,12 @@
 					<dd>メンタースタッフと参加人数のバランスでは、質問対応にお時間を頂くケースがあります。</dd>
 					<dd>ネットワークの状態や持ち込み機器の状態で、作業の進行が出来ない場合がございます。</dd>
 				</dl>
-				<p>その他ご不明な点がありましたら<a href="">こちら</a>からお問い合わせください。</p>
+				<!--<p>その他ご不明な点がありましたら<a href="">こちら</a>からお問い合わせください。</p>-->
 		</div>
 		<div class="join">
-			<div class="btn-join"><a href="">FRONTEND CONFERENCE 2016 に参加する！</a></div>
-			<div class="btn"><a href="">個人/企業スポンサーはこちら</a></div>
+			<p>現在優先案内枠付のスポンサーチケット発売中!!</p>
+			<!--<div class="btn-join"><a href="">FRONTEND CONFERENCE 2016 に参加する！</a></div>-->
+			<div class="btn"><a href="">個人/企業スポンサーのお申し込みはこちら</a></div>
 		</div>
 		</div>
 	</section>
