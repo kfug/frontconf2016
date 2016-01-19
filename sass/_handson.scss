@@ -14,18 +14,22 @@ section {
 #handson-howto {
 	padding: 50px 0;
 	background-color: #eee;
-	background-image: url(../images/handson/handson.jpg)
-	background-size: cover;
+	background-image: url(../images/handson/handson.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 .handson-howto {
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	padding: 20px 40px 30px;
 	width: 85%;
 	height: auto;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
 	background: #fff;	
-	
+	position: relative;
+	opacity: 0.9;
+	top: 50px;
 }
 .handson-howto h1 {
 	font-size: 2em;
@@ -108,7 +112,7 @@ span.tag {
 
 #handson {
 	padding-top: 30px;
-	background: #63c3ff;
+	background: #94d6ff;
 }
 
 .handson-list {
