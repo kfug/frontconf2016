@@ -1,0 +1,182 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+section {
+	padding-bottom: 20px;
+}
+
+.handson-img {
+	width: 100%;
+	height: 100%;
+	
+}
+
+#handson-howto {
+	padding: 40px;
+	background-color: #eee;
+	background-size: cover;
+}
+
+.handson-howto {
+	margin: 0 auto;
+	padding: 20px 40px 30px;
+	width: 85%;
+	height: auto;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+	background: #fff;	
+	
+}
+.handson-howto h1 {
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+#handson-lists {
+	padding: 40px;
+	background: #d3efff;
+}
+
+h1.edge {
+	font-size: 2em;
+}
+.edge {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 45px;
+	padding: 20px 20px;
+	width: auto;
+	height: auto;
+	color: #4d4d4d;
+	line-height: 40px;
+	text-align: center;
+	background: #fff;
+	z-index: 0;
+}
+.edge:after {
+	content: "";
+	position: absolute;
+	bottom: -35px; left: 0;
+	margin-left: 0;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 40px 35px 0;
+	border-color: transparent #63c3ff transparent transparent;
+	z-index: -1;
+}
+
+.handson-lists ul li {
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+
+.handson-lists ul li:before {
+  content: "";
+  display: inline-block;
+  border: 8px solid transparent;
+  border-left-color: #fff;
+}
+
+span.tag {
+	display: inline-block;
+	border-radius: 6px;
+	padding: 4px 6px;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #fff;
+	background: #f48660;
+}
+
+.handson-lists ul li a {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 8px;
+	color: #414141;
+}
+
+#handson {
+	padding-top: 30px;
+	background: #63c3ff;
+}
+
+.handson-list {
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 20px 40px 45px;
+	background: #fff;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.handson-list .heading {
+	margin-bottom: 30px;
+}
+
+.handson-list h1 {
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+.handson-list p {
+	padding-top: 20px;
+}
+
+.handson-list .detail {
+	margin: 0 auto;
+	border-top: 1px dotted #333;
+	padding-top: 30px;
+}
+
+.handson-list .detail dl dt {
+	padding: 2px 4px;
+	background: #d9efff;
+}
+
+.handson-list .prof-img {
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.btn-join {
+	width: 100%;
+	height: auto;
+	margin: 20px auto 0;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+	background: #ccc;
+}
+
+.btn-join a {
+	display: block;
+	width: 100%;
+	height: auto;
+	color: #fff;
+}
+
+.handson-info {
+	padding: 30px;
+}
+.handson-info dl {
+	margin-bottom: 30px;
+}
+.handson-info dl dt {
+	margin-bottom: 10px;
+}
+
+.join .btn {
+	display: block;
+	margin:  0 auto;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding: 20px;
+	width: auto;
+	text-align: center;
+	background: #e56d43;
+}
+.join .btn a {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #fff;
+}
