@@ -5146,7 +5146,7 @@
     width: 100%;
     height: 100%; }
   .handsonArea #handson-howto {
-    padding: 40px;
+    padding: 50px 0;
     background-color: #eee;
     background-size: cover; }
   .handsonArea .handson-howto {
@@ -5159,16 +5159,19 @@
   .handsonArea .handson-howto h1 {
     font-size: 2em;
     margin-bottom: 30px; }
+  .handsonArea .handson-howto p {
+    margin-bottom: 1.5em; }
   .handsonArea #handson-lists {
-    padding: 40px;
+    padding: 40px 0;
     background: #d3efff; }
   .handsonArea h1.edge {
-    font-size: 2em; }
+    font-size: 1.7em;
+    font-weight: 100; }
   .handsonArea .edge {
     position: relative;
     display: inline-block;
     margin-bottom: 45px;
-    padding: 20px 20px;
+    padding: 20px 40px;
     width: auto;
     height: auto;
     color: #4d4d4d;
@@ -5204,24 +5207,28 @@
     font-size: 0.7em;
     font-weight: bold;
     color: #fff;
-    background: #f48660; }
+    background: #fc9b79; }
   .handsonArea .handson-lists ul li a {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
+    line-height: 1.5em;
     text-decoration: none;
     margin-right: 8px;
     color: #414141; }
+    .handsonArea .handson-lists ul li a:hover {
+      color: #4499CE; }
   .handsonArea #handson {
     padding-top: 30px;
     background: #63c3ff; }
   .handsonArea .handson-list {
     width: 100%;
     margin-bottom: 40px;
-    padding: 20px 40px 45px;
+    padding: 40px 8% 70px;
     background: #fff;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
   .handsonArea .handson-list .heading {
-    margin-bottom: 30px; }
+    padding-bottom: 30px;
+    margin-bottom: 10px; }
   .handsonArea .handson-list h1 {
     margin-bottom: 10px;
     font-size: 2em; }
@@ -5229,46 +5236,78 @@
     padding-top: 20px; }
   .handsonArea .handson-list .detail {
     margin: 0 auto;
-    border-top: 1px dotted #333;
+    border-top: 1px dotted #ccc;
     padding-top: 30px; }
   .handsonArea .handson-list .detail dl dt {
+    margin-bottom: 10px;
     padding: 2px 4px;
     background: #d9efff; }
+  .handsonArea .handson-list .detail dl dd.name {
+    font-size: 1.1em;
+    font-weight: bold; }
+  .handsonArea .handson-list .detail dl dd.time {
+    color: #888; }
   .handsonArea .handson-list .prof-img {
     margin-top: 20px;
     border-radius: 50%; }
-  .handsonArea .btn-join {
-    width: 100%;
+  .handsonArea .btn-join a {
+    display: block;
+    width: auto;
     height: auto;
-    margin: 20px auto 0;
+    margin: 60px 30px 0;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    background: #ccc; }
-  .handsonArea .btn-join a {
-    display: block;
-    width: 100%;
-    height: auto;
-    color: #fff; }
+    background: #fc9773;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.2s; }
+    .handsonArea .btn-join a:hover {
+      text-decoration: none;
+      background: #ff7545; }
   .handsonArea .handson-info {
-    padding: 30px; }
+    padding: 40px 20px 20px; }
   .handsonArea .handson-info dl {
     margin-bottom: 30px; }
   .handsonArea .handson-info dl dt {
     margin-bottom: 10px; }
-  .handsonArea .join .btn {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    padding: 20px;
-    width: auto;
-    text-align: center;
-    background: #e56d43; }
-  .handsonArea .join .btn a {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #fff; }
+  .handsonArea .join {
+    text-align: center; }
+    .handsonArea .join .btn a {
+      display: block;
+      width: auto;
+      height: auto;
+      margin: 0 auto 10px;
+      border-radius: 4px;
+      border: 3px solid #23a8fc;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #23a8fc;
+      transition: all 0.2s; }
+      .handsonArea .join .btn a:hover {
+        text-decoration: none;
+        color: #218bd3;
+        border: 3px solid #218bd3; }
+    .handsonArea .join .btn-join a {
+      display: block;
+      width: auto;
+      height: auto;
+      margin: 60px 30px 30px;
+      padding: 30px;
+      text-align: center;
+      border-radius: 5px;
+      background: #23a8fc;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.5em;
+      color: #fff;
+      transition: all 0.2s; }
+      .handsonArea .join .btn-join a:hover {
+        text-decoration: none;
+        background: #218bd3; }
 
 #footer {
   /*!
