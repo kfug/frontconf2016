@@ -65,6 +65,19 @@ module.exports = [
     "tag": ["CSS"]
   },
   {
+    "code":"B010",
+    "title":"これからのデザインを考える",
+    "name": "山下 一樹",
+    "link": {
+      "blog":"http://ykazu.com/about"
+    },
+    "description": "Web やアプリにおける「フロントエンド」に関わるエンジニア、デザイナーがこれから考えるべきデザインとはどのようなものなのか。UI や UX だけでなく「デザイン（設計）する」ということにフォーカスしながら皆さんと考えていければと思います。\n[キーワード: デザイン思考、インタラクションデザイン、共創]",
+    "cws": true,
+    "video": false,
+    "target": "デザイナ",
+    "tag": ["UI・UX"]
+  },
+  {
     "code":"B050",
     "title":"超軽量 Sass ライブラリ Bourbon/Neat のススメ",
     "name": "Kite",
