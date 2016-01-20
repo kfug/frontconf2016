@@ -7,6 +7,7 @@ var notify = require('gulp-notify');
 module.exports = function(){
     this.src(["./ejs/*.ejs","!./ejs/_*"])
         .pipe(ejs({
+            tickets:"http://kfug.connpass.com/event/25757/",
             speakers: require("../data/speakers.js"),
             staffs: require("../data/staffs.js"),
             sponsors: require("../data/sponsors.js"),

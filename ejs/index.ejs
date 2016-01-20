@@ -56,11 +56,16 @@
 </script>
 	<style>
 		.kfugBtn{
-			margin: 2em 0;
+			display: block;
+			margin: 2em 1em;
 			border: 3px solid #23a8fc;
-			border-radius: 2px;
-			padding: .5em 1em;
-
+			border-radius: 5px;
+			padding: .8em 2em;
+			color: #23a8fc;
+			font-size: 1.2em;
+			font-weight:bold;
+			text-align: center;
+			text-decoration: none;
 		}
 	</style>
 </head>
@@ -97,10 +102,20 @@
 				JSフレームワークやSASS,デザイン設計など 気になるセッション一覧は
 				<a style="color:#00C0FF;" href="./speaker.html">こちらをチェック!!</a>
 			</p>
+			<p>
+				ビギナー向けハンズオン企画の一覧は
+				<a style="color:#00C0FF;" href="./handson.html">こちらからご確認ください!!</a>
+			</p>
 			<br>
 			<br>
 
-			<p class="kfugBtn">参加チケットの一般申込は近日公開!! <br>優先案内付きの個人/法人スポンサーチケットは <a href="http://the-frontend-conference-2016.peatix.com/" target="_blank">こちら</a>からお申し込みください!!	</p>
+			<a href="http://connpass.com/event/25757" class="kfugBtn">
+				一般参加チケットの申込はこちらをチェック
+			</a>
+
+			<a href="http://the-frontend-conference-2016.peatix.com/" class="kfugBtn">
+				優先案内付きの個人/法人スポンサーチケット申込はこちらから!!
+			</a>
 		</div><!-- /.inner -->
 
 
@@ -227,8 +242,10 @@
 				<li><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
-			<br><br><br><br>
-			<p>スポンサー掲載ご希望の方は <a href="http://the-frontend-conference-2016.peatix.com/" target="_blank">こちら</a>よりお申し込みください。</p>
+			<br><br>
+			<a href="http://the-frontend-conference-2016.peatix.com/" class="kfugBtn">
+				スポンサー掲載ご希望の方はこちらよりお申し込みください
+			</a>
 
 		</div><!-- /.inner -->
 	</section><!-- /#sponsor -->

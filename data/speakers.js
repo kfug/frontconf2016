@@ -83,7 +83,7 @@ module.exports = [
     "name": "Kite",
     "link": {
     },
-    "description": "BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitter/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。",
+    "description": "BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitters/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。",
     "cws": true,
     "video": true,
     "target": "デザイナ",

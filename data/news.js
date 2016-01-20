@@ -1,5 +1,10 @@
 module.exports = [
     {
+        "title":"ハンズオン企画の概要をUPしました!!",
+        "link":"./handson.html",
+        "date": "2016/01/20"
+    },
+    {
         "title":"NSC Training ネットワークスタッフ募集中!!",
         "link":"https://nscsec.doorkeeper.jp/events/37738",
         "date": "2016/01/19"
