@@ -2,11 +2,14 @@
   "name": "frontconf2016",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "browser-sync": "^2.11.0",
     "ejs": "^2.3.4",
     "gulp": "^3.9.0",
+    "gulp-cli": "^1.1.0",
     "gulp-ejs": "^1.2.2",
     "gulp-gm": "0.0.8",
     "gulp-image-resize": "^0.7.1",
@@ -16,9 +19,13 @@
     "gulp-sass": "^2.1.1",
     "gulp-sitemap": "^2.2.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp start",
+    "images": "gulp images",
+    "ejs": "gulp ejs",
+    "sass": "gulp sass",
+    "build": "gulp build",
+    "deploy": "git subtree push --prefix src/ . gh-pages; git push origin gh-pages:gh-pages"
   },
   "repository": {
     "type": "git",

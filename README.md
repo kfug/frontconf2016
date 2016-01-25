@@ -1,27 +1,34 @@
 # フロントエンドカンファレンス2016 本サイト制作
 
+http://kfug.github.io/frontconf2016 のソースコードです。
+
+## インストール
+
+必要なことは [nodejs](https://nodejs.org/en/) です。インストールした後はターミナルで`npm i`を読んでください。
+
 ## 運用フロー
 
 ````
-$ gulp
+$ npm run build
 ````
 
-ejsのwatch コンパイル
+でサイトのダイナミックのコンテンツをコンパイルできます。
+長い間の開発のために
 
 ````
-$ gulp bsync
+$ npm start
 ````
 
 ブラウザシンクの起動
 
 ````
-$ gulp image
+$ npm run image
 ````
 
 画像の圧縮・リサイズ
 
 ````
-$ make deploy
+$ npm run deploy
 ````
 
 デプロイ
