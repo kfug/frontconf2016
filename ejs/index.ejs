@@ -95,27 +95,42 @@
 			<h2><i class="fa fa-exclamation"></i><span>ABOUT</span></h2>
 			<h3>関西最大級のフロントエンドの祭典</h3>
 			<p>2016年03月05日　大阪梅田の新梅田研修センターにて、<br>フロントエンドエンジニア/デザイナー向けイベントを開催します。</p>
-			<p>デザイナー向け、エンジニア向け合わせて10以上のセッショントラックに加え、<br>もくもく会ブースやハンズオンブースなど初めての方でも気軽に楽しめる企画が盛り沢山!!</p>
 			<p>デザイナーもエンジニアもWebで働く全ての人のために。<br>関西最大級のフロントエンドイベントが今始まります!!</p>
 			<br>
-			<p>
-				JSフレームワークやSASS,デザイン設計など 気になるセッション一覧は
-				<a style="color:#00C0FF;" href="./speaker.html">こちらをチェック!!</a>
-			</p>
-			<p>
-				ビギナー向けハンズオン企画の一覧は
-				<a style="color:#00C0FF;" href="./handson.html">こちらからご確認ください!!</a>
-			</p>
-			<br>
-			<br>
 
-			<a href="http://connpass.com/event/25757" class="kfugBtn">
-				一般参加チケットの申込はこちらをチェック
+			<a href="http://ptix.co/1RHIQDV" target="_blank" class="kfugBtn">
+				参加申込はこちら!!
+			</a>
+			<p>
+				ハンズオン優先参加等の特典付きのスポンサーチケットは
+				<a href="http://the-frontend-conference-2016.peatix.com/">
+					こちら
+				</a>
+				からお申し込みください!!
+			</p>
+
+			<br><br><br>
+			<h3>Webではたらく全ての人のために</h3>
+			<p>FRONEND CONFERENCE 2016の魅力は、なんといってもそのコンテンツの幅広さにあります。</p>
+			<p>デザイナー向け、エンジニア向け合わせて10以上のセッショントラックに加え、<br>もくもく会ブースやハンズオンブースなど初めての方でも気軽に楽しめる企画が盛り沢山!!</p>
+			<p>
+				コンテンツの詳細は随時公開していきますので、是非
+				<a href="https://www.facebook.com/frontconf2016/">Facebookページ</a>
+				や
+				<a href="https://twitter.com/frontkansai">Twitter公式アカウント</a>
+				にて最新情報のチェックをお願いします。
+			</p>
+
+			<a href="./speaker.html" class="kfugBtn">
+				Angular2やSassなど <br>
+				気になるセッション一覧はこちら
 			</a>
 
-			<a href="http://the-frontend-conference-2016.peatix.com/" class="kfugBtn">
-				優先案内付きの個人/法人スポンサーチケット申込はこちらから!!
+			<a href="handson.html" class="kfugBtn">
+				ハンズオン企画はこちら
 			</a>
+
+
 		</div><!-- /.inner -->
 
 
@@ -255,22 +270,11 @@
 			<h2><i class="fa fa-users"></i><span>Staff</span></h2>
 
 			<p class="cs">coming soon!</p><!-- /.cs -->
-			<!--<ul class="staff-list">-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-				<!--<li><a href="#" target="_blank"><img src="http://placehold.it/800x800/27709b/ffffff"><span>苗字 名前</span></a></li>-->
-			<!--</ul>&lt;!&ndash; /.sponsor-list &ndash;&gt;-->
+			<ul class="staff-list">
+				<% staffs.forEach(function(staff){ %>
+				<!--<li><a href="<%=staff.link%>" target="_blank"><img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span></a></li>-->
+				<% })%>
+			</ul><!-- /.sponsor-list -->
 
 		</div><!-- /.inner -->
 	</section><!-- /#staff -->

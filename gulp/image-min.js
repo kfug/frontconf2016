@@ -27,6 +27,15 @@ var sponsorImgCompiler = function (gmfile,done) {
     });
 };
 
+var staffImgCompiler = function (gmfile,done) {
+    gmfile.size(function (err, size) {
+        done(err, gmfile
+            .resize(400)
+            .gravity("Center")
+            .crop(400,400))
+    });
+};
+
 var logo = function (gmfile,done) {
     gmfile.size(function (err, size) {
         done(err, gmfile
@@ -45,6 +54,9 @@ module.exports = function(){
     this.src([paths.srcDir+"sponsors/*"])
         .pipe(gm(sponsorImgCompiler))
         .pipe(this.dest(paths.dstDir+"sponsors/"));
+    this.src([paths.srcDir+"staffs/*"])
+        .pipe(gm(staffImgCompiler))
+        .pipe(this.dest(paths.dstDir+"staffs/"));
     //gulp.src([
     //        "./images/member/**/*"
     //    ])

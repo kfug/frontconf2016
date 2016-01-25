@@ -20,6 +20,17 @@ gulp.task("watch",function(){
     gulp.watch('./sass/**/*.scss', ['sass']);
     //gulp.watch('./script/**/*.js', ['babel']);
 });
+gulp.task("clean",function(){
+	var del = require("del");
+	del("piyo.md");
+})
+gulp.task("test",["clean"],function(){
+	var $ = require("gulp-load-plugins")();
+	var rename = require("gulp-rename");
+	gulp.src("hoge.md")
+	.pipe($.rename("piyo.md"))
+	.pipe(gulp.dest("./"));
+});
 // 開発用
 gulp.task("default",["watch"])
 

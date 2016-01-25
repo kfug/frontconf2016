@@ -19,5 +19,13 @@ module.exports = [
         "code":"SP007",
         "link":"http://www.unzip.co.jp/"
     },
+    {
+        "code":"SP010",
+        "link":"http://annai.co.jp"
+    },
+    {
+        "code":"SP011",
+        "link":"http://chatbox-inc.com/"
+    },
 ]
 
