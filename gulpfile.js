@@ -32,5 +32,7 @@ gulp.task("test",["clean"],function(){
 	.pipe(gulp.dest("./"));
 });
 // 開発用
+gulp.task("build",["image","ejs","sass"])
+// 開発用
 gulp.task("default",["watch"])
 

@@ -27,5 +27,9 @@ module.exports = [
         "code":"SP011",
         "link":"http://chatbox-inc.com/"
     },
+    {
+        "code":"SP012",
+        "link":"http://www.tam-tam.co.jp/"
+    },
 ]
 
