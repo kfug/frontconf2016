@@ -16031,7 +16031,9 @@
     #sponsor .hidden-print {
       display: none !important; } }
   #sponsor .sponsor-list li {
-    display: inline-block; }
+    margin-top: 20px;
+    display: table-cell;
+    vertical-align: middle; }
 
 #staff {
   /*!
@@ -21244,5 +21246,14 @@
       display: none !important; } }
   #staff .staff-list {
     margin: 10px auto; }
+    #staff .staff-list li {
+      display: inline-block;
+      height: 8em;
+      overflow: hidden;
+      margin-left: 1em;
+      margin-right: 1em; }
     #staff .staff-list span {
-      font-size: 12px; }
+      margin-top: .5em;
+      font-size: 12px;
+      display: inline-block;
+      height: 2em; }

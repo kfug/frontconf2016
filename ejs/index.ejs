@@ -276,9 +276,12 @@
 				<% staffs.forEach(function(staff){ %>
 				<li>
 				<%if(staff.link){%>
-                    <a href="<%=staff.link%>" target="_blank"><img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span></a>
+                    <a href="<%=staff.link%>" target="_blank"><img src="./images/staffs/<%=staff.image%>">
+						<span><%=staff.name%></span>
+					</a>
 				<%}else{%>
-                    <img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span>
+                    <img src="./images/staffs/<%=staff.image%>">
+					<span><%=staff.name%></span>
 				<%}%>
 				</li>
 				<% })%>
