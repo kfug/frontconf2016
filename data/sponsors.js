@@ -31,5 +31,9 @@ module.exports = [
         "code":"SP012",
         "link":"http://www.tam-tam.co.jp/"
     },
+    {
+        "code":"SP013",
+        "link":"https://www.facebook.com/tambourine.inc/?fref=ts"
+    },
 ]
 
