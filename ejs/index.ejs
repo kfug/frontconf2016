@@ -251,12 +251,14 @@
 	<section id="sponsor" class="cont">
 		<div class="inner">
 			<h2><i class="fa fa-star"></i><span>Sponsor</span></h2>
-
-			<ul class="sponsor-list">
+			<div class="container-fluid">
+			<br><br>
+			<ul class="sponsor-list row">
 				<% sponsors.forEach(function(sponsor){ %>
-				<li><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
+            </div>
 			<br><br>
 			<a href="http://the-frontend-conference-2016.peatix.com/" class="kfugBtn">
 				スポンサー掲載ご希望の方はこちらよりお申し込みください
@@ -269,10 +271,16 @@
 		<div class="inner">
 			<h2><i class="fa fa-users"></i><span>Staff</span></h2>
 
-			<p class="cs">coming soon!</p><!-- /.cs -->
+			<!--<p class="cs">coming soon!</p><!-- /.cs -->
 			<ul class="staff-list">
 				<% staffs.forEach(function(staff){ %>
-				<!--<li><a href="<%=staff.link%>" target="_blank"><img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span></a></li>-->
+				<li>
+				<%if(staff.link){%>
+                    <a href="<%=staff.link%>" target="_blank"><img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span></a>
+				<%}else{%>
+                    <img src="./images/staffs/<%=staff.image%>"><span><%=staff.name%></span>
+				<%}%>
+				</li>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
 
