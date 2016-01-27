@@ -1,3 +1,36 @@
+$kfug-blue: #23a8fc;
+
+@mixin kfugBtn() {
+    .kfugBtn {
+        display: block;
+        margin: 2em 1em;
+        border: 3px solid $kfug-blue;
+        border-radius: 5px;
+        padding: .8em 2em;
+        color: $kfug-blue;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight:bold;
+        text-align: center;
+        text-decoration: none;
+        &:hover, &:active {
+            background-color: $kfug-blue;
+            color: #fff;
+            text-decoration: none;
+        }
+    }   
+}
+
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@include kfugBtn();
+
 .handsonArea{
 	@import "handson";
 }
@@ -14,3 +47,4 @@
 #staff{
     @import "staff";
 }
+
