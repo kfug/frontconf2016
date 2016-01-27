@@ -16,13 +16,23 @@ module.exports = [
     },
     {
         "name" : "恩田大輝",
-        "image":"noimage.jpg",
+        "image":"onda.jpg",
+        "link": ""
+    },
+    {
+        "name" : "上條 忠久",
+        "image": "noimage.jpg",
         "link": ""
     },
     {
         "name" : "神野春奈",
         "image":"kamino.jpg",
         "link": "https://twitter.com/kmnhrn"
+    },
+    {
+        "name" : "古賀 友輝",
+        "image": "noimage.jpg",
+        "link": ""
     },
     {
         "name" : "後藤知宏",
@@ -40,8 +50,33 @@ module.exports = [
         "link": "http://shimakyohsuke.com/"
     },
     {
-        "name" : "山崎好洋",
-        "image":"noimage.jpg",
+        "name" : "善家 綜一朗",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "田中 駿一郎",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "Heidegger Martin",
+        "image": "martin.jpg",
+        "link": "http://we-are-root.co.jp/"
+    },
+    {
+        "name" : "林 千尋",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "日下部 拓人",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "福壽 卓哉",
+        "image": "noimage.jpg",
         "link": ""
     },
     {
@@ -55,9 +90,9 @@ module.exports = [
         "link": "http://blog.mismithportfolio.com/"
     },
     {
-        "name" : "Heidegger Martin",
-        "image": "martin.jpg",
-        "link": "http://we-are-root.co.jp/"
+        "name" : "山崎好洋",
+        "image":"noimage.jpg",
+        "link": ""
     },
 ]
 
