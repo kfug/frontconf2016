@@ -54,5 +54,10 @@ module.exports = [
         "image":"misumi.jpg",
         "link": "http://blog.mismithportfolio.com/"
     },
+    {
+        "name" : "Heidegger Martin",
+        "image": "martin.jpg",
+        "link": "http://we-are-root.co.jp/"
+    },
 ]
 
