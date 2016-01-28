@@ -11,13 +11,18 @@ module.exports = [
     },
     {
         "name" : "一樂さつき",
-        "image":"noimage.jpg",
+        "image":"ichiraku.jpg",
         "link": "http://www.nsc.gr.jp"
     },
     {
         "name" : "恩田大輝",
         "image":"onda.jpg",
-        "link": ""
+        "link": "http://twitter.com/ONDX_jp"
+    },
+    {
+        "name" : "尾上 洋介",
+        "image":"onoue.jpg",
+        "link": "https://twitter.com/_likr"
     },
     {
         "name" : "上條 忠久",
@@ -65,6 +70,11 @@ module.exports = [
         "link": "http://we-are-root.co.jp/"
     },
     {
+        "name" : "花谷拓磨 (Potato4d)",
+        "image": "potato4d.png",
+        "link": "https://twitter.com/potato4d"
+    },
+    {
         "name" : "林 千尋",
         "image": "noimage.jpg",
         "link": ""
@@ -83,6 +93,11 @@ module.exports = [
         "name" : "牧 昂拡",
         "image":"maki.png",
         "link": "https://www.glad-cube.com/staff/maki.html"
+    },
+    {
+        "name" : "松田恵美",
+        "image":"noimage.jpg",
+        "link": ""
     },
     {
         "name" : "ミスミタクマ",
