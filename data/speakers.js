@@ -53,6 +53,19 @@ module.exports = [
     "tag": ["JS"]
   },
   {
+    "code":"A050",
+    "title":"HTML5のAPI群をただひたすらに触ってみた記録",
+    "name": "花谷拓磨",
+    "link": {
+      "twitter": "https://twitter.com/potato4d"
+    },
+    "description": "HTML5には様々なAPIがありますが、今だあまり使われていない技術も数多く有ります。そんなHTML5のAPIたちに触れてみた所感をお話します。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["JS"]
+  },
+  {
     "code":"B020",
     "title":"グロースハックを実現する「モジュールデザイン」とCSS設計",
     "name": "榊原昌彦	",
