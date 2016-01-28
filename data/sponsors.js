@@ -35,5 +35,9 @@ module.exports = [
         "code":"SP013",
         "link":"https://www.facebook.com/tambourine.inc/?fref=ts"
     },
+    {
+        "code":"SP015",
+        "link":"http://www.aquent.co.jp/"
+    },
 ]
 
