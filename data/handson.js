@@ -20,6 +20,11 @@ module.exports = [
         "title":"CSSをもっと便利に。BootstrapとSass入門",
         "description" : "Sassと呼ばれるCSSの新しい書き方が登場してから、数年が経過しますが、現場ではCSSをガリガリ書いている…という所も実はまだ多いのではないでしょうか？\nこのハンズオンではSassの一種であるSCSSを中心に、SCSSの基本的な使い方から活用方法等を説明していきます。",
     },
+    {
+        "code":"SP005",
+        "title":"Jadeで始める新しいHTMLの書き方",
+        "description" : "JadeはHTMLをコンパイルして生成するテンプレートエンジンです。Jadeを用いることで複数のHTMLページを効率的に制作出来るようになります。\n AltJSやAltCSSなどNode.jsを用いたワークフローが進む中、HTMLコーディングにも効率化のテクニック、取り入れてみませんか？",
+    },
     //{
     //    "code":"SP005",
     //    "title":"JavaScriptの新標準。BabelでES2015を始めよう",
@@ -27,8 +32,8 @@ module.exports = [
     //},
     {
         "code":"SP006",
-        "title": "国際に太陽できるサイトの導入",
-        "description": "ウエブサイトを外国対応するのが難しくないですがまた試したことがない人はたくさんいます。簡単なサンプルを使ってウエッブサイトを外国の聴衆できるワークフローを紹介します。翻訳、通貨、SEOの基本だけど大切なコンゼプトは含めて勉強しましょう。",
+        "title": "国際化に対応できるサイトの導入",
+        "description": "Webサイトの外国語対応は難しくないですが、また試したことがない人はたくさんいます。簡単なサンプルを使って外国語対応のためのワークフローを紹介します。翻訳、通貨、SEOなど、基本だけど大切なコンゼプトを抑えながら勉強しましょう。",
         "description_en": "Making a website available to an international audience is easy, but there are still many who never attempted it. Using a easy example you will be introduced to a workflow for preparing a website for an international audience. Important, yet basic, concepts ranging from Translation to Currency and SEO will be introduced."
     },
     //{
