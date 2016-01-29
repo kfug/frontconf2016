@@ -5568,6 +5568,20 @@ a:hover {
   .handsonArea .handson-list .prof-img {
     margin-top: 20px;
     border-radius: 50%; }
+  .handsonArea .btn-join a {
+    display: block;
+    margin: 60px 30px 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fc9773;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.2s; }
+    .handsonArea .btn-join a:hover {
+      text-decoration: none;
+      background: #ff7545; }
   .handsonArea .handson-info {
     padding: 40px 20px 20px; }
   .handsonArea .handson-info dl {
