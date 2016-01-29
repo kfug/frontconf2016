@@ -1,5 +1,13 @@
 module.exports = [
   {
+    "code": "A010",
+    "hall": "A",
+    "title": "大型フロントエンド開発におけるTypeScriptとDDD",
+    "name": "奥野 賢太郎",
+    "description": "ChatWork株式会社におけるフロントエンド開発に採り入れたTypeScript、およびDDD（ドメイン駆動設計）について、実務での利点、失敗、工夫を交えたスケールアップさせていく段階的構築の手法をお伝えします。",
+    "link": {},
+  },
+  {
     "code":"A020",
     "title":"Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する",
     "name": "桝田 草一",

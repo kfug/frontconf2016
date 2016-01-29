@@ -105,6 +105,11 @@ module.exports = [
         "link": "http://blog.mismithportfolio.com/"
     },
     {
+        "name" : "Yasui Risa",
+        "image":"carol.jpg",
+        "link": ""
+    },
+    {
         "name" : "山崎好洋",
         "image":"noimage.jpg",
         "link": ""
