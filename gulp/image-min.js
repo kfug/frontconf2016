@@ -36,6 +36,17 @@ var staffImgCompiler = function (gmfile,done) {
     });
 };
 
+var testImgCompiler = function (gmfile,done) {
+    gmfile.size(function (err, size) {
+        done(err, gmfile
+            .setFormat("png")
+            .page(400,400)
+            .resize(400)
+            //.crop(400,400)
+        )
+    });
+};
+
 var logo = function (gmfile,done) {
     gmfile.size(function (err, size) {
         done(err, gmfile
@@ -57,14 +68,9 @@ module.exports = function(){
     this.src([paths.srcDir+"staffs/*"])
         .pipe(gm(staffImgCompiler))
         .pipe(this.dest(paths.dstDir+"staffs/"));
-    //gulp.src([
-    //        "./images/member/**/*"
-    //    ])
-    //    .pipe(gm(member))
-    //    .pipe(gulp.dest('./contents/assets/img/member/'));
-    //gulp.src([
-    //        "./images/logo.png"
-    //    ])
-    //    .pipe(gm(thumnail))
-    //    .pipe(gulp.dest('./contents/assets/img/'));
+
+    //this.src([paths.srcDir+"test/*"])
+    //    .pipe(testImgCompiler())
+    //    //.pipe(gm(testImgCompiler))
+    //    .pipe(this.dest(paths.dstDir+"test/"));
 };

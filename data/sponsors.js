@@ -39,5 +39,9 @@ module.exports = [
         "code":"SP015",
         "link":"http://www.aquent.co.jp/"
     },
+    {
+        "code":"SP016",
+        "link":"http://www.n-di.co.jp/"
+    }
 ]
 

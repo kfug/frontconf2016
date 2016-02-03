@@ -22,6 +22,19 @@ module.exports = [
     "tag": ["HTML5"]
   },
   {
+    "code":"A050",
+    "title":"HTML5のAPI群をただひたすらに触ってみた記録",
+    "name": "花谷拓磨",
+    "link": {
+      "twitter": "https://twitter.com/potato4d"
+    },
+    "description": "HTML5には様々なAPIがありますが、今だあまり使われていない技術も数多く有ります。そんなHTML5のAPIたちに触れてみた所感をお話します。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["JS"]
+  },
+  {
     "code":"A031",
     "title":"Angular2でアプリを書いた話",
     "name": "今井晨介",
@@ -48,38 +61,12 @@ module.exports = [
     "tag": ["JS"]
   },
   {
-    "code":"A040",
-    "title":"Webサイトパフォーマンス管理の基礎知識",
-    "name": "竹洞 陽一郎",
-    "link": {
-      "twitter": "https://twitter.com/martini3oz"
-    },
-    "description": "Webサイトパフォーマンス管理は、表示速度と繋がりやすさを軸とした、配信品質管理です。\n分析においては、統計学の知識が必要となっています。\nまた、スマートフォンでのブラウジングの増大に伴い、携帯ネットワークの知識が求められ、\nUXの観点から神経物理学、行動経済学の知識が必要となっています。\nそのようなWebサイトパフォーマンス管理に必要な基礎知識の概要を説明します。",
-    "cws": true,
-    "video": true,
-    "target": "エンジニア",
-    "tag": ["JS"]
-  },
-  {
-    "code":"A050",
-    "title":"HTML5のAPI群をただひたすらに触ってみた記録",
-    "name": "花谷拓磨",
-    "link": {
-      "twitter": "https://twitter.com/potato4d"
-    },
-    "description": "HTML5には様々なAPIがありますが、今だあまり使われていない技術も数多く有ります。そんなHTML5のAPIたちに触れてみた所感をお話します。",
-    "cws": true,
-    "video": true,
-    "target": "エンジニア",
-    "tag": ["JS"]
-  },
-  {
-    "code":"B020",
-    "title":"グロースハックを実現する「モジュールデザイン」とCSS設計",
-    "name": "榊原昌彦	",
+    "code":"B050",
+    "title":"超軽量 Sass ライブラリ Bourbon/Neat のススメ",
+    "name": "Kite",
     "link": {
     },
-    "description": "paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。\nでは、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。",
+    "description": "BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitters/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。",
     "cws": true,
     "video": true,
     "target": "デザイナ",
@@ -99,12 +86,37 @@ module.exports = [
     "tag": ["UI・UX"]
   },
   {
-    "code":"B050",
-    "title":"超軽量 Sass ライブラリ Bourbon/Neat のススメ",
-    "name": "Kite",
+    "code":"A040",
+    "title":"Webサイトパフォーマンス管理の基礎知識",
+    "name": "竹洞 陽一郎",
+    "link": {
+      "twitter": "https://twitter.com/martini3oz"
+    },
+    "description": "Webサイトパフォーマンス管理は、表示速度と繋がりやすさを軸とした、配信品質管理です。\n分析においては、統計学の知識が必要となっています。\nまた、スマートフォンでのブラウジングの増大に伴い、携帯ネットワークの知識が求められ、\nUXの観点から神経物理学、行動経済学の知識が必要となっています。\nそのようなWebサイトパフォーマンス管理に必要な基礎知識の概要を説明します。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["JS"]
+  },
+  {
+    "code":"A060",
+    "title":"10年超のサービスにSass導入してモダン化した話",
+    "name": "大出 豪",
     "link": {
     },
-    "description": "BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitters/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。",
+    "description": "日本最大級のライブストリーミングサイトを運営しながら、「老舗サイトでもしっかり時代にあわせられるのか？」をテーマに、WEBサイトのモダン化を行いました。Laravel Bladeと、タスクランナーやSASSなどを組み合わせたので、その構成や苦労した所、便利だった所などをお話します。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["CSS"]
+  },
+  {
+    "code":"B020",
+    "title":"グロースハックを実現する「モジュールデザイン」とCSS設計",
+    "name": "榊原昌彦	",
+    "link": {
+    },
+    "description": "paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。\nでは、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。",
     "cws": true,
     "video": true,
     "target": "デザイナ",

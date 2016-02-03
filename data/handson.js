@@ -36,6 +36,11 @@ module.exports = [
         "description": "Webサイトの外国語対応は難しくないですが、また試したことがない人はたくさんいます。簡単なサンプルを使って外国語対応のためのワークフローを紹介します。翻訳、通貨、SEOなど、基本だけど大切なコンゼプトを抑えながら勉強しましょう。",
         "description_en": "Making a website available to an international audience is easy, but there are still many who never attempted it. Using a easy example you will be introduced to a workflow for preparing a website for an international audience. Important, yet basic, concepts ranging from Translation to Currency and SEO will be introduced."
     },
+    {
+        "code":"SP007",
+        "title": "Angular2 + TypeScriptで本格Webアプリ開発",
+        "description": "大規模なSPA(Single Page Application)開発では、AngularなどのフレームワークやTypeScriptなどのAltJS言語が使われることが増えてきましたが、まだまだ難しそうなイメージがありますよね？このハンズオンではAngular2とTypeScriptによるWebアプリ開発を学ぶことができます。まずは怖がらずに手を動かして体験してみましょう！大規模SPA開発じゃなくても便利なんですよ？",
+    },
     //{
     //    "code":"SP006",
     //    "title":"angular2",
