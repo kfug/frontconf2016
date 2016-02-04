@@ -71,7 +71,7 @@
 	</div>
 
 			<div class="bnrbox cf">
-				<div class="bnr"><a href="http://the-frontend-conference-2016.peatix.com" target="_blank" class="hvr-icon-wobble-horizontal">スポンサー募集中!!</a></div>
+				<div class="bnr"><a href="http://kfug.connpass.com/event/26509/" target="_blank" class="hvr-icon-wobble-horizontal">LT登壇者募集中!!</a></div>
 			</div><!-- /.bnrbox cf -->
 		</div><!-- /.inner -->
 	</section><!-- /.main-area -->
@@ -244,7 +244,23 @@
 			<br><br>
 			<ul class="sponsor-list row">
 				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class=="session"){%>
+					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
+				<% })%>
+			</ul><!-- /.sponsor-list -->
+			<ul class="sponsor-list row">
+				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class=="booth"){%>
+					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
+				<% })%>
+			</ul><!-- /.sponsor-list -->
+			<ul class="sponsor-list row">
+				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class==undefined){%>
 				<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
             </div>

@@ -20,6 +20,11 @@ module.exports = [
         "link":"http://www.unzip.co.jp/"
     },
     {
+        "code":"SP008",
+        "link":"http://reas.jp/",
+        "class":"session"
+    },
+    {
         "code":"SP010",
         "link":"http://annai.co.jp"
     },
@@ -29,11 +34,13 @@ module.exports = [
     },
     {
         "code":"SP012",
-        "link":"http://www.tam-tam.co.jp/"
+        "link":"http://www.tam-tam.co.jp/",
+        "class": "booth"
     },
     {
         "code":"SP013",
-        "link":"https://www.facebook.com/tambourine.inc/?fref=ts"
+        "link":"https://www.facebook.com/tambourine.inc/?fref=ts",
+        "class": "booth"
     },
     {
         "code":"SP015",
@@ -42,6 +49,15 @@ module.exports = [
     {
         "code":"SP016",
         "link":"http://www.n-di.co.jp/"
+    },
+    {
+        "code":"SP017",
+        "link":"http://samuraism.com/products/jetbrains/webstorm"
+    },
+    {
+        "code":"SP018",
+        "link":"http://cybozu.co.jp/",
+        "class": "session"
     }
 ]
 

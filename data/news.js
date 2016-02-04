@@ -1,5 +1,10 @@
 module.exports = [
     {
+        "title":"LTの募集を開始しました!!",
+        "link":"http://kfug.connpass.com/event/26509/",
+        "date": "2016/02/04"
+    },
+    {
         "title":"ハンズオン企画の概要をUPしました!!",
         "link":"./handson.html",
         "date": "2016/01/20"
