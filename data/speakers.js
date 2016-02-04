@@ -22,6 +22,33 @@ module.exports = [
     "tag": ["HTML5"]
   },
   {
+    "code":"B030",
+    "title":"gulp ベストプラクティス",
+    "name": "神保 嘉秀",
+    "link": {
+      "twitter": "https://twitter.com/jmblog",
+    },
+    "description": "ビルドフロー自動化のためのツールである gulp のベストプラクティスをご紹介します。定番のプラグインや、パフォーマンスやメンテナンス性を考慮した書き方などについてお話する予定です。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["HTML5"]
+  },
+  {
+    "code":"B060",
+    "title":"あなたの言葉で伝えるWebアクセシビリティ",
+    "name": "小林 大輔",
+    "link": {
+      "twitter": "https://twitter.com/sukoyakarizumu",
+      "facebook": "https://www.facebook.com/daisuke.kobayashi.6",
+    },
+    "description": "アクセシブルなWebを実現するためには、エンジニアだけではなく、Webに携わるすべての人がWebアクセシビリティの重要性を認識する必要があります。\n本セッションでは、サイボウズ株式会社の取り組みを紹介しながら、Webアクセシビリティの重要性を、より多くの人に伝えるための方法について考えます。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["HTML5"]
+  },
+  {
     "code":"A050",
     "title":"HTML5のAPI群をただひたすらに触ってみた記録",
     "name": "花谷拓磨",
