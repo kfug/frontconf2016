@@ -1,10 +1,28 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-.sponsor-list{
-    li{
-        margin-top: 20px;
-        display: table-cell;
-        vertical-align: middle;
+.large-sponsor{
+    //li{
+    //  display: inline-block;
+    //}
+    .hidden-xs {
+      display: inline-block;
+      height: 180px;
+      padding: 0;
+    }
+    .visible-xs{
+      display: block;
+      margin: 0% 12% 12% 12%;
     }
 }
+
+.middle-sponsor{
+  li{
+    display: inline-block;
+  }
+  .hidden-xs{
+    height: 130px;
+    padding:0;
+  }
+}
+
 @include kfugBtn();

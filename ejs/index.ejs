@@ -242,21 +242,23 @@
 			<h2><i class="fa fa-star"></i><span>Sponsor</span></h2>
 			<div class="container-fluid">
 			<br><br>
-			<ul class="sponsor-list row">
+			<ul class="sponsor-list large-sponsor row">
 				<% sponsors.forEach(function(sponsor){ %>
 				<% if(sponsor.class=="session"){%>
-					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+					<li class="hidden-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="110%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+					<li class="visible-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="150%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% }%>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
-			<ul class="sponsor-list row">
+			<ul class="sponsor-list middle-sponsor row">
 				<% sponsors.forEach(function(sponsor){ %>
 				<% if(sponsor.class=="booth"){%>
-					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+					<li class="hidden-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="100%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+					<li class="col-xs-6 visible-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="130%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% }%>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
-			<ul class="sponsor-list row">
+			<ul class="sponsor-list small-sponsor row">
 				<% sponsors.forEach(function(sponsor){ %>
 				<% if(sponsor.class==undefined){%>
 				<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
