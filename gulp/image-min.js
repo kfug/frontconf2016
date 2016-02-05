@@ -2,10 +2,12 @@
 var gulp = require("gulp");
 var imagemin = require("gulp-imagemin")
 var gm = require("gulp-gm")
+var gmorigin = require("gm")
 var resize = require("gulp-image-resize")
 
 var paths = {
     srcDir : './images/',
+    basePath : './images/baseImage.png',
     dstDir : 'src/images/'
 }
 
@@ -36,41 +38,36 @@ var staffImgCompiler = function (gmfile,done) {
     });
 };
 
+
 var testImgCompiler = function (gmfile,done) {
     gmfile.size(function (err, size) {
-        done(err, gmfile
-            .setFormat("png")
-            .page(400,400)
-            .resize(400)
-            //.crop(400,400)
-        )
+        var rtnGm = gmorigin(paths.basePath);
+        if(size.width / size.height < 2){
+            rtnGm = rtnGm.resize(null,size.height)
+        }else{
+            rtnGm = rtnGm.resize(size.width);
+        }
+        rtnGm = rtnGm.composite(gmfile.source)
+        rtnGm = rtnGm.gravity("Center")
+
+        done(err, rtnGm)
     });
 };
 
-var logo = function (gmfile,done) {
-    gmfile.size(function (err, size) {
-        done(err, gmfile
-            .resize(800)
-            .gravity("Center")
-            .crop(800,350))
-    });
-};
-
-
+var matGm = require("./mat.js");
 
 module.exports = function(){
     this.src([paths.srcDir+"speakers/*"])
         .pipe(gm(speakerImgCompiler))
         .pipe(this.dest(paths.dstDir+"speakers/"));
     this.src([paths.srcDir+"sponsors/*"])
-        .pipe(gm(sponsorImgCompiler))
+        .pipe(gm(testImgCompiler))
         .pipe(this.dest(paths.dstDir+"sponsors/"));
     this.src([paths.srcDir+"staffs/*"])
         .pipe(gm(staffImgCompiler))
         .pipe(this.dest(paths.dstDir+"staffs/"));
 
-    //this.src([paths.srcDir+"test/*"])
-    //    .pipe(testImgCompiler())
-    //    //.pipe(gm(testImgCompiler))
-    //    .pipe(this.dest(paths.dstDir+"test/"));
+    this.src([paths.srcDir+"test/*"])
+        .pipe(gm(testImgCompiler))
+        .pipe(this.dest(paths.dstDir+"test/"));
 };
