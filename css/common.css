@@ -16040,10 +16040,18 @@ a:hover {
   @media print {
     #sponsor .hidden-print {
       display: none !important; } }
-  #sponsor .sponsor-list li {
-    margin-top: 20px;
-    display: table-cell;
-    vertical-align: middle; }
+  #sponsor .large-sponsor .hidden-xs {
+    display: inline-block;
+    height: 180px;
+    padding: 0; }
+  #sponsor .large-sponsor .visible-xs {
+    display: block;
+    margin: 0% 12% 12% 12%; }
+  #sponsor .middle-sponsor li {
+    display: inline-block; }
+  #sponsor .middle-sponsor .hidden-xs {
+    height: 130px;
+    padding: 0; }
   #sponsor .kfugBtn {
     display: block;
     margin: 2em 1em;
