@@ -47,10 +47,18 @@ var testImgCompiler = function (gmfile,done) {
         }else{
             rtnGm = rtnGm.resize(size.width);
         }
-        rtnGm = rtnGm.composite(gmfile.source)
-        rtnGm = rtnGm.gravity("Center")
+        rtnGm = rtnGm.composite(gmfile.source);
+        rtnGm = rtnGm.gravity("Center");
+        //rtnGm = rtnGm.resample(800,400);
 
         done(err, rtnGm)
+    });
+};
+var testImgCompiler2 = function (gmfile,done) {
+    gmfile.size(function (err, size) {
+        done(err, gmfile
+            .resize(800)
+            .gravity("Center"))
     });
 };
 
@@ -62,6 +70,7 @@ module.exports = function(){
         .pipe(this.dest(paths.dstDir+"speakers/"));
     this.src([paths.srcDir+"sponsors/*"])
         .pipe(gm(testImgCompiler))
+        .pipe(gm(testImgCompiler2))
         .pipe(this.dest(paths.dstDir+"sponsors/"));
     this.src([paths.srcDir+"staffs/*"])
         .pipe(gm(staffImgCompiler))
