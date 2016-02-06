@@ -4,6 +4,7 @@
     //li{
     //  display: inline-block;
     //}
+  padding-left:0;
     .hidden-xs {
       display: inline-block;
       height: 180px;
@@ -11,7 +12,7 @@
     }
     .visible-xs{
       display: block;
-      margin: 0% 12% 12% 12%;
+      margin: 0 auto;
     }
 }
 
@@ -19,10 +20,24 @@
   li{
     display: inline-block;
   }
+  li:first-child{
+    left: -10px;
+  }
+  li:last-child{
+    top: 10px;
+  }
   .hidden-xs{
     height: 130px;
     padding:0;
   }
+  .visible-xs{
+    .col-xs-6{
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
 }
+
+
 
 @include kfugBtn();

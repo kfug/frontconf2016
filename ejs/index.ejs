@@ -242,29 +242,53 @@
 			<h2><i class="fa fa-star"></i><span>Sponsor</span></h2>
 			<div class="container-fluid">
 			<br><br>
-			<ul class="sponsor-list large-sponsor row">
+			<ul class="sponsor-list large-sponsor row"><!-- /.large-sponsor -->
+                <div class="hidden-xs">
 				<% sponsors.forEach(function(sponsor){ %>
 				<% if(sponsor.class=="session"){%>
-					<li class="hidden-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="110%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
-					<li class="visible-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="150%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+					<li><a href="<%=sponsor.link %>" target="_blank"><img width="110%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% }%>
 				<% })%>
-			</ul><!-- /.sponsor-list -->
-			<ul class="sponsor-list middle-sponsor row">
-				<% sponsors.forEach(function(sponsor){ %>
-				<% if(sponsor.class=="booth"){%>
-					<li class="hidden-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="100%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
-					<li class="col-xs-6 visible-xs"><a href="<%=sponsor.link %>" target="_blank"><img width="130%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
-				<% }%>
-				<% })%>
-			</ul><!-- /.sponsor-list -->
-			<ul class="sponsor-list small-sponsor row">
+                </div>
+			</ul>
+
+            <ul class="sponsor-list large-sponsor row">
+                <div class="visible-xs">
+                <% sponsors.forEach(function(sponsor){ %>
+                <% if(sponsor.class=="session"){%>
+                    <li><a href="<%=sponsor.link %>" target="_blank"><img width="150%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+                <% }%>
+                <% })%>
+                </div>
+            </ul><!-- /.large-list -->
+
+            <ul class="sponsor-list middle-sponsor row"><!-- /.middle-sponsor -->
+                <div class="hidden-xs">
+                <% sponsors.forEach(function(sponsor){ %>
+                <% if(sponsor.class=="booth"){%>
+                <li><a href="<%=sponsor.link %>" target="_blank"><img width="100%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+                <% }%>
+                <% })%>
+                </div>
+            </ul>
+
+            <ul class="sponsor-list middle-sponsor row">
+                <div class="visible-xs">
+                <% sponsors.forEach(function(sponsor){ %>
+                <% if(sponsor.class=="booth"){%>
+                <li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="120%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+                <% }%>
+                <% })%>
+                </div>
+			</ul><!-- /.middle-sponsor -->
+
+			<ul class="sponsor-list small-sponsor row"><!-- /.small-sponsor -->
 				<% sponsors.forEach(function(sponsor){ %>
 				<% if(sponsor.class==undefined){%>
 				<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
 				<% }%>
 				<% })%>
-			</ul><!-- /.sponsor-list -->
+			</ul><!-- /.small-sponsor -->
             </div>
 			<br><br>
 			<a href="http://the-frontend-conference-2016.peatix.com/" class="kfugBtn hvr-back-pulse">
