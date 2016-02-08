@@ -1,8 +1,20 @@
 module.exports = [
     {
+        "name" : "あずましげなり",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
         "name" : "Abe Asami",
         "image":"kinoko.jpg",
         "link": "http://nocono.net/"
+    },
+    {
+        "name" : "Juntaro Iida",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
     },
     {
         "name" : "井土 貴寛",
@@ -35,6 +47,18 @@ module.exports = [
         "link": "https://twitter.com/kmnhrn"
     },
     {
+        "name" : "川田 悠",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
+        "name" : "岸本 延幸",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
         "name" : "古賀 友輝",
         "image": "noimage.jpg",
         "link": ""
@@ -55,13 +79,37 @@ module.exports = [
         "link": "http://shimakyohsuke.com/"
     },
     {
+        "name" : "白石雅義",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
         "name" : "善家 綜一朗",
         "image": "noimage.jpg",
         "link": ""
     },
     {
+        "name" : "masaya.takami",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
         "name" : "田中 駿一郎",
         "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "Danno",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    },
+    {
+        "name" : "tossh0095",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
         "link": ""
     },
     {
@@ -114,5 +162,11 @@ module.exports = [
         "image":"noimage.jpg",
         "link": ""
     },
+    {
+        "name" : "山下輝志",
+        "image":"noimage.jpg",
+        "class":"ネットワーク",
+        "link": ""
+    }
 ]
 
