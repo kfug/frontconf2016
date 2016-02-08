@@ -16040,27 +16040,10 @@ a:hover {
   @media print {
     #sponsor .hidden-print {
       display: none !important; } }
-  #sponsor .large-sponsor {
-    padding-left: 0; }
-    #sponsor .large-sponsor .hidden-xs {
-      display: inline-block;
-      height: 180px;
-      padding: 0; }
-    #sponsor .large-sponsor .visible-xs {
-      display: block;
-      margin: 0 auto; }
-  #sponsor .middle-sponsor li {
-    display: inline-block; }
-  #sponsor .middle-sponsor li:first-child {
-    left: -10px; }
-  #sponsor .middle-sponsor li:last-child {
-    top: 10px; }
-  #sponsor .middle-sponsor .hidden-xs {
-    height: 130px;
-    padding: 0; }
-  #sponsor .middle-sponsor .visible-xs .col-xs-6 {
-    padding-left: 0;
-    margin-left: 0; }
+  #sponsor .sponsor-list li {
+    margin-top: 20px;
+    display: table-cell;
+    vertical-align: middle; }
   #sponsor .kfugBtn {
     display: block;
     margin: 2em 1em;
