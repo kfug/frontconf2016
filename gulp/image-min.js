@@ -58,6 +58,7 @@ var testImgCompiler2 = function (gmfile,done) {
     gmfile.size(function (err, size) {
         done(err, gmfile
             .resize(800)
+            .setFormat("png")
             .gravity("Center"))
     });
 };
@@ -76,7 +77,7 @@ module.exports = function(){
         .pipe(gm(staffImgCompiler))
         .pipe(this.dest(paths.dstDir+"staffs/"));
 
-    this.src([paths.srcDir+"test/*"])
-        .pipe(gm(testImgCompiler))
-        .pipe(this.dest(paths.dstDir+"test/"));
+    //this.src([paths.srcDir+"test/*"])
+    //    .pipe(gm(staffImgCompiler)
+    //    .pipe(this.dest(paths.dstDir+"test/"));
 };

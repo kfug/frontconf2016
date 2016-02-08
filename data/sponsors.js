@@ -58,6 +58,19 @@ module.exports = [
         "code":"SP018",
         "link":"http://cybozu.co.jp/",
         "class": "session"
+    },
+    {
+        "code":"SP019",
+        "link":"http://rdlabo.jp/"
+    },
+    {
+        "code":"SP020",
+        "link":"https://career.levtech.jp/",
+        "class":"booth"
+    },
+    {
+        "code":"SP021",
+        "link":"http://www.aid-dcc.com"
     }
 ]
 
