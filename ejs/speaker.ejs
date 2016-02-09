@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<%- include('_head', {title:"登壇・セミナー情報"}); %>
+  <%- include('_head', {title:"登壇・セミナー情報"}); %>
 
-	<style>
-		.sublogo{
-			width:100%;
-			max-width: 980px;
-			margin: 0 auto;
-			display: block;
-		}
-	</style>
+  <style>
+    .sublogo{
+      width:100%;
+      max-width: 980px;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
 </head>
 <body id="speaker">
 <%- include('_header', {top:false}); %>
 
 
 <div id="content-wraper">
-	<img class="sublogo" src="./img/fec_main.jpg" alt="">
-	<section class="pagettl column">
-		<div class="inner">
-			<h2 class="animated bounceInDown">セッション一覧 - SPEAKERS</h2>
-		</div><!-- /.inner -->
-	</section><!-- /.column -->
-	<!--<section class="column hole">-->
-		<!--<div class="inner">-->
-			<!--<div class="l">-->
-				<!--<div class="border"><h3>Aホール</h3>-->
-					<!--<ul class="speaker-list">-->
-						<!--<li><a href="#ishida hvr-icon-down">石田　三成</a></li>-->
-						<!--<li><a href="#shima hvr-icon-down">島　左近</a></li>-->
-					<!--</ul>-->
-					<!--&lt;!&ndash; /.speaker-list &ndash;&gt;-->
-				<!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
-			<!--</div>-->
-			<!--<div class="r">-->
-				<!--<div class="border">-->
-					<!--<h3>Bホール</h3>-->
-					<!--<ul class="speaker-list">-->
-						<!--<li><a href="#kuroda hvr-icon-down">黒田　長政</a></li>-->
-						<!--<li><a href="#hosokawa hvr-icon-down">細川　忠興</a></li>-->
-					<!--</ul>-->
-				<!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
-			<!--</div>-->
-		<!--</div>&lt;!&ndash; /.inner &ndash;&gt;-->
-	<!--</section>&lt;!&ndash; /.column &ndash;&gt;-->
-	<% speakers.forEach(function(speaker){ %>
-	<section class="column speaker" id="<%=speaker.code%>%>">
-		<div class="inner">
-		<!--<div class="label time"></div>-->
-		<!--<div class="label hole a-hole"></div>-->
-			<div class="cf">
-			<div class="speaker-img">
-					<p class="img">
-						<img style="width:100%;" src="./images/speakers/<%=speaker.code%>.jpg">
-					</p><!-- /.img -->
-				</div><!-- /.speaker-img -->
-				<div class="speaker-detail">
-					<h2 style="font-size: 1.5em;margin: .5em 0 "><%=speaker.title%></h2>
-					<h1><%=speaker.name %></h1>
-					<p><%=speaker.description %></p>
-				</div><!-- /.speaker-detail -->
-			</div><!-- /.cf -->
-			<!--<ul class="tag">-->
-				<!--<li><span>Aホール</span></li>-->
-				<!--<li><span>豊臣</span></li>-->
-			<!--</ul>&lt;!&ndash; /.tag &ndash;&gt;-->
-		</div><!-- /.inner -->
-	</section><!-- /.column speaker -->
-	<% });%>
-	<section>
-		<br><br><br>
-		<p style="text-align: center;font-size: 1.5em;font-weight: bold;color: #999">and more ...</p>
-	</section>
+  <img class="sublogo" src="./img/fec_main.jpg" alt="">
+  <section class="pagettl column">
+    <div class="inner">
+      <h2 class="animated bounceInDown">セッション一覧 - SPEAKERS</h2>
+    </div><!-- /.inner -->
+  </section><!-- /.column -->
+  <!--<section class="column hole">-->
+    <!--<div class="inner">-->
+      <!--<div class="l">-->
+        <!--<div class="border"><h3>Aホール</h3>-->
+          <!--<ul class="speaker-list">-->
+            <!--<li><a href="#ishida hvr-icon-down">石田　三成</a></li>-->
+            <!--<li><a href="#shima hvr-icon-down">島　左近</a></li>-->
+          <!--</ul>-->
+          <!--&lt;!&ndash; /.speaker-list &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="r">-->
+        <!--<div class="border">-->
+          <!--<h3>Bホール</h3>-->
+          <!--<ul class="speaker-list">-->
+            <!--<li><a href="#kuroda hvr-icon-down">黒田　長政</a></li>-->
+            <!--<li><a href="#hosokawa hvr-icon-down">細川　忠興</a></li>-->
+          <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
+      <!--</div>-->
+    <!--</div>&lt;!&ndash; /.inner &ndash;&gt;-->
+  <!--</section>&lt;!&ndash; /.column &ndash;&gt;-->
+  <% speakers.forEach(function(speaker){ %>
+  <section class="column speaker" id="<%=speaker.code%>">
+    <div class="inner">
+    <!--<div class="label time"></div>-->
+    <!--<div class="label hole a-hole"></div>-->
+      <div class="cf">
+      <div class="speaker-img">
+          <p class="img">
+            <img style="width:100%;" src="./images/speakers/<%=speaker.code%>.jpg">
+          </p><!-- /.img -->
+        </div><!-- /.speaker-img -->
+        <div class="speaker-detail">
+          <span class="speakerlabel time-label"><%=speaker.time %></span>
+          <span class="speakerlabel hall-label"><%=speaker.hall %>ホール</span>
+          <!-- <span class="speakerlabel category-label"><%=speaker.category %></span> -->
+          <h2><%=speaker.title%></h2>
+          <h1><%=speaker.name %></h1>
+          <p class="description-txt"><%=speaker.description %></p>
+        </div><!-- /.speaker-detail -->
+      </div><!-- /.cf -->
+      <!--<ul class="tag">-->
+        <!--<li><span>Aホール</span></li>-->
+        <!--<li><span>豊臣</span></li>-->
+      <!--</ul>&lt;!&ndash; /.tag &ndash;&gt;-->
+    </div><!-- /.inner -->
+  </section><!-- /.column speaker -->
+  <% });%>
+  <section>
+    <br><br><br>
+    <p style="nobtntxt">and more ...</p>
+  </section>
 
-	<div id="page-top" class="hvr-icon-bob">
-		<a href="#content-wraper">PAGE TOP</a>
-	</div>
+  <div id="page-top" class="hvr-icon-bob">
+    <a href="#content-wraper">PAGE TOP</a>
+  </div>
 
-	<%- include('_footer', {title:"サイトタイトル"}); %>
+  <%- include('_footer', {title:"サイトタイトル"}); %>
 
 </div>
 <!-- /#contentWraper -->

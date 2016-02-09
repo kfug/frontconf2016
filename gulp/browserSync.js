@@ -10,7 +10,8 @@ module.exports = function(){
         }
     });
     this.watch([
-        './ejs/**/*'
+        './ejs/**/*',
+        './src/css/**/*'
     ], function(){
         browserSync.reload();
     });
