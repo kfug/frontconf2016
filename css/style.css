@@ -952,13 +952,20 @@ speaker.html
   overflow: hidden;
   margin-top: 10px;
 }
+#speaker .speaker-img .img img {
+  width: 100%;
+}
 #speaker .speaker-detail {
   width: 780px;
   float: right;
 }
 #speaker .speaker-detail h1 {
+  display: inline-block;
   font-size: 1.3rem;
   color: #535353;
+}
+#speaker .speaker-detail .linklist {
+  display: inline-block;
 }
 #speaker .speaker-detail h2 {
   line-height: 1.1;
@@ -966,6 +973,10 @@ speaker.html
   padding-bottom: 5px;
   font-size: 1.5em;
   margin: 0px 0px 7px;
+}
+#speaker .speaker-detail h3 {
+  margin-top: 8px;
+  font-size: 1rem;
 }
 #speaker .speaker-detail .speakerlabel {
   font-size: 0.8rem;
@@ -989,6 +1000,7 @@ speaker.html
 #speaker .column .tag {
   float: right;
   overflow: hidden;
+  margin-top: 10px;
 }
 #speaker .column .tag li {
   float: left;
@@ -996,10 +1008,11 @@ speaker.html
 }
 #speaker .column .tag li span {
   display: inline-block;
-  background-color: #F38869;
+  background-color: #676767;
   padding: 5px 10px;
   color: #fff;
   margin-left: 6px;
+  font-size: 1rem;
 }
 #speaker .column .tag li:before {
   content: "/";
@@ -1031,6 +1044,19 @@ speaker.html
 #speaker .label.hole.b-hole {
   background-color: #F95D5D;
 }
+#speaker .speaker-name {
+  padding-right: 15px;
+}
+#speaker .link {
+  color: #81C1DB;
+  text-decoration: none;
+}
+#speaker .link + .link {
+  margin-left: 5px;
+}
+#speaker .link i {
+  vertical-align: top;
+}
 #speaker .nobtntxt {
   text-align: center;
   font-size: 1.5em;
@@ -1046,6 +1072,9 @@ SP
   /*::::::::::::::::::::::::::::::::::
   header
   :::::::::::::::::::::::::::::::::::*/
+  .pagettl h2 {
+    font-size: 1.3rem;
+  }
   #speaker #content-wraper {
     margin-top: 60px;
   }
@@ -1110,5 +1139,23 @@ SP
   }
   #sponsor .sponsor-list li:nth-child(odd) {
     clear: both;
+  }
+
+  #speaker .speaker-detail h2 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  #speaker .speaker-detail h1 {
+    font-size: 1.1rem;
+  }
+  #speaker .speaker-detail .description-txt {
+    font-size: 0.9rem;
+  }
+  #speaker .link + .link {
+    margin-left: 15px;
+  }
+  #speaker .nobtntxt {
+    margin-top: 40px;
+    font-size: 1rem;
   }
 }
