@@ -71,7 +71,7 @@
 	</div>
 
 			<div class="bnrbox cf">
-				<div class="bnr"><a href="http://the-frontend-conference-2016.peatix.com" target="_blank" class="hvr-icon-wobble-horizontal">スポンサー募集中!!</a></div>
+				<div class="bnr"><a href="http://kfug.connpass.com/event/26509/" target="_blank" class="hvr-icon-wobble-horizontal">LT登壇者募集中!!</a></div>
 			</div><!-- /.bnrbox cf -->
 		</div><!-- /.inner -->
 	</section><!-- /.main-area -->
@@ -97,7 +97,7 @@
 
 			<br><br><br>
 			<h3>Webではたらく全ての人のために</h3>
-			<p>FRONEND CONFERENCE 2016の魅力は、なんといってもそのコンテンツの幅広さにあります。</p>
+			<p>FRONTEND CONFERENCE 2016の魅力は、なんといってもそのコンテンツの幅広さにあります。</p>
 			<p>デザイナー向け、エンジニア向け合わせて10以上のセッショントラックに加え、<br>もくもく会ブースやハンズオンブースなど初めての方でも気軽に楽しめる企画が盛り沢山!!</p>
 			<p>
 				コンテンツの詳細は随時公開していきますので、是非
@@ -175,6 +175,9 @@
 					<p>JR大阪駅 より 徒歩 10分</p>
 					<p>JR大阪駅よりシャトルバスも運行</p>
 					<p>詳しくは<a href="http://www.temmacenter.com/shin_umeda/access/index.html#access01">公式HP</a>をチェック!!</p>
+
+					<br><br>
+					<p>会場周辺の <a href="https://www.google.com/maps/d/edit?mid=zaBnRQARfV0M.kQqnvV-PSshI&usp=sharing">ランチマップ</a>はこちら!!</p>
 				</div>
 			</div><!-- /.mapbox -->
 		</div><!-- /.inner -->
@@ -203,36 +206,15 @@
 				<% })%>
 			</ul>
 			<br><br>
+			<iframe src="https://drive.google.com/a/chatbox-inc.com/file/d/0B70HXMesa1VnS3BpLWJVQnE1UE0/preview" width="100%" height="500px"></iframe>
+
+			<p  style="text-align: right"><a href="https://drive.google.com/file/d/0B70HXMesa1VnS3BpLWJVQnE1UE0/view?usp=sharing" target="_blank">PDFのダウンロード版希望の方はこちら</a></p>
+
+			<br><br>
 			<p style="text-align: right"><a href="speaker.html" target="_blank">セッション情報一覧はこちら</a></p>
 			<!-- /.list-speaker -->
 		</div><!-- /.inner -->
 	</section><!-- /#speaker -->
-
-	<section id="faq" class="cont">
-		<div class="inner">
-			<h2><i class="fa fa-question"></i><span>FAQ</span></h2>
-
-			<p class="cs">coming soon!</p><!-- /.cs -->
-
-			<!-- <dl class="faq-col">
-				<dt>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dt>
-				<dd>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dd>
-			</dl>
-			<dl class="faq-col">
-				<dt>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dt>
-				<dd>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dd>
-			</dl>
-			<dl class="faq-col">
-				<dt>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dt>
-				<dd>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dd>
-			</dl>
-			<dl class="faq-col">
-				<dt>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dt>
-				<dd>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</dd>
-			</dl> -->
-		</div><!-- /.inner -->
-	</section><!-- /#faq -->
-
 
 	<section id="sponsor" class="cont">
 		<div class="inner">
@@ -241,7 +223,23 @@
 			<br><br>
 			<ul class="sponsor-list row">
 				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class=="session"){%>
+					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
+				<% })%>
+			</ul><!-- /.sponsor-list -->
+			<ul class="sponsor-list row">
+				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class=="booth"){%>
+					<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
+				<% })%>
+			</ul><!-- /.sponsor-list -->
+			<ul class="sponsor-list row">
+				<% sponsors.forEach(function(sponsor){ %>
+				<% if(sponsor.class==undefined){%>
 				<li class="col-xs-6"><a href="<%=sponsor.link %>" target="_blank"><img width="80%" src="./images/sponsors/<%=sponsor.code%>.png"></a></li>
+				<% }%>
 				<% })%>
 			</ul><!-- /.sponsor-list -->
             </div>

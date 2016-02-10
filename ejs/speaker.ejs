@@ -53,7 +53,7 @@
       <div class="cf">
       <div class="speaker-img">
           <p class="img">
-            <img style="width:100%;" src="./images/speakers/<%=speaker.code%>.jpg">
+            <img src="./images/speakers/<%=speaker.code%>.jpg">
           </p><!-- /.img -->
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
@@ -61,20 +61,21 @@
           <span class="speakerlabel hall-label"><%=speaker.hall %>ホール</span>
           <!-- <span class="speakerlabel category-label"><%=speaker.category %></span> -->
           <h2><%=speaker.title%></h2>
-          <h1><%=speaker.name %></h1>
+          <h1><span class="speaker-name"><%=speaker.name %></span></h1>
+          <div class="linklist">
+             <a href="<%=speaker.link.twitter %>" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="<%=speaker.link.facebook %>" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="<%=speaker.link.blog %>" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+          </div><!-- /.linklist -->
           <p class="description-txt"><%=speaker.description %></p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
-      <!--<ul class="tag">-->
-        <!--<li><span>Aホール</span></li>-->
-        <!--<li><span>豊臣</span></li>-->
-      <!--</ul>&lt;!&ndash; /.tag &ndash;&gt;-->
+      <ul class="tag">
+        <li><span><%=speaker.tag %></span></li>
+      </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
   <% });%>
   <section>
-    <br><br><br>
-    <p style="nobtntxt">and more ...</p>
+    <p class="nobtntxt">and more ...</p>
   </section>
 
   <div id="page-top" class="hvr-icon-bob">
