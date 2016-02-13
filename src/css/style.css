@@ -888,6 +888,9 @@ SP
 /* -----------------------------
 speaker.html
 ------------------------------- */
+.pb1em {padding-bottom: 1.2em;}
+.pb2em {padding-bottom: 2.2em;}
+.pb3em {padding-bottom: 3.2em;}
 
 #speaker #timetableBtn {
   margin-bottom: 20px;
@@ -902,6 +905,7 @@ speaker.html
   color: #fff;
 }
 #speaker .halltable a {
+  display: inline-block;
   color: #00C0FF;
   line-height: 1.2;
 }
@@ -913,6 +917,12 @@ speaker.html
 #speaker .halltable tbody th {
   padding: 10px;
   color: #fff;
+}
+#speaker .holetableindent {
+  margin-left: 10px;
+}
+#speaker .holetableindent:before {
+  content: "・";
 }
 #speaker .halltable {
   border: 1px solid #eee;

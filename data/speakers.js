@@ -61,7 +61,7 @@ module.exports = [
     "hall":"B",
     "title":"HTML5のAPI群をただひたすらに触ってみた記録",
     "time": "12:40〜",
-    "name": "花谷拓磨",
+    "name": "花谷 拓磨",
     "link": {
       "twitter": "https://twitter.com/potato4d"
     },
@@ -76,7 +76,7 @@ module.exports = [
     "hall":"A",
     "title":"Angular2でアプリを書いた話",
     "time": "14:20〜",
-    "name": "今井晨介",
+    "name": "今井 晨介",
     "link": {
       "twitter": "https://twitter.com/shin_v1"
     },
@@ -104,7 +104,7 @@ module.exports = [
   {
     "code":"B050",
     "hall":"B",
-    "title":"超軽量 Sass ライブラリ Bourbon/Neat のススメ",
+    "title":"Sassを使ってるなら Bourbon/Neat を使え!",
     "time": "14:20〜",
     "name": "Kite",
     "link": {
@@ -164,7 +164,7 @@ module.exports = [
     "hall":"B",
     "title":"グロースハックを実現する「モジュールデザイン」とCSS設計",
     "time": "16:20〜",
-    "name": "榊原昌彦 ",
+    "name": "榊原 昌彦",
     "link": {
     },
     "description": "paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。\nでは、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。",
