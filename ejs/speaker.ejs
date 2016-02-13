@@ -3,6 +3,16 @@
 <head>
   <%- include('_head', {title:"登壇・セミナー情報"}); %>
 
+  <script>
+    $(function(){
+      $(".scroll").on("click",function(){
+        var p = $($(this).attr("data-target")).offset().top;
+        $('html,body').animate({ scrollTop: p }, 'fast');
+        return false;
+      });
+    })
+
+  </script>
   <style>
     .sublogo{
       width:100%;
@@ -34,38 +44,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>10:40〜</th>
-            </tr>
-              <td><a href="#A010">大型フロントエンド開発におけるTypeScriptとDDD</a></td>
-            </tr>
-            <tr>
-              <th>11:40〜</th>
-            </tr>
-              <td><a href="#A020">Extended HTML-WAI-ARIAとMicrodataでHTMLを拡張する</a></td>
-            </tr>
-            <tr>
-              <th>12:40〜</th>
-            </tr>
-              <td><a href="#B060">あなたの言葉で伝えるWebアクセシビリティ</a></td>
-            </tr>
-            <tr>
-              <th>14:20〜</th>
-            </tr>
-              <td>JSフレームワークと年月 - ExtJS, AngularJS, React -
-              <a href="#A032" class="holetableindent">Sencha Ext JS 6 の紹介</a><br>
-              <a href="#A031" class="holetableindent">Angular2でアプリを書いた話</a></td>
-            </tr>
-            <tr>
-              <th>15:20〜</th>
-            </tr>
-              <td><a href="#B010">これからのデザインを考える</a></td>
-            </tr>
-            <tr>
-              <th>16:20〜</th>
-            </tr>
-              <td><a href="#A060" class="pb1em">10年超のサービスにSass導入してモダン化した話</a></td>
-            </tr>
+          <% speakers.forEach(function(speaker){ %>
+            <% if(speaker.hall == "A"){%>
+              <tr>
+                <th><%=speaker.time%></th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#<%=speaker.code%>"><%=speaker.title%></a></td>
+              </tr>
+            <% }%>
+          <% });%>
           </tbody>
         </table>
 
@@ -76,42 +64,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>10:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A020">記憶の利用からアフォーダンスへ</a></td>
-            </tr>
-            <tr>
-              <th>11:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B030" class="pb1em">gulp ベストプラクティス</a></td>
-            </tr>
-            <tr>
-              <th>12:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A050">HTML5のAPI群をただひたすらに触ってみた記録</a></td>
-            </tr>
-            <tr>
-              <th>14:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B050" class="pb2em">Sassを使ってるならBourbon/Neatを使え!</a></td>
-            </tr>
-            <tr>
-              <th>15:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A040">Webサイトパフォーマンス管理の基礎知識</a></td>
-            </tr>
-            <tr>
-              <th>16:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B020">グロースハックを実現する「モジュールデザイン」とCSS設計</a></td>
-            </tr>
+            <% speakers.forEach(function(speaker){ %>
+              <% if(speaker.hall == "B"){%>
+                <tr>
+                  <th><%=speaker.time%></th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#<%=speaker.code%>"><%=speaker.title%></a></td>
+                </tr>
+              <% }%>
+            <% });%>
           </tbody>
         </table>
       </div>
@@ -131,18 +93,31 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label"><%=speaker.time %></span>
-          <span class="speakerlabel hall-label a-hall b-hall"><%=speaker.hall %>ホール</span>
+          <% if(speaker.hall == "A"){%>
+          <span class="speakerlabel hall-label a-hall "><%=speaker.hall %>ホール</span>
+          <% }%>
+          <% if(speaker.hall == "B"){%>
+          <span class="speakerlabel hall-label b-hall"><%=speaker.hall %>ホール</span>
+          <% }%>
           <!-- <span class="speakerlabel category-label"><%=speaker.category %></span> -->
           <h2><%=speaker.title%></h2>
           <h1><span class="speaker-name"><%=speaker.name %></span></h1>
           <div class="linklist">
-             <a href="<%=speaker.link.twitter %>" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="<%=speaker.link.facebook %>" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="<%=speaker.link.blog %>" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            <% if(speaker.link.twitter){%>
+            <a href="<%=speaker.link.twitter %>" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            <% }%>
+            <% if(speaker.link.facebook ){%>
+            <a href="<%=speaker.link.facebook %>" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a>
+            <% }%>
+            <% if(speaker.link.blog ){%>
+            <a href="<%=speaker.link.blog %>" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            <% }%>
           </div><!-- /.linklist -->
           <p class="description-txt"><%=speaker.description %></p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span><%=speaker.tag %></span></li>
+        <!--<li><span><%=speaker.tag %></span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->

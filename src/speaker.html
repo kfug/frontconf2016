@@ -26,6 +26,16 @@
 <script type="text/javascript" src="js/navigation.js"></script>
 
 
+  <script>
+    $(function(){
+      $(".scroll").on("click",function(){
+        var p = $($(this).attr("data-target")).offset().top;
+        $('html,body').animate({ scrollTop: p }, 'fast');
+        return false;
+      });
+    })
+
+  </script>
   <style>
     .sublogo{
       width:100%;
@@ -87,38 +97,91 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>10:40〜</th>
-            </tr>
-              <td><a href="#A010">大型フロントエンド開発におけるTypeScriptとDDD</a></td>
-            </tr>
-            <tr>
-              <th>11:40〜</th>
-            </tr>
-              <td><a href="#A020">Extended HTML-WAI-ARIAとMicrodataでHTMLを拡張する</a></td>
-            </tr>
-            <tr>
-              <th>12:40〜</th>
-            </tr>
-              <td><a href="#B060">あなたの言葉で伝えるWebアクセシビリティ</a></td>
-            </tr>
-            <tr>
-              <th>14:20〜</th>
-            </tr>
-              <td>JSフレームワークと年月 - ExtJS, AngularJS, React -
-              <a href="#A032" class="holetableindent">Sencha Ext JS 6 の紹介</a><br>
-              <a href="#A031" class="holetableindent">Angular2でアプリを書いた話</a></td>
-            </tr>
-            <tr>
-              <th>15:20〜</th>
-            </tr>
-              <td><a href="#B010">これからのデザインを考える</a></td>
-            </tr>
-            <tr>
-              <th>16:20〜</th>
-            </tr>
-              <td><a href="#A060" class="pb1em">10年超のサービスにSass導入してモダン化した話</a></td>
-            </tr>
+          
+            
+              <tr>
+                <th>10:40〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A010">大型フロントエンド開発におけるTypeScriptとDDD</a></td>
+              </tr>
+            
+          
+            
+          
+            
+              <tr>
+                <th>11:40〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A020">Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する</a></td>
+              </tr>
+            
+          
+            
+          
+            
+              <tr>
+                <th>12:40〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#B060">あなたの言葉で伝えるWebアクセシビリティ</a></td>
+              </tr>
+            
+          
+            
+          
+            
+              <tr>
+                <th>14:20〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A031">Angular2でアプリを書いた話</a></td>
+              </tr>
+            
+          
+            
+              <tr>
+                <th>14:20〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A032">Sencha Ext JS 6 の紹介</a></td>
+              </tr>
+            
+          
+            
+              <tr>
+                <th>14:20〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A033">Designing in React: Why and How</a></td>
+              </tr>
+            
+          
+            
+          
+            
+              <tr>
+                <th>15:20〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#B010">これからのデザインを考える</a></td>
+              </tr>
+            
+          
+            
+          
+            
+              <tr>
+                <th>16:20〜</th>
+              </tr>
+              <tr>
+                <td><a class="scroll" data-target="#A060">10年超のサービスにSass導入してモダン化した話</a></td>
+              </tr>
+            
+          
+            
+          
           </tbody>
         </table>
 
@@ -129,42 +192,77 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>10:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A020">記憶の利用からアフォーダンスへ</a></td>
-            </tr>
-            <tr>
-              <th>11:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B030" class="pb1em">gulp ベストプラクティス</a></td>
-            </tr>
-            <tr>
-              <th>12:40〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A050">HTML5のAPI群をただひたすらに触ってみた記録</a></td>
-            </tr>
-            <tr>
-              <th>14:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B050" class="pb2em">Sassを使ってるならBourbon/Neatを使え!</a></td>
-            </tr>
-            <tr>
-              <th>15:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#A040">Webサイトパフォーマンス管理の基礎知識</a></td>
-            </tr>
-            <tr>
-              <th>16:20〜</th>
-            </tr>
-            <tr>
-              <td><a href="#B020">グロースハックを実現する「モジュールデザイン」とCSS設計</a></td>
-            </tr>
+            
+              
+            
+              
+                <tr>
+                  <th>10:40〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#B040">記憶の利用からメタファへ 〜分かりやすいってなんやねん（哲学）〜</a></td>
+                </tr>
+              
+            
+              
+            
+              
+                <tr>
+                  <th>11:40〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#B030">gulp ベストプラクティス</a></td>
+                </tr>
+              
+            
+              
+            
+              
+                <tr>
+                  <th>12:40〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#A050">HTML5のAPI群をただひたすらに触ってみた記録</a></td>
+                </tr>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <tr>
+                  <th>14:20〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#B050">Sassを使ってるなら Bourbon/Neat を使え!</a></td>
+                </tr>
+              
+            
+              
+            
+              
+                <tr>
+                  <th>15:20〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#A040">Webサイトパフォーマンス管理の基礎知識</a></td>
+                </tr>
+              
+            
+              
+            
+              
+                <tr>
+                  <th>16:20〜</th>
+                </tr>
+                <tr>
+                  <td><a class="scroll" data-target="#B020">グロースハックを実現する「モジュールデザイン」とCSS設計</a></td>
+                </tr>
+              
+            
           </tbody>
         </table>
       </div>
@@ -184,18 +282,56 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">10:40〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>大型フロントエンド開発におけるTypeScriptとDDD</h2>
           <h1><span class="speaker-name">奥野 賢太郎</span></h1>
           <div class="linklist">
-             <a href="" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">ChatWork株式会社におけるフロントエンド開発に採り入れたTypeScript、およびDDD（ドメイン駆動設計）について、実務での利点、失敗、工夫を交えたスケールアップさせていく段階的構築の手法をお伝えします。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>JS</span></li>
+        <!--<li><span>JS</span></li>-->
+      </ul>
+    </div><!-- /.inner -->
+  </section><!-- /.column speaker -->
+  
+  <section class="column speaker" id="B040">
+    <div class="inner">
+    <!--<div class="label time"></div>-->
+    <!--<div class="label hole a-hole"></div>-->
+      <div class="cf">
+      <div class="speaker-img">
+          <p class="img">
+            <img src="./images/speakers/B040.jpg">
+          </p><!-- /.img -->
+        </div><!-- /.speaker-img -->
+        <div class="speaker-detail">
+          <span class="speakerlabel time-label">10:40〜</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
+          <!-- <span class="speakerlabel category-label"></span> -->
+          <h2>記憶の利用からメタファへ 〜分かりやすいってなんやねん（哲学）〜</h2>
+          <h1><span class="speaker-name">梅景 晃平</span></h1>
+          <div class="linklist">
+            
+            
+            
+          </div><!-- /.linklist -->
+          <p class="description-txt">本稿では、人が知識・記憶・経験をどのように利用するかについて主な理論をご紹介する。特に人が犯す「誤り」から情報処理の認知的な特性にフォーカスする。</p>
+        </div><!-- /.speaker-detail -->
+      </div><!-- /.cf -->
+      <ul class="tag">
+        <!--<li><span>UI・UX</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -212,18 +348,27 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">11:40〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する</h2>
           <h1><span class="speaker-name">桝田 草一</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/masuP9" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="http://masup.net/" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/masuP9" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
+            <a href="http://masup.net/" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
           </div><!-- /.linklist -->
           <p class="description-txt">HTML5は普及してきていますが、HTML5を拡張するための関連仕様であるWAI-ARIA（アクセシビリティ）やMicrodata（構造化データ）はHTML5そのものと比較してまだまだ使われていないのではないでしょうか。このセッションでは、WAI-ARIAやMicrodataをJavaScriptやCMSから利用するために具体的な実装方法や検証方法を紹介します。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>HTML5</span></li>
+        <!--<li><span>HTML5</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -240,18 +385,25 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">11:40〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>gulp ベストプラクティス</h2>
           <h1><span class="speaker-name">神保 嘉秀</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/jmblog" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/jmblog" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">ビルドフロー自動化のためのツールである gulp のベストプラクティスをご紹介します。定番のプラグインや、パフォーマンスやメンテナンス性を考慮した書き方などについてお話する予定です。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>HTML5</span></li>
+        <!--<li><span>HTML5</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -268,19 +420,28 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">12:40〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>あなたの言葉で伝えるWebアクセシビリティ</h2>
           <h1><span class="speaker-name">小林 大輔</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/sukoyakarizumu" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="https://www.facebook.com/daisuke.kobayashi.6" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/sukoyakarizumu" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            <a href="https://www.facebook.com/daisuke.kobayashi.6" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a>
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">アクセシブルなWebを実現するためには、エンジニアだけではなく、Webに携わるすべての人がWebアクセシビリティの重要性を認識する必要があります。
 本セッションでは、サイボウズ株式会社の取り組みを紹介しながら、Webアクセシビリティの重要性を、より多くの人に伝えるための方法について考えます。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>HTML5</span></li>
+        <!--<li><span>HTML5</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -297,18 +458,25 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">12:40〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>HTML5のAPI群をただひたすらに触ってみた記録</h2>
           <h1><span class="speaker-name">花谷 拓磨</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/potato4d" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/potato4d" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">HTML5には様々なAPIがありますが、今だあまり使われていない技術も数多く有ります。そんなHTML5のAPIたちに触れてみた所感をお話します。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>JS</span></li>
+        <!--<li><span>JS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -325,18 +493,25 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Angular2でアプリを書いた話</h2>
           <h1><span class="speaker-name">今井 晨介</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/shin_v1" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/shin_v1" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">Angular2を用いてBGM付ポモドーロ・テクニックを利用したWebアプリケーションを書いてみたお話をします。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>JS</span></li>
+        <!--<li><span>JS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -353,19 +528,63 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Sencha Ext JS 6 の紹介</h2>
           <h1><span class="speaker-name">中村 久司</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/martini3oz" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            <a href="https://twitter.com/martini3oz" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">Sencha Touch で名を馳せた Sencha のフレームワークは、デスクトップ用の Ext JS と統合され、デスクトップからモバイルまで全てのデバイスをサポートするフレームワークとなりました。
 最新の Ext JS 6 について解説します。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>JS</span></li>
+        <!--<li><span>JS</span></li>-->
+      </ul>
+    </div><!-- /.inner -->
+  </section><!-- /.column speaker -->
+  
+  <section class="column speaker" id="A033">
+    <div class="inner">
+    <!--<div class="label time"></div>-->
+    <!--<div class="label hole a-hole"></div>-->
+      <div class="cf">
+      <div class="speaker-img">
+          <p class="img">
+            <img src="./images/speakers/A033.jpg">
+          </p><!-- /.img -->
+        </div><!-- /.speaker-img -->
+        <div class="speaker-detail">
+          <span class="speakerlabel time-label">14:20〜</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
+          <!-- <span class="speakerlabel category-label"></span> -->
+          <h2>Designing in React: Why and How</h2>
+          <h1><span class="speaker-name">黄 峻</span></h1>
+          <div class="linklist">
+            
+            <a href="http://twitter.com/fand" target="_blank" class="link"><i class="icon-twitter"></i></a>
+            
+            
+            
+            <a href="http://amagitakayosi.hatenablog.com/" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+          </div><!-- /.linklist -->
+          <p class="description-txt">Reactはフロントエンド開発のパラダイムに革命を起こし、いまや一大ムーブメントとなっています。一方で「Reactはデザイナーとの相性が悪い」なんて噂もよく耳にします。このセッションでは、フロントエンドでReactが使われる理由、およびReact界隈のWebデザインに起きている事を説明します。</p>
+        </div><!-- /.speaker-detail -->
+      </div><!-- /.cf -->
+      <ul class="tag">
+        <!--<li><span>JS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -382,18 +601,23 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Sassを使ってるなら Bourbon/Neat を使え!</h2>
           <h1><span class="speaker-name">Kite</span></h1>
           <div class="linklist">
-             <a href="" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">BootStrap などの CSS フレームワークが抱える根本的な問題を解決してくれる Bourbon/Neat という超軽量 Sass ライブラリをご紹介します。Bourbon ツールセット (Bourbon/Neat/Bitters/Refills) の説明や使うメリットをお話し、それらを使ったライブコーディングを行う予定です。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>CSS</span></li>
+        <!--<li><span>CSS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -410,19 +634,26 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">15:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>これからのデザインを考える</h2>
           <h1><span class="speaker-name">山下 一樹</span></h1>
           <div class="linklist">
-             <a href="" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="http://ykazu.com/about" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
+            <a href="http://ykazu.com/about" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
           </div><!-- /.linklist -->
           <p class="description-txt">Web やアプリにおける「フロントエンド」に関わるエンジニア、デザイナーがこれから考えるべきデザインとはどのようなものなのか。UI や UX だけでなく「デザイン（設計）する」ということにフォーカスしながら皆さんと考えていければと思います。
 [キーワード: デザイン思考、インタラクションデザイン、共創]</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>UI・UX</span></li>
+        <!--<li><span>UI・UX</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -439,12 +670,19 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">15:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Webサイトパフォーマンス管理の基礎知識</h2>
           <h1><span class="speaker-name">竹洞 陽一郎</span></h1>
           <div class="linklist">
-             <a href="https://twitter.com/martini3oz" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
+            <a href="https://jp.linkedin.com/in/takehora/ja" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
           </div><!-- /.linklist -->
           <p class="description-txt">Webサイトパフォーマンス管理は、表示速度と繋がりやすさを軸とした、配信品質管理です。
 分析においては、統計学の知識が必要となっています。
@@ -454,7 +692,7 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>JS</span></li>
+        <!--<li><span>JS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -471,18 +709,23 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">16:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
+          
+          <span class="speakerlabel hall-label a-hall ">Aホール</span>
+          
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>10年超のサービスにSass導入してモダン化した話</h2>
           <h1><span class="speaker-name">大出 豪</span></h1>
           <div class="linklist">
-             <a href="" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">日本最大級のライブストリーミングサイトを運営しながら、「老舗サイトでもしっかり時代にあわせられるのか？」をテーマに、WEBサイトのモダン化を行いました。Laravel Bladeと、タスクランナーやSASSなどを組み合わせたので、その構成や苦労した所、便利だった所などをお話します。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>CSS</span></li>
+        <!--<li><span>CSS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->
@@ -499,19 +742,24 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">16:20〜</span>
-          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
+          
+          
+          <span class="speakerlabel hall-label b-hall">Bホール</span>
+          
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>グロースハックを実現する「モジュールデザイン」とCSS設計</h2>
           <h1><span class="speaker-name">榊原 昌彦</span></h1>
           <div class="linklist">
-             <a href="" target="_blank" class="link"><i class="icon-twitter"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-facebook-official"></i></a> <a href="" target="_blank" class="link"><i class="fa fa-desktop"></i></a>
+            
+            
+            
           </div><!-- /.linklist -->
           <p class="description-txt">paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。
 では、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。</p>
         </div><!-- /.speaker-detail -->
       </div><!-- /.cf -->
       <ul class="tag">
-        <li><span>CSS</span></li>
+        <!--<li><span>CSS</span></li>-->
       </ul>
     </div><!-- /.inner -->
   </section><!-- /.column speaker -->

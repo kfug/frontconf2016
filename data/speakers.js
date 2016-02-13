@@ -10,6 +10,20 @@ module.exports = [
     "tag": ["JS"]
   },
   {
+    "code":"B040",
+    "hall":"B",
+    "title":"記憶の利用からメタファへ 〜分かりやすいってなんやねん（哲学）〜",
+    "time": "10:40〜",
+    "name": "梅景 晃平",
+    "link": {
+    },
+    "description": "本稿では、人が知識・記憶・経験をどのように利用するかについて主な理論をご紹介する。特に人が犯す「誤り」から情報処理の認知的な特性にフォーカスする。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["UI・UX"]
+  },
+  {
     "code":"A020",
     "hall":"A",
     "title":"Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する",
@@ -102,6 +116,22 @@ module.exports = [
     "tag": ["JS"]
   },
   {
+    "code":"A033",
+    "hall":"A",
+    "title":"Designing in React: Why and How",
+    "time": "14:20〜",
+    "name": "黄 峻",
+    "link": {
+      "twitter":"http://twitter.com/fand",
+      "blog":"http://amagitakayosi.hatenablog.com/"
+    },
+    "description": "Reactはフロントエンド開発のパラダイムに革命を起こし、いまや一大ムーブメントとなっています。一方で「Reactはデザイナーとの相性が悪い」なんて噂もよく耳にします。このセッションでは、フロントエンドでReactが使われる理由、およびReact界隈のWebデザインに起きている事を説明します。",
+    "cws": true,
+    "video": true,
+    "target": "エンジニア",
+    "tag": ["JS"]
+  },
+  {
     "code":"B050",
     "hall":"B",
     "title":"Sassを使ってるなら Bourbon/Neat を使え!",
@@ -137,7 +167,7 @@ module.exports = [
     "time": "15:20〜",
     "name": "竹洞 陽一郎",
     "link": {
-      "twitter": "https://twitter.com/martini3oz"
+      "blog": "https://jp.linkedin.com/in/takehora/ja"
     },
     "description": "Webサイトパフォーマンス管理は、表示速度と繋がりやすさを軸とした、配信品質管理です。\n分析においては、統計学の知識が必要となっています。\nまた、スマートフォンでのブラウジングの増大に伴い、携帯ネットワークの知識が求められ、\nUXの観点から神経物理学、行動経済学の知識が必要となっています。\nそのようなWebサイトパフォーマンス管理に必要な基礎知識の概要を説明します。",
     "cws": true,

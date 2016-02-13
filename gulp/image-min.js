@@ -15,6 +15,7 @@ var speakerImgCompiler = function (gmfile,done) {
     gmfile.size(function (err, size) {
         done(err, gmfile
             .resize(800)
+            .setFormat("jpg")
             .gravity("Center")
             .crop(800,800))
     });
