@@ -888,6 +888,49 @@ SP
 /* -----------------------------
 speaker.html
 ------------------------------- */
+
+#speaker #timetableBtn {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+#speaker .halltable {
+  width: 48%;
+}
+#speaker .halltable thead th {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+#speaker .halltable a {
+  color: #00C0FF;
+  line-height: 1.2;
+}
+#speaker .halltable a:hover {
+  text-decoration: none;
+}
+#speaker .a-halltable thead th { background-color: #1B8388;}
+#speaker .b-halltable thead th { background-color: #226898;}
+#speaker .halltable tbody th {
+  padding: 10px;
+  color: #fff;
+}
+#speaker .halltable {
+  border: 1px solid #eee;
+}
+#speaker .halltable tbody td {
+  padding: 10px;
+}
+#speaker .halltable tbody td, #speaker .halltable tbody th {
+  border-bottom: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+}
+#speaker .a-halltable tbody th { background-color: #5DBFCD;}
+#speaker .b-halltable tbody th { background-color: #35A3D4;}
+#speaker .halltable tbody { font-size: 1rem;}
+
+#speaker .hallbox h3{
+  text-align: center;
+}
 #speaker .column.hole .l h3, #speaker .column.hole .r h3 {
   text-align: center;
 }
@@ -986,11 +1029,16 @@ speaker.html
   color: #fff;
 }
 #speaker .speaker-detail .speakerlabel.time-label {
-  background-color: #00C6D5;
+  background-color: #F3724C;
 }
 #speaker .speaker-detail .speakerlabel.hall-label {
-  background-color: #F3724C;
   padding-left: 7px;
+}
+#speaker .speaker-detail .speakerlabel.a-hall {
+  background-color: #5DBFCD;
+}
+#speaker .speaker-detail .speakerlabel.b-hall {
+  background-color: #35A3D4;
 }
 #speaker .speaker-detail .description-txt {
   margin-top: 20px;
@@ -1061,9 +1109,12 @@ speaker.html
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  color: #999
+  color: #999;
+  margin-top: 60px;
 }
-
+#speaker #timetableBtn {
+  display: none;
+}
 /* ----------------------------------------------------
 SP
 ---------------------------------------------------- */
@@ -1157,5 +1208,56 @@ SP
   #speaker .nobtntxt {
     margin-top: 40px;
     font-size: 1rem;
+  }
+
+  #speaker .halltable {
+    float: none;
+    width: 100%;
+  }
+  #speaker .halltable + .halltable {
+    margin-top: 30px;
+  }
+  #speaker .hall.column {
+    margin-bottom: 40px;
+  }
+  #speaker #timetableBtn {
+    margin-bottom: 15px;
+    display: inline-block;
+background: -moz-linear-gradient(top,#FFF 0%,#EEE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color:#111;
+    padding: 0px 20px 4px;
+  }
+  #speaker #timetableBtn span {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+  #speaker #timetableBtn span:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: url("../img/ico_togglearrow-open.gif") center no-repeat;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 5px;
+  }
+  #speaker #timetableBtn.act span:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: url("../img/ico_togglearrow-close.gif") center no-repeat;
   }
 }

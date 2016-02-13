@@ -76,28 +76,99 @@
       <h2 class="animated bounceInDown">セッション一覧 - SPEAKERS</h2>
     </div><!-- /.inner -->
   </section><!-- /.column -->
-  <!--<section class="column hole">-->
-    <!--<div class="inner">-->
-      <!--<div class="l">-->
-        <!--<div class="border"><h3>Aホール</h3>-->
-          <!--<ul class="speaker-list">-->
-            <!--<li><a href="#ishida hvr-icon-down">石田　三成</a></li>-->
-            <!--<li><a href="#shima hvr-icon-down">島　左近</a></li>-->
-          <!--</ul>-->
-          <!--&lt;!&ndash; /.speaker-list &ndash;&gt;-->
-        <!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
-      <!--</div>-->
-      <!--<div class="r">-->
-        <!--<div class="border">-->
-          <!--<h3>Bホール</h3>-->
-          <!--<ul class="speaker-list">-->
-            <!--<li><a href="#kuroda hvr-icon-down">黒田　長政</a></li>-->
-            <!--<li><a href="#hosokawa hvr-icon-down">細川　忠興</a></li>-->
-          <!--</ul>-->
-        <!--</div>&lt;!&ndash; /.border &ndash;&gt;-->
-      <!--</div>-->
-    <!--</div>&lt;!&ndash; /.inner &ndash;&gt;-->
-  <!--</section>&lt;!&ndash; /.column &ndash;&gt;-->
+  <section class="hall　column">
+    <div class="inner">
+  <h3 id="timetableBtn"><span>タイムテーブル</span></h3>
+      <div class="sp-togglearea">
+        <table class="halltable a-halltable l">
+          <thead>
+            <tr>
+              <th colspan="2">Aホール 7F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>10:40〜</th>
+            </tr>
+              <td><a href="#A010">大型フロントエンド開発におけるTypeScriptとDDD</a></td>
+            </tr>
+            <tr>
+              <th>11:40〜</th>
+            </tr>
+              <td><a href="#A020">Extended HTML-WAI-ARIAとMicrodataでHTMLを拡張する</a></td>
+            </tr>
+            <tr>
+              <th>12:40〜</th>
+            </tr>
+              <td><a href="#B060">あなたの言葉で伝えるWebアクセシビリティ</a></td>
+            </tr>
+            <tr>
+              <th>14:20〜</th>
+            </tr>
+              <td>JSフレームワークと年月 - ExtJS, AngularJS, React -</td>
+            </tr>
+            <tr>
+              <th>15:20〜</th>
+            </tr>
+              <td><a href="#B010">これからのデザインを考える</a></td>
+            </tr>
+            <tr>
+              <th>16:20〜</th>
+            </tr>
+              <td><a href="#A060">10年超のサービスにSass導入してモダン化した話</a><br><br></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="halltable b-halltable r">
+          <thead>
+            <tr>
+              <th colspan="2">Bホール 9F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>10:40〜</th>
+            </tr>
+            <tr>
+              <td><a href="#A020">記憶の利用からアフォーダンスへ</a></td>
+            </tr>
+            <tr>
+              <th>11:40〜</th>
+            </tr>
+            <tr>
+              <td><a href="#B030">gulp ベストプラクティス<br><br></a></td>
+            </tr>
+            <tr>
+              <th>12:40〜</th>
+            </tr>
+            <tr>
+              <td><a href="#A050">HTML5のAPI群をただひたすらに触ってみた記録</a></td>
+            </tr>
+            <tr>
+              <th>14:20〜</th>
+            </tr>
+            <tr>
+              <td><a href="#B050">Sassを使ってるならBourbon/Neatを使え!</a></td>
+            </tr>
+            <tr>
+              <th>15:20〜</th>
+            </tr>
+            <tr>
+              <td><a href="#A040">Webサイトパフォーマンス管理の基礎知識</a></td>
+            </tr>
+            <tr>
+              <th>16:20〜</th>
+            </tr>
+            <tr>
+              <td><a href="#B020">グロースハックを実現する「モジュールデザイン」とCSS設計</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.sp-togglearea -->
+    </div>
+  </section>
   
   <section class="column speaker" id="A010">
     <div class="inner">
@@ -111,7 +182,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">10:40〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>大型フロントエンド開発におけるTypeScriptとDDD</h2>
           <h1><span class="speaker-name">奥野 賢太郎</span></h1>
@@ -139,7 +210,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">11:40〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する</h2>
           <h1><span class="speaker-name">桝田 草一</span></h1>
@@ -167,7 +238,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">11:40〜</span>
-          <span class="speakerlabel hall-label">Bホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>gulp ベストプラクティス</h2>
           <h1><span class="speaker-name">神保 嘉秀</span></h1>
@@ -195,7 +266,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">12:40〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>あなたの言葉で伝えるWebアクセシビリティ</h2>
           <h1><span class="speaker-name">小林 大輔</span></h1>
@@ -224,7 +295,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">12:40〜</span>
-          <span class="speakerlabel hall-label">Bホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>HTML5のAPI群をただひたすらに触ってみた記録</h2>
           <h1><span class="speaker-name">花谷拓磨</span></h1>
@@ -252,7 +323,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Angular2でアプリを書いた話</h2>
           <h1><span class="speaker-name">今井晨介</span></h1>
@@ -280,7 +351,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Sencha Ext JS 6 の紹介</h2>
           <h1><span class="speaker-name">中村 久司</span></h1>
@@ -309,7 +380,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">14:20〜</span>
-          <span class="speakerlabel hall-label">Bホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>超軽量 Sass ライブラリ Bourbon/Neat のススメ</h2>
           <h1><span class="speaker-name">Kite</span></h1>
@@ -337,7 +408,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">15:20〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>これからのデザインを考える</h2>
           <h1><span class="speaker-name">山下 一樹</span></h1>
@@ -366,7 +437,7 @@
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">15:20〜</span>
-          <span class="speakerlabel hall-label">Bホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>Webサイトパフォーマンス管理の基礎知識</h2>
           <h1><span class="speaker-name">竹洞 陽一郎</span></h1>
@@ -398,7 +469,7 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">16:20〜</span>
-          <span class="speakerlabel hall-label">Aホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Aホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>10年超のサービスにSass導入してモダン化した話</h2>
           <h1><span class="speaker-name">大出 豪</span></h1>
@@ -426,7 +497,7 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
         </div><!-- /.speaker-img -->
         <div class="speaker-detail">
           <span class="speakerlabel time-label">16:20〜</span>
-          <span class="speakerlabel hall-label">Bホール</span>
+          <span class="speakerlabel hall-label a-hall b-hall">Bホール</span>
           <!-- <span class="speakerlabel category-label"></span> -->
           <h2>グロースハックを実現する「モジュールデザイン」とCSS設計</h2>
           <h1><span class="speaker-name">榊原昌彦 </span></h1>
@@ -493,5 +564,23 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
     ga('send', 'pageview');
 </script>
 
+<script type="text/javascript">
+  $(function(){
+    $(window).on("load resize", function(){
+      if( 640 < parseInt( $(window).width() ) ) {
+        $(".sp-togglearea").show();
+        $("#timetableBtn").removeClass('act');
+        return false;
+      } else {
+        //SP
+        $(".sp-togglearea").hide();
+      }
+    });
+    $("#timetableBtn").on("click", function() {
+        $(this).toggleClass('act');
+        $(".sp-togglearea").slideToggle();
+    });
+  });
+</script>
 </body>
 </html>
