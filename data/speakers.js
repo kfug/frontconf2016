@@ -3,13 +3,17 @@ module.exports = [
     "code": "A010",
     "hall": "A",
     "title": "大型フロントエンド開発におけるTypeScriptとDDD",
+    "time": "10:40〜",
     "name": "奥野 賢太郎",
     "description": "ChatWork株式会社におけるフロントエンド開発に採り入れたTypeScript、およびDDD（ドメイン駆動設計）について、実務での利点、失敗、工夫を交えたスケールアップさせていく段階的構築の手法をお伝えします。",
     "link": {},
+    "tag": ["JS"]
   },
   {
     "code":"A020",
+    "hall":"A",
     "title":"Extended HTML - WAI-ARIAとMicrodataでHTMLを拡張する",
+    "time": "11:40〜",
     "name": "桝田 草一",
     "link": {
       "twitter": "https://twitter.com/masuP9",
@@ -23,7 +27,9 @@ module.exports = [
   },
   {
     "code":"B030",
+    "hall":"B",
     "title":"gulp ベストプラクティス",
+    "time": "11:40〜",
     "name": "神保 嘉秀",
     "link": {
       "twitter": "https://twitter.com/jmblog",
@@ -36,7 +42,9 @@ module.exports = [
   },
   {
     "code":"B060",
+    "hall":"A",
     "title":"あなたの言葉で伝えるWebアクセシビリティ",
+    "time": "12:40〜",
     "name": "小林 大輔",
     "link": {
       "twitter": "https://twitter.com/sukoyakarizumu",
@@ -50,8 +58,10 @@ module.exports = [
   },
   {
     "code":"A050",
+    "hall":"B",
     "title":"HTML5のAPI群をただひたすらに触ってみた記録",
-    "name": "花谷拓磨",
+    "time": "12:40〜",
+    "name": "花谷 拓磨",
     "link": {
       "twitter": "https://twitter.com/potato4d"
     },
@@ -63,8 +73,10 @@ module.exports = [
   },
   {
     "code":"A031",
+    "hall":"A",
     "title":"Angular2でアプリを書いた話",
-    "name": "今井晨介",
+    "time": "14:20〜",
+    "name": "今井 晨介",
     "link": {
       "twitter": "https://twitter.com/shin_v1"
     },
@@ -76,7 +88,9 @@ module.exports = [
   },
   {
     "code":"A032",
+    "hall":"A",
     "title":"Sencha Ext JS 6 の紹介",
+    "time": "14:20〜",
     "name": "中村 久司",
     "link": {
       "twitter": "https://twitter.com/martini3oz"
@@ -89,7 +103,9 @@ module.exports = [
   },
   {
     "code":"B050",
-    "title":"超軽量 Sass ライブラリ Bourbon/Neat のススメ",
+    "hall":"B",
+    "title":"Sassを使ってるなら Bourbon/Neat を使え!",
+    "time": "14:20〜",
     "name": "Kite",
     "link": {
     },
@@ -101,7 +117,9 @@ module.exports = [
   },
   {
     "code":"B010",
+    "hall":"A",
     "title":"これからのデザインを考える",
+    "time": "15:20〜",
     "name": "山下 一樹",
     "link": {
       "blog":"http://ykazu.com/about"
@@ -114,7 +132,9 @@ module.exports = [
   },
   {
     "code":"A040",
+    "hall":"B",
     "title":"Webサイトパフォーマンス管理の基礎知識",
+    "time": "15:20〜",
     "name": "竹洞 陽一郎",
     "link": {
       "twitter": "https://twitter.com/martini3oz"
@@ -127,7 +147,9 @@ module.exports = [
   },
   {
     "code":"A060",
+    "hall":"A",
     "title":"10年超のサービスにSass導入してモダン化した話",
+    "time": "16:20〜",
     "name": "大出 豪",
     "link": {
     },
@@ -139,8 +161,10 @@ module.exports = [
   },
   {
     "code":"B020",
+    "hall":"B",
     "title":"グロースハックを実現する「モジュールデザイン」とCSS設計",
-    "name": "榊原昌彦	",
+    "time": "16:20〜",
+    "name": "榊原 昌彦",
     "link": {
     },
     "description": "paperデザインとwebデザインの一番大きな違いは「webのデザインは成長すること」。\nでは、どうやったら成長するwebをデザインすることができるか。基本的な考え方から、実例紹介、それを支える技術を紹介します。デザイナーに聞いてもらいたいエンジニアリング話です。",
@@ -150,4 +174,5 @@ module.exports = [
     "tag": ["CSS"]
   },
 ]
+
 
