@@ -71,6 +71,10 @@ module.exports = [
     {
         "code":"SP021",
         "link":"http://www.aid-dcc.com"
+    },
+    {
+        "code":"SP023",
+        "link":"http://relation2012.com/"
     }
 ]
 

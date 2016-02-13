@@ -29,7 +29,7 @@
   <script>
     $(function(){
       $(".scroll").on("click",function(){
-        var p = $($(this).attr("data-target")).offset().top;
+        var p = $($(this).attr("data-target")).offset().top-100;
         $('html,body').animate({ scrollTop: p }, 'fast');
         return false;
       });
@@ -765,7 +765,7 @@ UXの観点から神経物理学、行動経済学の知識が必要となって
   </section><!-- /.column speaker -->
   
   <section>
-    <p class="nobtntxt">and more ...</p>
+    <p class="nobtntxt">and more ...?</p>
   </section>
 
   <div id="page-top" class="hvr-icon-bob">
