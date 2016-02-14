@@ -1,5 +1,10 @@
 module.exports = [
     {
+        "title":"チケット完売!!追加のチケット情報などはFacebookページをチェック!!",
+        "link":"https://www.facebook.com/frontconf2016/",
+        "date": "2016/02/12"
+    },
+    {
         "title":"LTの募集を開始しました!!",
         "link":"http://kfug.connpass.com/event/26509/",
         "date": "2016/02/04"
