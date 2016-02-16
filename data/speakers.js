@@ -6,7 +6,9 @@ module.exports = [
     "time": "10:40〜",
     "name": "奥野 賢太郎",
     "description": "ChatWork株式会社におけるフロントエンド開発に採り入れたTypeScript、およびDDD（ドメイン駆動設計）について、実務での利点、失敗、工夫を交えたスケールアップさせていく段階的構築の手法をお伝えします。",
-    "link": {},
+    "link": {
+      "twitter":"https://twitter.com/armorik83"
+    },
     "tag": ["JS"]
   },
   {
