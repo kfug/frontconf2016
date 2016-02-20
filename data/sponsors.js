@@ -75,6 +75,10 @@ module.exports = [
     {
         "code":"SP023",
         "link":"http://relation2012.com/"
+    },
+    {
+        "code":"SP024",
+        "link":"https://www.udemy.com/jp/"
     }
 ]
 
