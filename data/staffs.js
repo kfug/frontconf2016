@@ -22,12 +22,12 @@ module.exports = [
         "link": "https://impath.co.jp/"
     },
     {
-        "name" : "一樂さつき",
+        "name" : "一樂 さつき",
         "image":"ichiraku.jpg",
         "link": "http://www.nsc.gr.jp"
     },
     {
-        "name" : "恩田大輝",
+        "name" : "恩田 大輝",
         "image":"onda.jpg",
         "link": "http://twitter.com/ONDX_jp"
     },
@@ -42,7 +42,7 @@ module.exports = [
         "link": ""
     },
     {
-        "name" : "神野春奈",
+        "name" : "神野 春奈",
         "image":"kamino.jpg",
         "link": "https://twitter.com/kmnhrn"
     },
@@ -64,12 +64,22 @@ module.exports = [
         "link": ""
     },
     {
-        "name" : "後藤知宏",
+        "name" : "後藤 知宏",
         "image":"mikakane.jpg",
         "link": "http://chatbox-inc.com/page/member/mikakane"
     },
     {
-        "name" : "重兼史尚",
+        "name" : "坂本 要",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "佐竹 映季",
+        "image": "satake.jpg",
+        "link": "https://www.facebook.com/eiki.satake"
+    },
+    {
+        "name" : "重兼 史尚",
         "image":"shigekane.jpg",
         "link": "http://www.sacraya.net"
     },
@@ -79,13 +89,18 @@ module.exports = [
         "link": "http://shimakyohsuke.com/"
     },
     {
-        "name" : "白石雅義",
+        "name" : "白石 雅義",
         "image":"noimage.jpg",
         "class":"ネットワーク",
         "link": ""
     },
     {
         "name" : "善家 綜一朗",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "ryousei takahashi",
         "image": "noimage.jpg",
         "link": ""
     },
@@ -97,6 +112,11 @@ module.exports = [
     },
     {
         "name" : "田中 駿一郎",
+        "image": "noimage.jpg",
+        "link": ""
+    },
+    {
+        "name" : "たなかゆうすけ",
         "image": "noimage.jpg",
         "link": ""
     },
@@ -133,6 +153,11 @@ module.exports = [
         "link": ""
     },
     {
+        "name" : "pastelInc",
+        "image": "pastelInc.png",
+        "link": ""
+    },
+    {
         "name" : "福壽 卓哉",
         "image": "noimage.jpg",
         "link": ""
@@ -141,6 +166,11 @@ module.exports = [
         "name" : "牧 昂拡",
         "image":"maki.png",
         "link": "https://www.glad-cube.com/staff/maki.html"
+    },
+    {
+        "name" : "松尾 浩志",
+        "image":"matsuo.jpg",
+        "link": "https://www.facebook.com/matsuoshi"
     },
     {
         "name" : "松田恵美",
