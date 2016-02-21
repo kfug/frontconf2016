@@ -3,7 +3,7 @@ module.exports = [
         "name" : "あずましげなり",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "Abe Asami",
@@ -14,7 +14,7 @@ module.exports = [
         "name" : "Juntaro Iida",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "井土 貴寛",
@@ -50,13 +50,13 @@ module.exports = [
         "name" : "川田 悠",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "岸本 延幸",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "古賀 友輝",
@@ -71,7 +71,8 @@ module.exports = [
     {
         "name" : "坂本 要",
         "image": "noimage.jpg",
-        "link": ""
+        "class":"ネットワーク",
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "佐竹 映季",
@@ -92,7 +93,7 @@ module.exports = [
         "name" : "白石 雅義",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "善家 綜一朗",
@@ -102,13 +103,14 @@ module.exports = [
     {
         "name" : "ryousei takahashi",
         "image": "noimage.jpg",
-        "link": ""
+        "class":"ネットワーク",
+        "link": "http://www.nsc.gr.jp/"
     },
     {
-        "name" : "masaya.takami",
-        "image":"noimage.jpg",
+        "name" : "masaya .takami",
+        "image":"takami.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "田中 駿一郎",
@@ -118,19 +120,20 @@ module.exports = [
     {
         "name" : "たなかゆうすけ",
         "image": "noimage.jpg",
-        "link": ""
+        "class":"ネットワーク",
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "Danno",
-        "image":"noimage.jpg",
+        "image":"danno.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "tossh0095",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     },
     {
         "name" : "Heidegger Martin",
@@ -196,7 +199,7 @@ module.exports = [
         "name" : "山下輝志",
         "image":"noimage.jpg",
         "class":"ネットワーク",
-        "link": ""
+        "link": "http://www.nsc.gr.jp/"
     }
 ]
 

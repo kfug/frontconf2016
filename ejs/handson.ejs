@@ -52,7 +52,7 @@
 			<h1 class="edge">FRONTEND CONFERENCE 2016 でチャレンジできること</h1>
 			<ul>
 				<% handson.forEach(function(seminor){ %>
-				<li><a class="scroll" data-target="#seminor<%=seminor.code%>"><%=seminor.title%></a>
+				<li><a class="scroll" data-target="#seminor<%=seminor.code%>">[<%=seminor.hour%>] <%=seminor.title%></a>
 					<!--<span class="tag">デザイナー向け</span>-->
 					<!--<span class="tag">エンジニア向け</span>-->
 				</li>
@@ -66,9 +66,12 @@
 			<% handson.forEach(function(seminor){ %>
 			<div class="handson-list" id="seminor<%=seminor.code%>">
 				<div class="heading">
+					<div>
+						<span class="label label-warning" style="font-size: 1em;"><%=seminor.hour%></span>
+					</div>
 					<h1><%=seminor.title%></h1>
 					<!--<span class="tag">デザイナー向け</span>-->
-					<p><%=seminor.description%></p>
+					<p><%-nl2br(seminor.description)%></p>
 				</div>
 				<!--<div class="row detail">-->
 					<!--<div class="col-sm-6 speaker-prof">-->

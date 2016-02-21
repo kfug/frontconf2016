@@ -15,7 +15,8 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.1.1",
-    "gulp-sitemap": "^2.2.0"
+    "gulp-sitemap": "^2.2.0",
+    "nl2br": "0.0.3"
   },
   "devDependencies": {},
   "scripts": {
