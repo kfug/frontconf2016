@@ -122,9 +122,9 @@ module.exports = [
     "hall":"A",
     "title":"Designing in React: Why and How",
     "time": "14:20〜",
-    "name": "黄 峻",
+    "name": "アマギタカヨシ",
     "link": {
-      "twitter":"http://twitter.com/fand",
+      "twitter":"https://twitter.com/amagitakayosi",
       "blog":"http://amagitakayosi.hatenablog.com/"
     },
     "description": "Reactはフロントエンド開発のパラダイムに革命を起こし、いまや一大ムーブメントとなっています。一方で「Reactはデザイナーとの相性が悪い」なんて噂もよく耳にします。このセッションでは、フロントエンドでReactが使われる理由、およびReact界隈のWebデザインに起きている事を説明します。",

@@ -1,5 +1,10 @@
 module.exports = [
     {
+        "title":"開催目前!!当日LTの選考結果公開中です!",
+        "link":"http://kfug.connpass.com/event/26509/participation/#participants",
+        "date": "2016/02/29"
+    },
+    {
         "title":"チケット完売!!追加のチケット情報などはFacebookページをチェック!!",
         "link":"https://www.facebook.com/frontconf2016/",
         "date": "2016/02/12"
