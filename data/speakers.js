@@ -1,5 +1,17 @@
 module.exports = [
   {
+    "code": "A000",
+    "hall": "A",
+    "title": " Are you a Designer or an Engineer?",
+    "time": "10:10〜",
+    "name": "yamasy1549",
+    "description": "目が覚めたらwebの世界にいた17歳が、webとフロントエンドについてちょっとだけ真面目に考えてみました。",
+    "link": {
+      "blog":"https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fyamasy1549&h=9AQG3uTP6"
+    },
+    "tag": ["JS"]
+  },
+  {
     "code": "A010",
     "hall": "A",
     "title": "大型フロントエンド開発におけるTypeScriptとDDD",
