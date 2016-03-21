@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('_head', {title:"開催後記"}); %>
+
+    <style>
+        .sublogo{
+            width:100%;
+            max-width: 980px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css">
+    <script>
+        $(function(){
+            $(".scroll").on("click",function(){
+                var p = $($(this).attr("data-target")).offset().top;
+                $('html,body').animate({ scrollTop: p }, 'fast');
+                return false;
+            });
+        })
+
+    </script>
+
+</head>
+<body>
+<%- include('_header', {top:false}); %>
+
+<div id="partyoverPage">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="fitimg" src="./img/fec_main.jpg" alt="">
+                <h1 class="text-center">FRONTEND CONFERENCE 2016 開催後記</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">PHPTOES</h2>
+            </div>
+        </div>
+
+        <div class="row photoesUnit">
+
+            <% (po.photo).forEach(function(photo){ %>
+            <div class="image">
+                <a href="<%=photo.link%>" data-lightbox="<%=photo.code%>">
+                    <img class="fitimg" src="<%=photo.link%>" alt="">
+                </a>
+            </div>
+            <% });%>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">MOVIES</h2>
+            </div>
+        </div>
+
+        <div class="row photoesUnit">
+            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
+            <div class="image">
+                <img class="fitimg" src="http://placehold.it/800x400" alt="">
+            </div>
+            <% });%>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">アンケート</h2>
+            </div>
+        </div>
+
+        <div class="row ancUnit">
+            <div class="col-sm-6">
+                <img src="./img/anc_age.png" alt="" class="fitimg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet asperiores cumque deserunt doloribus eligendi esse ipsam ipsum laboriosam nam, quia tempore. Debitis error impedit itaque iure labore officia veniam!</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="./img/anc_area.png" alt="" class="fitimg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet asperiores cumque deserunt doloribus eligendi esse ipsam ipsum laboriosam nam, quia tempore. Debitis error impedit itaque iure labore officia veniam!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">LINKS</h2>
+            </div>
+        </div>
+
+        <div class="row linkUnit">
+            <div class="col-sm-12">
+                <h3 class="text-center">NEWS</h3>
+            </div>
+            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
+            <div class="col-sm-6">
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" title="[M] mbdb" src="http://hatenablog.com/embed?url=https://mbdb.jp/" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <% });%>
+            <div class="col-sm-12">
+                <h3 class="text-center">BLOGS</h3>
+            </div>
+            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
+            <div class="col-sm-6">
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" title="[M] mbdb" src="http://hatenablog.com/embed?url=https://mbdb.jp/" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <% });%>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">END ROLL</h2>
+            </div>
+        </div>
+
+        <div class="row speakerUnit">
+
+            <div class="col-sm-12">
+                <h3 class="text-center">スピーカー</h3>
+            </div>
+            <% var odd = null;%>
+            <% (speakers).forEach(function(speaker){ %>
+            <div class="<%=(odd === null)?"col-sm-12 keynote":"col-sm-6"%> text-center speaker  <%=(odd)?"odd":""%>">
+                <a href="./speaker.html#<%=speaker.code%>"><%=speaker.name%></a>
+                <!--<div class="container-fluid">-->
+                    <!--<div class="col-xs-4 icon">-->
+                        <!--<img style="height:3em;" src="./images/speakers/<%=speaker.code%>.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-8 name">-->
+                        <!--<span><%=speaker.name%></span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <% odd = !odd;%>
+            <% });%>
+        </div>
+        <div class="row staffUnit">
+
+            <div class="col-sm-12">
+                <h3 class="text-center">ハンズオン スタッフ</h3>
+            </div>
+            <% var odd = false;%>
+            <% (staffs).forEach(function(staff){ %>
+            <% if(staff.is_handson){%>
+            <div class="col-sm-12 staff <%=(odd)?"odd":""%>">
+                <% if(staff.link){%>
+                <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
+                <% }else{ %>
+                <span><%=staff.name%></span>
+                <% }%>
+            </div>
+            <% odd = !odd;%>
+            <% } %>
+            <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">実行委員長</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="https://twitter.com/kmnhrn" target="_blank">神野 春奈</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">ブース・スポンサー企画</h3>
+            </div>
+            <% (staffs).forEach(function(staff){ %>
+            <% if(staff.is_booth){%>
+            <div class="col-sm-12 staff">
+                <% if(staff.link){%>
+                <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
+                <% }else{ %>
+                <span><%=staff.name%></span>
+                <% }%>
+            </div>
+            <% } %>
+            <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">撮影</h3>
+            </div>
+            <% (staffs).forEach(function(staff){ %>
+            <% if(staff.is_camera){%>
+            <div class="col-sm-12 staff">
+                <% if(staff.link){%>
+                <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
+                <% }else{ %>
+                <span><%=staff.name%></span>
+                <% }%>
+            </div>
+            <% } %>
+            <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">学生スタッフ</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <span>山崎好洋</span>
+            </div>
+            <% var odd = false;%>
+            <% (staffs).forEach(function(staff){ %>
+            <% if(staff.is_oic){%>
+                <div class="col-sm-6 staff oic <%=(odd)?"odd":""%>">
+                    <% if(staff.link){%>
+                    <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
+                    <% }else{ %>
+                    <span><%=staff.name%></span>
+                    <% }%>
+                </div>
+            <% odd = !odd;%>
+            <% } %>
+            <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">ネットワーク(NSC)</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="http://www.nsc.gr.jp" target="_blank">一樂 さつき</a>
+            </div>
+            <% var odd = false;%>
+            <% (staffs).forEach(function(staff){ %>
+            <% if(staff.is_network){%>
+                <div class="col-sm-6 staff nsc <%=(odd)?"odd":""%>">
+                    <% if(staff.link){%>
+                    <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
+                    <% }else{ %>
+                    <span><%=staff.name%></span>
+                    <% }%>
+                </div>
+            <% odd = !odd;%>
+            <% } %>
+            <% });%>
+
+            <div class="col-sm-12 staff">
+                <a href="http://www.nsc.gr.jp" target="_blank">重兼 史尚</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">懇親会</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="http://twitter.com/ONDX_jp" target="_blank">恩田 大輝</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">インタビュアー(現地採用)</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="https://twitter.com/se_kamo" target="_blank">Wakai Shinichiro</a>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="https://twitter.com/taniyanpgd?lang=ja" target="_blank">Kazuki Nakatani</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">サイト制作・印刷物</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="https://twitter.com/kmnhrn" target="_blank">神野 春奈</a>
+            </div>
+            <div class="col-sm-12 staff">
+                <span>Yasui Risa</span>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">大目付</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="http://nocono.net/">Abe Asami</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">企画・総務</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a href="http://chatbox-inc.com/page/member/mikakane">後藤 知宏</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">スポンサー</h3>
+            </div>
+
+            <div class="col-sm-12">
+                <% (sponsors).forEach(function(sponsor){ %>
+                <% if(sponsor.class == "session"){%>
+                <div class="col-sm-6 sponsor">
+                    <a href="<%=sponsor.link%>" target="_blank">
+                        <img class="fitimg2" src="./images/sponsors/<%=sponsor.code%>.png" alt="">
+                    </a>
+                </div>
+                <%}%>
+                <% });%>
+            </div>
+
+            <div class="col-sm-12">
+                <% (sponsors).forEach(function(sponsor){ %>
+                <% if(sponsor.class == "booth"){%>
+                <div class="col-sm-4 sponsor">
+                    <a href="<%=sponsor.link%>" target="_blank">
+                        <img class="fitimg2" src="./images/sponsors/<%=sponsor.code%>.png" alt="">
+                    </a>
+                </div>
+                <%}%>
+                <% });%>
+            </div>
+
+            <div class="col-sm-12">
+                <% (sponsors).forEach(function(sponsor){ %>
+                <% if(sponsor.class == undefined){%>
+                <div class="col-sm-4 col-xs-6 sponsor">
+                    <a href="<%=sponsor.link%>" target="_blank">
+                        <img class="fitimg2" src="./images/sponsors/<%=sponsor.code%>.png" alt="">
+                    </a>
+                </div>
+                <%}%>
+                <% });%>
+            </div>
+
+
+            <div class="col-sm-12">
+                <h3 class="text-center">会場提供</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <a target="_blank" href="http://www.temmacenter.com/shin_umeda/access/index.html">新梅田研修センター</a>
+            </div>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">SPECIAL THANKS</h3>
+            </div>
+            <div class="col-sm-12 staff">
+                <span>wordbench の皆様</span>
+            </div>
+            <div class="col-sm-12 staff">
+                <span>ng-kyoto の皆様</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="./lightbox2/dist/js/lightbox.min.js"></script>
+
+
+
+</div>
+<%- include('_footer', {title:"サイトタイトル"}); %>
+<!-- /#contentWraper -->
+<%- include('_ga'); %>
+</body>
+</html>

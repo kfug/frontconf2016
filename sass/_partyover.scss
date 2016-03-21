@@ -1,0 +1,96 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.fitimg{
+	width:100%;
+}
+
+.fitimg2{
+	height:4em;
+}
+
+.photoesUnit{
+	color:red;
+	.image{
+		@extend .col-xs-3;
+		margin-top: 5px;
+	}
+}
+
+.speakerUnit{
+	font-size: .9em;
+	.speaker{
+		text-align: left;
+		padding: .5em 0;
+		padding-left: 1em;
+		a{
+			color:inherit;
+			text-decoration: none;
+		}
+		.icon{
+			img{
+				border-radius: 50px;
+			}
+			text-align: right;
+		}
+		.name{
+			padding-top:1em;
+			text-align: left;
+		}
+	}
+	//.speaker:nth-child(even){
+	//	.icon{
+	//		text-align: left;
+	//		@extend .col-xs-push-8
+	//	}
+	//	.name{
+	//		text-align: right;
+	//		@extend .col-xs-pull-4
+	//	}
+	//}
+	.speaker.odd{
+		text-align: right;
+		padding-right: 1em;
+	}
+	.keynote{
+		text-align: center;
+	}
+}
+
+.staffUnit{
+	h3{
+		color: gray;
+		margin-top:2em;
+	}
+	.staff{
+		padding: .5em 0;
+		text-align: center;
+		a{
+			color:inherit;
+			text-decoration: none;
+		}
+	}
+	.sponsor{
+		padding: 1em 0;
+		text-align: center;
+		a{
+			color:inherit;
+		}
+	}
+	.oic.odd{
+		text-align: left;
+		padding-left: 1em;
+	}
+	.oic{
+		padding-right: 1em;
+		text-align: right;
+	}
+
+	.nsc.odd{
+		text-align: left;
+		padding-left: 1em;
+	}
+	.nsc{
+		padding-right: 1em;
+		text-align: right;
+	}
+}

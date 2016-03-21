@@ -13,9 +13,9 @@ module.exports = function(){
             sponsors: require("../data/sponsors.js"),
             news: require("../data/news.js"),
             handson: require("../data/handson.js"),
-            nl2br: require("nl2br")
+            nl2br: require("nl2br"),
+            po: require("../data/partyover"),
     }))
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
         .pipe(this.dest("src/"))
-
 }
