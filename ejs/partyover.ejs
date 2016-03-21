@@ -92,19 +92,38 @@
 
         <div class="row linkUnit">
             <div class="col-sm-12">
-                <h3 class="text-center">NEWS</h3>
+                <h3 class="text-center">SESSIONS</h3>
             </div>
-            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
+            <% (po.session).forEach(function(link){ %>
             <div class="col-sm-6">
-                <iframe style="width:100%;height:155px;max-width:100%;display:block;" title="[M] mbdb" src="http://hatenablog.com/embed?url=https://mbdb.jp/" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" src="http://hatenablog.com/embed?url=<%=link%>" frameborder="0" scrolling="no"></iframe>
             </div>
             <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">Lightening Talk</h3>
+            </div>
+            <% (po.lt).forEach(function(link){ %>
+            <div class="col-sm-6">
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" src="http://hatenablog.com/embed?url=<%=link%>" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <% });%>
+
             <div class="col-sm-12">
                 <h3 class="text-center">BLOGS</h3>
             </div>
-            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
+            <% (po.blog).forEach(function(link){ %>
             <div class="col-sm-6">
-                <iframe style="width:100%;height:155px;max-width:100%;display:block;" title="[M] mbdb" src="http://hatenablog.com/embed?url=https://mbdb.jp/" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" src="http://hatenablog.com/embed?url=<%=link%>" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <% });%>
+
+            <div class="col-sm-12">
+                <h3 class="text-center">NEWS AND MORE</h3>
+            </div>
+            <% (po.news).forEach(function(link){ %>
+            <div class="col-sm-6">
+                <iframe style="width:100%;height:155px;max-width:100%;display:block;" src="http://hatenablog.com/embed?url=<%=link%>" frameborder="0" scrolling="no"></iframe>
             </div>
             <% });%>
         </div>
