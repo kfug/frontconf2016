@@ -11036,6 +11036,12 @@ a:hover {
     width: 100%; }
   #partyoverPage .fitimg2 {
     height: 4em; }
+  #partyoverPage h2 {
+    margin-top: 4em;
+    margin-bottom: 1em; }
+  #partyoverPage .ancUnit p,
+  #partyoverPage .ancHeadUnit p {
+    font-size: .9em; }
   #partyoverPage .photoesUnit {
     color: red; }
     #partyoverPage .photoesUnit .image {
