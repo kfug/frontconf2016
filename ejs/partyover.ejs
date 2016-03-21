@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <img class="fitimg" src="./img/fec_main.jpg" alt="">
-                <h1 class="text-center">FRONTEND CONFERENCE 2016 開催後記</h1>
+                <h1 class="text-center">FRONTEND CONFERENCE 2016 <br>開催後記</h1>
             </div>
         </div>
 
@@ -53,34 +53,43 @@
             <% });%>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-center">MOVIES</h2>
-            </div>
-        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+                <!--<h2 class="text-center">MOVIES</h2>-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <div class="row photoesUnit">
-            <% (["","","","","","","","",""]).forEach(function(speaker){ %>
-            <div class="image">
-                <img class="fitimg" src="http://placehold.it/800x400" alt="">
-            </div>
-            <% });%>
-        </div>
+        <!--<div class="row photoesUnit">-->
+            <!--<% (["","","","","","","","",""]).forEach(function(speaker){ %>-->
+            <!--<div class="image">-->
+                <!--<img class="fitimg" src="http://placehold.it/800x400" alt="">-->
+            <!--</div>-->
+            <!--<% });%>-->
+        <!--</div>-->
 
-        <div class="row">
-            <div class="col-sm-12">
+        <div class="row ancHeadUnit">
+            <div class="col-sm-12 text-center">
                 <h2 class="text-center">アンケート</h2>
+                <p>
+                    たくさんの方にご回答頂いた会場内アンケートは、イベント終了後
+                    スタッフで集計し、反省会のテーマにさせていただきました。
+                </p>
+                <p>
+                    一部ではありますが、ココでその結果を発表させていただきたいと思います。
+                </p>
             </div>
         </div>
 
         <div class="row ancUnit">
             <div class="col-sm-6">
                 <img src="./img/anc_age.png" alt="" class="fitimg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet asperiores cumque deserunt doloribus eligendi esse ipsam ipsum laboriosam nam, quia tempore. Debitis error impedit itaque iure labore officia veniam!</p>
+                <p>参加の年代別アンケートではほぼ30代の方の参加を中心に、20代、40代とまんべんなく参加頂いていたようです。</p>
+                <p>スタッフの方では学生スタッフなど、若いスタッフも多く参加していて、ベテランから若手まで幅広い人が参加しているという印象でした。</p>
             </div>
             <div class="col-sm-6">
                 <img src="./img/anc_area.png" alt="" class="fitimg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, amet asperiores cumque deserunt doloribus eligendi esse ipsam ipsum laboriosam nam, quia tempore. Debitis error impedit itaque iure labore officia veniam!</p>
+                <p>参加者の地域別アンケートでは関西圏からの参加が非常に多かったです。</p>
+                <p>告知が分かりづらかった…との声もあるため、遠方からの参加者も集められるよう次回以降の告知は頑張っていきたいと思いました。/p>
             </div>
         </div>
 
@@ -141,7 +150,7 @@
             </div>
             <% var odd = null;%>
             <% (speakers).forEach(function(speaker){ %>
-            <div class="<%=(odd === null)?"col-sm-12 keynote":"col-sm-6"%> text-center speaker  <%=(odd)?"odd":""%>">
+            <div class="<%=(odd === null)?"col-sm-12 keynote":"col-xs-6"%> text-center speaker  <%=(odd)?"odd":""%>">
                 <a href="./speaker.html#<%=speaker.code%>"><%=speaker.name%></a>
                 <!--<div class="container-fluid">-->
                     <!--<div class="col-xs-4 icon">-->
@@ -220,7 +229,7 @@
             <% var odd = false;%>
             <% (staffs).forEach(function(staff){ %>
             <% if(staff.is_oic){%>
-                <div class="col-sm-6 staff oic <%=(odd)?"odd":""%>">
+                <div class="col-xs-6 staff oic <%=(odd)?"odd":""%>">
                     <% if(staff.link){%>
                     <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
                     <% }else{ %>
@@ -243,7 +252,7 @@
             <% var odd = false;%>
             <% (staffs).forEach(function(staff){ %>
             <% if(staff.is_network){%>
-                <div class="col-sm-6 staff nsc <%=(odd)?"odd":""%>">
+                <div class="col-xs-6 staff nsc <%=(odd)?"odd":""%>">
                     <% if(staff.link){%>
                     <a href="<%=staff.link%>" target="_blank"><%=staff.name%></a>
                     <% }else{ %>
