@@ -1,5 +1,8 @@
 # フロントエンドカンファレンス2016 本サイト制作
 
+修正に関する希望等はissue または [Facebookページ](https://www.facebook.com/frontconf2016/) などでも承っております。
+
+
 ## 運用フロー
 
 ````
@@ -30,8 +33,12 @@ $ make deploy
 
 頻繁に切り替わる情報はjsonにて管理
 
-speakers.js スピーカー情報
+- speakers.js スピーカー情報
 
-sponsors.js スポンサー情報
+- sponsors.js スポンサー情報
 
-staffs.js スタッフ情報
+- handson.js ハンズオン情報
+
+- staffs.js スタッフ情報
+
+- partyover.js 開催後記

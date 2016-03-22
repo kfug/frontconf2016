@@ -45,7 +45,6 @@ module.exports = {
         "http://hatsuka.info/seminar/frontend-conference-2016",
         "http://blog.rokuzeudon.com/entry/20160308/1457429258",
         "http://blog.cybozu.io/entry/2016/03/09/080000",
-        "http://hatsuka.info/seminar/frontend-conference-2016",
         "http://yuzu441.hateblo.jp/entry/2016/03/06/003858",
         "http://exe.tyo.ro/2016/03/frontend_conference_2016.html",
         "http://satoyan419.com/frontend-conference-2016/",
