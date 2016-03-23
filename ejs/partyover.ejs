@@ -46,11 +46,18 @@
 
             <% (po.photo).forEach(function(photo){ %>
             <div class="image">
-                <a href="<%=photo.link%>" data-lightbox="<%=photo.code%>">
-                    <img class="fitimg" src="<%=photo.link%>" alt="">
+                <a href="./images/partyover/<%=photo.link%>" data-lightbox="<%=photo.code%>" data-title="<%=photo.title%>">
+                    <img class="fitimg" src="./images/partyover/<%=photo.link%>" alt="">
                 </a>
             </div>
             <% });%>
+        </div>
+        <div class="row photoUnit">
+            <div class="col-sm-12 text-right">
+                <br>
+                <br>
+                全ての写真は <a href="https://goo.gl/photos/RpHpCHY2EjUC1yzz6">こちら</a> から
+            </div>
         </div>
 
         <!--<div class="row">-->
@@ -239,7 +246,9 @@
             <% odd = !odd;%>
             <% } %>
             <% });%>
-            <div class="col-xs-6">&nbsp;</div>
+            <div class="col-xs-6 staff oic">&nbsp;</div>
+        </div>
+        <div class="row staffUnit">
             <div class="col-sm-12 staff">
                 <a href="https://twitter.com/potato4d" target="_blank">花谷拓磨 (Potato4d)</a>
             </div>
@@ -263,7 +272,8 @@
             <% odd = !odd;%>
             <% } %>
             <% });%>
-
+        </div>
+        <div class="row staffUnit">
             <div class="col-sm-12 staff">
                 <a href="http://www.nsc.gr.jp" target="_blank">重兼 史尚</a>
             </div>
@@ -370,7 +380,11 @@
                 <span>ご参加頂いた &nbsp;たくさんの皆様</span>
             </div>
 
-            <p>このページの管理は <a href="https://github.com/kfug/frontconf2016">Github</a>にて行っております。リンク先の追加、修正希望などはお気軽にissue等でお声がけください。</p>
+            <div class="col-sm-12">
+                <br><br>
+                <p class="text-center">このページの管理は <a href="https://github.com/kfug/frontconf2016">Github</a>にて行っております。リンク先の追加、修正希望などはお気軽にissue等でお声がけください。</p>
+            </div>
+
         </div>
 
     </div>

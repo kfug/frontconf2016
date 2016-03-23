@@ -1,44 +1,84 @@
 module.exports = {
     photo: [
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge",
-            "title": "hogehoge"
+            link: "IMG_0414.jpg",
+            code:"opening",
+            "title": "開幕です!!"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge2",
-            "title": "hogehoge"
+            link: "IMG_0428.jpg",
+            code: "keynote",
+            "title": "基調講演の様子"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge3",
-            "title": "hogehoge"
+            link: "IMG_0459.jpg",
+            code: "keynote",
+            "title": "奥野さんによるTypeScriptとDDDのお話"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge4",
-            "title": "hogehoge"
+            link: "IMG_0511.jpg",
+            code: "keynote",
+            "title": "桝田さんよりExtended HTML"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge5",
-            "title": "hogehoge"
+            link: "IMG_0545.jpg",
+            code: "keynote",
+            "title": "サイボウズ小林さんはアクセシビリティのお話を"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge6",
-            "title": "hogehoge"
+            link: "IMG_0583.jpg",
+            code: "keynote",
+            "title": "フレームワークセッションよりアマギタカヨシさん"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge7",
-            "title": "hogehoge"
+            link: "IMG_0584.jpg",
+            code: "keynote",
+            "title": "フレームワークセッションより今井さん"
         },
         {
-            link: "http://placehold.it/800x400",
-            code: "hogehoge8",
-            "title": "hogehoge"
+            link: "IMG_0887.jpg",
+            code: "keynote",
+            "title": "フレームワークセッションより中村さん"
+        },
+        {
+            link: "IMG_0594.jpg",
+            code: "keynote",
+            "title": "山下さんによる「これからのデザインを考える」"
+        },
+        {
+            link: "IMG_0598.jpg",
+            code: "keynote",
+            "title": "リアズ大出さんは「モダン化」の挑戦を"
+        },
+        {
+            link: "IMG_0843.jpg",
+            code: "keynote",
+            "title": "gulpのベストプラクティスを神保さんより",
+        },
+        {
+            link: "IMG_0865.jpg",
+            code: "keynote",
+            "title": "花谷さんよりHTML5API"
+        },
+        {
+            link: "IMG_0872.jpg",
+            code: "keynote",
+            "title": "KiteさんによるBroubon/Neatのライブコーディング"
+        },
+        {
+            link: "IMG_0909.jpg",
+            code: "keynote",
+            "title": "竹洞さんはサイトパフォーマンスのお話を"
+        },
+        {
+            link: "IMG_0926.jpg",
+            code: "keynote",
+            "title": "榊原さんによるモジュールデザイン"
+        },
+        {
+            link: "IMG_0816.jpg",
+            code: "keynote",
+            "title": "スポンサー限定ステッカー"
         },
     ],
     blog:[
