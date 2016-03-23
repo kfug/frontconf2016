@@ -11042,10 +11042,8 @@ a:hover {
   #partyoverPage .ancUnit p,
   #partyoverPage .ancHeadUnit p {
     font-size: .9em; }
-  #partyoverPage .photoesUnit {
-    color: red; }
-    #partyoverPage .photoesUnit .image {
-      margin-top: 5px; }
+  #partyoverPage .photoesUnit .image {
+    margin-top: 5px; }
   #partyoverPage .speakerUnit {
     font-size: .9em; }
     #partyoverPage .speakerUnit .speaker {
