@@ -91,6 +91,7 @@ module.exports = {
         "http://qiita.com/shinichi62/items/a9a8ca822f039a4e0540",
         "http://in.spicagraph.com/other/frontconf2016/",
         "http://webrunner.jp/2016/03/frontconf2016/",
+        "http://www.nsc.gr.jp/?p=248"
     ],
     session:[
         "http://www.slideshare.net/yamasy1549s/are-you-a-designer-or-an-engineer", // 基調講演
